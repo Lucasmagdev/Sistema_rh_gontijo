@@ -1,0 +1,455 @@
+linha,nome_linha,route_id,tipo_servico,direction_id
+10,Madrugão / Circular Noturno,989341,troncais_move,0
+30,Estação Diamante/Centro,562172,troncais_move,0
+32,Estação Barreiro/Centro-Tamoios,562016,troncais_move,0
+33,Estação Barreiro/Centro-Hospitais,561808,troncais_move,0
+35,Estação Barreiro/Centro,562088,troncais_move,0
+50,Estação Pampulha / Centro - Direta,561929,troncais_move,0
+51,Estação Pampulha / Centro / Hospitais,562134,troncais_move,0
+52,Estação Pampulha / Avenida Antonio Carlos,562165,troncais_move,0
+61,Estação Venda Nova/Centro-Direta,561937,troncais_move,0
+62,Estação Venda Nova/Savassi Via Hospitais,561896,troncais_move,0
+62,Estação Venda Nova/Savassi Via Hospitais,561896,troncais_move,1
+63,Estação Venda Nova / Avenida Antônio Carlos,562059,troncais_move,0
+64,Estação Venda Nova/Assembleia Via Carlos Luz,561870,troncais_move,0
+65,Estação Vilarinho/Centro Via Antônio Carlos-Direta,562193,troncais_move,0
+66,Estação Vilarinho/Centro/Hospitais Via Cristiano Machado (Direta),562052,troncais_move,0
+66,Estação Vilarinho/Centro/Hospitais Via Cristiano Machado (Direta),562052,troncais_move,1
+67,Estação Vilarinho/Santo Agostinho Via Carlos Luz,562121,troncais_move,0
+68,Estação Vilarinho / Avenida Antônio Carlos,561882,troncais_move,0
+82,Estação São Gabriel / Savassi Via Hospitais,561968,troncais_move,0
+85,Estação São Gabriel / Centro Via Floresta,561824,troncais_move,0
+101,Aglomerado Santa Lúcia / São Pedro,562367,vilas_favelas,0
+102,Nossa Senhora de Fatima/Hospital Evangelico,562225,estruturais,0
+103,Vila Cafezal/Rua Pouso Alto,561847,vilas_favelas,0
+104,Estação Lagoinha / Avenida,562240,troncais_move,0
+105,Estação Central / Lourdes,561829,troncais_move,0
+107,Vila Marçola / Rua do Ouro,562163,vilas_favelas,0
+201,Morro Das Pedras / Hospital Madre Teresa,562066,estruturais,0
+202,Estação Vila Oeste,561845,estruturais,0
+203,Morro Das Pedras/Ventosa,561831,estruturais,0
+204,Estação Vila Oeste / Nova Gameleira,561946,estruturais,0
+205,Metro Calafate/Buritis,562349,estruturais,0
+206,Circular Oeste,562026,estruturais,0
+208,Estação Barreiro/Betania Via Novo Das Industrias,562202,troncais_move,0
+209,Circular Saúde Havaí,701774,estruturais,0
+301,Estação Diamante/Novo Santa Cecília via Brasil Industrial,561924,troncais_move,0
+302,Estação Diamante / Vila Pinho,562184,troncais_move,0
+303,Estação Diamante / Santa Cecilia Via Castanheiras,562140,troncais_move,0
+304,Estação Diamante / Jatoba Iv,562241,troncais_move,0
+305,Estação Diamante / Mangueiras,561860,troncais_move,0
+308,Estação Barreiro / Tirol,562175,troncais_move,0
+309,Estação Diamante / Bairro Petropolis,561803,troncais_move,0
+309,Estação Diamante / Bairro Petropolis,561803,troncais_move,1
+310,Estação Diamante / 3 E 4 Secao,562021,troncais_move,0
+311,Estação Diamante / Independencia,561900,troncais_move,0
+311,Estação Diamante / Independencia,561900,troncais_move,1
+313,Estação Diamante / Olaria,561930,troncais_move,0
+314,Estação Diamante/Estação Barreiro Via Santa Helena,562000,troncais_move,0
+315,Estação Barreiro / Barreiro / Maldonado,561859,troncais_move,0
+318,Estação Barreiro/Jardim Liberdade Via Milionarios,561939,troncais_move,0
+318,Estação Barreiro/Jardim Liberdade Via Milionarios,561939,troncais_move,1
+319,Vila Cemig/Conjunto Esperanca,561823,estruturais,0
+321,Olhos D Agua / Pilar,562178,troncais_move,0
+325,Estação Barreiro / Flavio Marques Lisboa,562105,troncais_move,0
+326,Estação Barreiro / Vale do Jatoba,561787,troncais_move,0
+327,Estação Barreiro / Cardoso A,561975,troncais_move,0
+328,Estação Barreiro / Cardoso B,561804,troncais_move,0
+328,Estação Barreiro / Cardoso B,561804,troncais_move,1
+329,Estação Barreiro / Jatoba,561919,troncais_move,0
+330,Estação Barreiro / Independencia,561894,troncais_move,0
+330,Estação Barreiro / Independencia,561894,troncais_move,1
+331,Estação Barreiro / Conjunto Antônio Teixeira Dias,561969,troncais_move,0
+332,Estação Barreiro / Milionarios - Bonsucesso,561920,troncais_move,0
+335,Estação Barreiro / Lindeia,562033,troncais_move,0
+336,Vila Bernadete / Jardim Liberdade,562153,troncais_move,0
+337,Estação Barreiro / Itaipu,561960,troncais_move,0
+338,Estação Barreiro/Pilar - Olhos Dagua,561812,troncais_move,0
+340,Estação Barreiro / Vila Mangueiras,562155,troncais_move,0
+341,Estação Barreiro / Estação Diamante Via Saude,561806,troncais_move,0
+342,Estação Barreiro / Solar Via Estação Diamante,561886,troncais_move,0
+342,Estação Barreiro / Solar Via Estação Diamante,561886,troncais_move,1
+343,Vila Ecológica / Independência - Via Centro de Saúde,987722,troncais_move,0
+401,Metro Cidade Industrial/Santa Maria,561817,estruturais,0
+402,Metro Cidade Industrial/Camargos,561839,estruturais,0
+406,Estação Ponto São José / Pindorama  - Via Glória,561982,estruturais,0
+407,Califórnia/Glória via Centro de Saúde Califórnia,954089,troncais_convencionais,0
+503,Estação São Gabriel / Aparecida / Santa Rosa,562138,troncais_move,0
+504,Estação São Gabriel / Santa Rosa / Aparecida,562144,troncais_move,0
+506,Estação Ponto São Jose / Avenida Antonio Carlos,561852,troncais_move,0
+510,Estação Pampulha / Xangrila Via Trevo,561865,troncais_move,0
+510,Estação Pampulha / Xangrila Via Trevo,561865,troncais_move,1
+511,Estação Ponto São Jose / Jardim Alvorada,561903,troncais_move,0
+513,Estação Pampulha / Dandara via Braúnas,608000,troncais_move,0
+533,Castelo / Shopping Del Rey,562152,estruturais,0
+533,Castelo / Shopping Del Rey,562152,estruturais,1
+535,Trevo Via Braunas / Shopping Del Rey,562237,estruturais,0
+535,Trevo Via Braunas / Shopping Del Rey,562237,estruturais,1
+607,Estação Vilarinho / Esplendor,562167,troncais_move,0
+607,Estação Vilarinho / Esplendor,562167,troncais_move,1
+608,Estação Venda Nova / Nova Pampulha,561801,troncais_move,0
+609,Serra Verde/Santa Monica,562084,troncais_move,0
+614,Céu Azul A / Estação Pampulha - Via Avenida Portugal,561872,troncais_move,0
+614,Céu Azul A / Estação Pampulha - Via Avenida Portugal,561872,troncais_move,1
+615,Céu Azul B / Estação Pampulha - Via Garças,561813,troncais_move,0
+615,Céu Azul B / Estação Pampulha - Via Garças,561813,troncais_move,1
+616,Estação Pampulha / Ceu Azul C,561949,troncais_move,0
+616,Estação Pampulha / Ceu Azul C,561949,troncais_move,1
+617,Estação Pampulha / Piratininga Via Rio Branco,562181,troncais_move,0
+617,Estação Pampulha / Piratininga Via Rio Branco,562181,troncais_move,1
+618,Estação Pampulha/Rio Branco Via Jardim Leblon,561945,troncais_move,0
+618,Estação Pampulha/Rio Branco Via Jardim Leblon,561945,troncais_move,1
+619,Estação Pampulha/Santa Monica Via Santa Branca,561846,troncais_move,0
+619,Estação Pampulha/Santa Monica Via Santa Branca,561846,troncais_move,1
+620,Estação Pampulha / Santa Monica Via Santa Amelia,561948,troncais_move,0
+620,Estação Pampulha / Santa Monica Via Santa Amelia,561948,troncais_move,1
+621,Estação Venda Nova / Lagoa,561956,troncais_move,0
+622,Estação Venda Nova / Lagoinha,561933,troncais_move,0
+623,Estação Venda Nova / Vila Santa Branca,562407,troncais_move,0
+624,Estação Venda Nova / Maria Helena A,562304,troncais_move,0
+625,Estação Venda Nova / Maria Helena B,561830,troncais_move,0
+626,Estação Venda Nova/Esplendor Via Nova America,562083,troncais_move,0
+626,Estação Venda Nova/Esplendor Via Nova America,562083,troncais_move,1
+627,Estação Venda Nova/Mantiqueira,561799,troncais_move,0
+631,Estação Vilarinho / Serra Verde Via Minas Caixa,561912,troncais_move,0
+633,Estação Vilarinho / Jardim dos Comerciarios,561875,troncais_move,0
+634,Estação Vilarinho/Nova York Via Jardim dos Comerciarios,561833,troncais_move,0
+634,Estação Vilarinho/Nova York Via Jardim dos Comerciarios,561833,troncais_move,1
+635,Estação Vilarinho / Jardim dos Comerciarios C,562351,troncais_move,0
+635,Estação Vilarinho / Jardim dos Comerciarios C,562351,troncais_move,1
+636,Estação Vilarinho / Jardim Europa - Via Cenáculo,562341,troncais_move,0
+637,Estação Vilarinho / Canaa Via Serra Verde,561811,troncais_move,0
+638,Estação Vilarinho/Minas Caixa,562323,troncais_move,0
+639,Braunas / Shopping Del Rey,562075,troncais_move,0
+639,Braunas / Shopping Del Rey,562075,troncais_move,1
+640,Estação Venda Nova / Jardim Leblon Via Rio Branco,562160,troncais_move,0
+641,Estação Vilarinho/Serra Verde,561926,troncais_move,0
+641,Estação Vilarinho/Serra Verde,561926,troncais_move,1
+642,Estação Venda Nova/Estação Vilarinho/Cidade Administrativa,561992,troncais_move,0
+643,Estação Pampulha / Copacabana Via Monte Carmelo,561883,troncais_move,0
+643,Estação Pampulha / Copacabana Via Monte Carmelo,561883,troncais_move,1
+644,Estação Pampulha / São Joao Batista,561832,troncais_move,0
+644,Estação Pampulha / São Joao Batista,561832,troncais_move,1
+645,Estação Pampulha / Santa Monica Via Jardim Atlântico,561959,troncais_move,0
+645,Estação Pampulha / Santa Monica Via Jardim Atlântico,561959,troncais_move,1
+646,Estação Vilarinho/Zoológico Via Estação Venda Nova,603413,troncais_move,0
+702,Estação Vilarinho/Xodo-Marize Via Jardim Guanabara,562410,troncais_move,0
+703,Estação São Gabriel / Guarani - Via Primeiro de Maio,562230,troncais_move,0
+705,Estação São Gabriel / São Tomaz,561972,troncais_move,0
+706,Estação São Gabriel / Heliópolis,562111,troncais_move,0
+707,Estação São Gabriel / Jardim Guanabara,562013,troncais_move,0
+708,Estação São Gabriel / Felicidade,562272,troncais_move,0
+709,Estação São Gabriel / Tupi,561987,troncais_move,0
+710,Estação São Gabriel / Providência,562227,troncais_move,0
+711,Estação São Gabriel / Solimões,562412,troncais_move,0
+712,Estação Pampulha / São Bernardo,561796,troncais_move,0
+712,Estação Pampulha / São Bernardo,561796,troncais_move,1
+713,Estação São Gabriel / Lajedo,561925,troncais_move,0
+714,Estação São Gabriel / Casas Populares,562001,troncais_move,0
+715,Estação São Gabriel / Monte Azul,562363,troncais_move,0
+716,Estação São Gabriel / Novo Aarão Reis,561828,troncais_move,0
+717,Campo Alegre / Estação Pampulha - Via Planalto,561849,troncais_move,0
+717,Campo Alegre / Estação Pampulha - Via Planalto,561849,troncais_move,1
+718,Planalto / Estação Pampulha - Via Itapõa,561836,troncais_move,0
+718,Planalto / Estação Pampulha - Via Itapõa,561836,troncais_move,1
+719,Estação Pampulha / Floramar,561827,troncais_move,0
+719,Estação Pampulha / Floramar,561827,troncais_move,1
+720,Circular Saúde MG20,573119,troncais_move,0
+721,Estação São Gabriel / Maria Teresa Via Parque Cerrado,596937,troncais_move,0
+732,Estação São Gabriel / Tupi-Felicidade,562125,troncais_move,0
+734,Estação São Gabriel / Aarão Reis Via Minaslândia,562136,troncais_move,0
+735,Estação Vilarinho/Juliana A,562327,troncais_move,0
+736,Estação Vilarinho/Juliana B,562050,troncais_move,0
+737,Estação Vilarinho/Jaqueline,562054,troncais_move,0
+737,Estação Vilarinho/Jaqueline,562054,troncais_move,1
+738,Estação Vilarinho/Conjunto Zilah Sposito,561814,troncais_move,0
+738,Estação Vilarinho/Conjunto Zilah Sposito,561814,troncais_move,1
+739,Estação Vilarinho/Jaqueline 2ª Seção Via Frei Leopoldo,562101,troncais_move,0
+739,Estação Vilarinho/Jaqueline 2ª Seção Via Frei Leopoldo,562101,troncais_move,1
+740,Tupi / Mirante,562264,troncais_move,0
+806,Estação São Gabriel / Vista do Sol Via Nazaré,562058,troncais_move,0
+806,Estação São Gabriel / Vista do Sol Via Nazaré,562058,troncais_move,1
+807,Estação São Gabriel / Ribeiro de Abreu A,562120,troncais_move,0
+808,Estação São Gabriel / Paulo VI,561802,troncais_move,0
+808,Estação São Gabriel / Paulo VI,561802,troncais_move,1
+809,Estação São Gabriel / Belmonte,562284,troncais_move,0
+810,Estação São Gabriel/Parque Belmonte via Dom Silverio,562302,troncais_move,0
+811,Estação São Gabriel / Vista do Sol Via PUC,562189,troncais_move,0
+812,Estação São Gabriel / São Gabriel A,562093,troncais_move,0
+813,Estação São Gabriel/Paulo VI Via Ribeiro de Abreu,561999,troncais_move,0
+814,Estação São Gabriel / Jardim Vitoria,561917,troncais_move,0
+815,Estação São Gabriel / Conjunto Paulo VI,561856,troncais_move,0
+815,Estação São Gabriel / Conjunto Paulo VI,561856,troncais_move,1
+821,Goiânia / Metrô Estação José Cândido,561951,troncais_move,0
+822,Santa Inês / Vila Maria - Via Estação José Cândido,562378,troncais_move,0
+823,Estação São Gabriel / Bairro Vitoria,561821,troncais_move,0
+823,Estação São Gabriel / Bairro Vitoria,561821,troncais_move,1
+825,Estação São Gabriel/Vitoria II Via Upa-Nordeste,562074,troncais_move,0
+825,Estação São Gabriel/Vitoria II Via Upa-Nordeste,562074,troncais_move,1
+826,Montes Claros / Rua São Romulo,562288,troncais_move,0
+832,Estação São Gabriel / Capitao Eduardo,562146,troncais_move,0
+832,Estação São Gabriel / Capitao Eduardo,562146,troncais_move,1
+836,Estação São Gabriel / Ribeiro de Abreu B,562127,troncais_move,0
+836,Estação São Gabriel / Ribeiro de Abreu B,562127,troncais_move,1
+837,Estação São Gabriel / Conjunto Ribeiro de Abreu,562156,troncais_move,0
+838,Estação São Gabriel/Palmares Via Maria Virginia,561893,troncais_move,0
+901,Circular Leste / Baleia / Hospitais,561966,estruturais,0
+902,Taquaril / Castanheiras,562027,estruturais,0
+903,Granja de Freitas / Taquaril via Alto Vera Cruz,562397,estruturais,0
+1030,Avenida,562004,estruturais,0
+1145,Bairro Das Indústrias,562358,estruturais,0
+1170,Santa Lucia / Mangabeiras - Via Savassi,562252,estruturais,0
+1502,Vista Alegre / Guarani,561822,estruturais,0
+1502,Vista Alegre / Guarani,561822,estruturais,1
+1505,Alto dos Pinheiros/Tupi,561993,estruturais,0
+1505,Alto dos Pinheiros/Tupi,561993,estruturais,1
+1509,California/Tupi,561826,estruturais,0
+1509,California/Tupi,561826,estruturais,1
+1510,Madre Gertrudes/Providencia,562361,estruturais,0
+1510,Madre Gertrudes/Providencia,562361,estruturais,1
+2033,Betania / Centro,562290,troncais_convencionais,0
+2034,Conjunto Betania / Centro,561850,troncais_convencionais,0
+2035,Bairro Das Industrias / Centro,562388,troncais_convencionais,0
+2036,Alto Havaí/Centro/Hospitais,701772,troncais_convencionais,0
+2101,Grajau/Sion,562210,estruturais,0
+2101,Grajau/Sion,562210,estruturais,1
+2102,Gameleira / Serra,561851,estruturais,0
+2102,Gameleira / Serra,561851,estruturais,1
+2103,Prado/Anchieta,561923,estruturais,0
+2103,Prado/Anchieta,561923,estruturais,1
+2104,Nova Gameleira/Bh Shopping,562370,estruturais,0
+2104,Nova Gameleira/Bh Shopping,562370,estruturais,1
+2150,Grajau/Sion Via Contorno,561899,estruturais,0
+2150,Grajau/Sion Via Contorno,561899,estruturais,1
+2151,Vista Alegre/Serra,561841,estruturais,0
+2151,Vista Alegre/Serra,561841,estruturais,1
+2152,Salgado Filho/Cruzeiro - Via Savassi,562218,estruturais,0
+2152,Salgado Filho/Cruzeiro - Via Savassi,562218,estruturais,1
+3029,Regina / Centro,561869,troncais_convencionais,0
+3030,Pilar-Olhos D Agua / Centro,562053,troncais_convencionais,0
+3050,Estação Diamante/Hospitais Via Bh Shopping,561943,troncais_move,0
+3051,Flavio Marques Lisboa / Savassi Via N.S.Carmo,561880,estruturais,0
+3052,Estação Diamante/Bh Shopping-Via Havai,562079,troncais_move,0
+3053,Estação Barreiro/B.Preto,561825,troncais_move,0
+3054,Milionarios/Centro,561971,troncais_convencionais,0
+3055,Estação Barreiro/Savassi Via Bhshopping,561905,troncais_move,0
+3150,Regina-Lindeia/BH Shopping via Anel Rodoviário,637902,estruturais,0
+3250,Estação Diamante/Buritis Via Palmeiras,562157,troncais_move,0
+3350,Estação Barreiro / Estação Diamante - Via Hospital Metropolitano,561950,troncais_move,0
+3502,Ouro Preto/São Gabriel,561970,estruturais,0
+3502,Ouro Preto/São Gabriel,561970,estruturais,1
+4031,Santa Maria / Hospitais,562023,estruturais,0
+4032,Caicara /Savassi/ Praca da Liberdade,561862,estruturais,0
+4033,Camargos/Centro,562090,troncais_convencionais,0
+4034,Novo Dom Bosco / Savassi Via Padre Eustaquio,561952,estruturais,0
+4037,Glória / Centro - Via Padre Eustáquio,561864,troncais_convencionais,0
+4102,Aparecida/Serra,562109,estruturais,0
+4102,Aparecida/Serra,562109,estruturais,1
+4103,Aparecida/Parque das Mangabeiras,561964,estruturais,0
+4103,Aparecida/Parque das Mangabeiras,561964,estruturais,1
+4106,São Cristovao / Santo Antônio - Via Savassi,562331,estruturais,0
+4107,Alto Caicara/Serra,562137,estruturais,0
+4107,Alto Caicara/Serra,562137,estruturais,1
+4108,Pedro II/Mangabeiras,561798,estruturais,0
+4110,Dom Cabral/Belvedere,561915,estruturais,0
+4110,Dom Cabral/Belvedere,561915,estruturais,1
+4111,Dom Cabral/Anchieta,561855,estruturais,0
+4111,Dom Cabral/Anchieta,561855,estruturais,1
+4113,Bom Jesus/Belvedere,561953,estruturais,0
+4113,Bom Jesus/Belvedere,561953,estruturais,1
+4150,Shopping Del Rey/Bh Shopping,562303,estruturais,0
+4150,Shopping Del Rey/Bh Shopping,562303,estruturais,1
+4201,Alto Caicara/Nova Cintra,562068,estruturais,0
+4201,Alto Caicara/Nova Cintra,562068,estruturais,1
+4205,Ermelinda / Salgado Filho - Via Prado,561792,estruturais,0
+4205,Ermelinda / Salgado Filho - Via Prado,561792,estruturais,1
+4405,Coqueiros / Centro / Hospitais,561928,troncais_convencionais,0
+4501,California II / São Paulo,561921,estruturais,0
+4501,California II / São Paulo,561921,estruturais,1
+5033,Santa Terezinha/Praca da Liberdade via Tancredo Neves,562389,estruturais,0
+5034,Urca/Centro Via Confisco,600190,troncais_convencionais,0
+5035,Zoológico/Hospitais Via Serrano,603188,estruturais,0
+5036,Celso Machado/Centro,603888,troncais_convencionais,0
+5102,UFMG/Santo Antonio,562055,estruturais,0
+5104,Suzana/Cruzeiro-Via Universitario,561892,estruturais,0
+5104,Suzana/Cruzeiro-Via Universitario,561892,estruturais,1
+5106,Bandeirantes / Bh Shopping,561988,estruturais,0
+5106,Bandeirantes / Bh Shopping,561988,estruturais,1
+5107,Estação Pampulha/Savassi,561834,troncais_move,0
+5201,Dona Clara/Buritis,561890,estruturais,0
+5201,Dona Clara/Buritis,561890,estruturais,1
+5203,Castelo/Estrela do Oriente-Via Manacas,562003,estruturais,0
+5203,Castelo/Estrela do Oriente-Via Manacas,562003,estruturais,1
+5250,Estação Pampulha / Betania,561807,troncais_move,0
+5250,Estação Pampulha / Betania,561807,troncais_move,1
+5401,São Luiz/Dom Cabral,561974,estruturais,0
+5401,São Luiz/Dom Cabral,561974,estruturais,1
+5550,Estação Pampulha / Estação Ponto São Jose,562360,troncais_move,0
+5550,Estação Pampulha / Estação Ponto São Jose,562360,troncais_move,1
+6030,Cidade Administrativa/Savassi Via Hospitais,561935,estruturais,0
+6030,Cidade Administrativa/Savassi Via Hospitais,561935,estruturais,1
+6031,Cidade Administrativa/Centro,562271,troncais_convencionais,0
+6031,Cidade Administrativa/Centro,562271,troncais_convencionais,1
+6350,Estação Vilarinho/Estação Barreiro Via Anel Rodoviario,562239,troncais_move,0
+6350,Estação Vilarinho/Estação Barreiro Via Anel Rodoviario,562239,troncais_move,1
+8101,Santa Cruz/Alto Santa Lúcia,561809,estruturais,0
+8101,Santa Cruz/Alto Santa Lúcia,561809,estruturais,1
+8102,União/Carmo Sion,561907,estruturais,0
+8102,União/Carmo Sion,561907,estruturais,1
+8103,Nova Floresta/Santa Lúcia - Via Lourdes,562043,estruturais,0
+8103,Nova Floresta/Santa Lúcia - Via Lourdes,562043,estruturais,1
+8106,Santa Cruz/BH Shopping Via Belvedere,561879,estruturais,0
+8106,Santa Cruz/BH Shopping Via Belvedere,561879,estruturais,1
+8107,Concórdia/São Pedro - Via Colégio Batista,561835,estruturais,0
+8107,Concórdia/São Pedro - Via Colégio Batista,561835,estruturais,1
+8108,Cidade Nova/Savassi - Via Rua da Bahia,561998,estruturais,0
+8150,União / Serra - Via Floresta / Hospitais,562294,estruturais,0
+8150,União / Serra - Via Floresta / Hospitais,562294,estruturais,1
+8151,Estação São Gabriel/BH Shopping Via Anel Rodoviario,562008,troncais_move,0
+8151,Estação São Gabriel/BH Shopping Via Anel Rodoviario,562008,troncais_move,1
+8203,Renascenca/Buritis - Via Nova Suiça,561874,estruturais,0
+8203,Renascenca/Buritis - Via Nova Suiça,561874,estruturais,1
+8205,Maria Goretti/Nova Granada,561795,estruturais,0
+8205,Maria Goretti/Nova Granada,561795,estruturais,1
+8207,Maria Goretti/Estrela Dalva,562310,estruturais,0
+8207,Maria Goretti/Estrela Dalva,562310,estruturais,1
+8208,Santa Cruz / Buritis - Via Avenida Barão,562253,estruturais,0
+8208,Santa Cruz / Buritis - Via Avenida Barão,562253,estruturais,1
+8350,Estação São Gabriel/Estação Barreiro,562347,troncais_move,0
+8350,Estação São Gabriel/Estação Barreiro,562347,troncais_move,1
+8401,Cachoeirinha/São Jose,561901,estruturais,0
+8405,Palmares/Bela Vista,561932,estruturais,0
+8405,Palmares/Bela Vista,561932,estruturais,1
+8501,Maria Goretti / Engenho Nogueira via Ouro Preto,561898,estruturais,0
+8501,Maria Goretti / Engenho Nogueira via Ouro Preto,561898,estruturais,1
+8550,Estação São Gabriel / Zoológico via Estação Pampulha,562217,troncais_move,0
+8551,Estação São Gabriel / Estação UFMG via Anel Rodoviário,561958,troncais_move,0
+9030,Castanheiras/Centro,561957,troncais_convencionais,0
+9032,Granja de Freitas / Centro - Via Avenida dos Andradas,562035,troncais_convencionais,0
+9034,Taquaril/Centro,561983,troncais_convencionais,0
+9101,Alto Vera Cruz/São Bento,561916,estruturais,0
+9101,Alto Vera Cruz/São Bento,561916,estruturais,1
+9103,Santa Tereza/Santo Antônio,562020,estruturais,0
+9104,Sagrada Família/Luxemburgo,561885,estruturais,0
+9104,Sagrada Família/Luxemburgo,561885,estruturais,1
+9105,Nova Vista/Sion,562051,estruturais,0
+9105,Nova Vista/Sion,562051,estruturais,1
+9106,Sagrada Família/Serra,561790,estruturais,0
+9106,Sagrada Família/Serra,561790,estruturais,1
+9201,Baleia/Nova Granada,561888,estruturais,0
+9201,Baleia/Nova Granada,561888,estruturais,1
+9202,Pompéia/Jardim América,561942,estruturais,0
+9204,Santa Efigênia/Estoril,562049,estruturais,0
+9204,Santa Efigênia/Estoril,562049,estruturais,1
+9205,Nova Vista/Nova Cintra,561889,estruturais,0
+9205,Nova Vista/Nova Cintra,561889,estruturais,1
+9206,Vera Cruz/Buritis - Via Avenida Raja Gabáglia,562393,estruturais,0
+9206,Vera Cruz/Buritis - Via Avenida Raja Gabáglia,562393,estruturais,1
+9208,Taquaril/Conjunto Santa Maria,561914,estruturais,0
+9208,Taquaril/Conjunto Santa Maria,561914,estruturais,1
+9209,Sagrada Família/Gutierrez,562064,estruturais,0
+9209,Sagrada Família/Gutierrez,562064,estruturais,1
+9210,Santa Teresa/Prado,562034,estruturais,0
+9210,Santa Teresa/Prado,562034,estruturais,1
+9211,Caetano Furquim/Havaí,561788,estruturais,0
+9211,Caetano Furquim/Havaí,561788,estruturais,1
+9250,Caetano Furquim/Nova Cintra Via Savassi,561810,estruturais,0
+9250,Caetano Furquim/Nova Cintra Via Savassi,561810,estruturais,1
+9402,Santa Inês/Santo André,562106,estruturais,0
+9402,Santa Inês/Santo André,562106,estruturais,1
+9403,Paraiso/Caiçara,561961,estruturais,0
+9403,Paraiso/Caiçara,561961,estruturais,1
+9404,São Lucas/Nova Esperança,562012,estruturais,0
+9404,São Lucas/Nova Esperança,562012,estruturais,1
+9405,Instituto Agronômico/Monsenhor Messias,562047,estruturais,0
+9405,Instituto Agronômico/Monsenhor Messias,562047,estruturais,1
+9407,Alto Vera Cruz/Dom Bosco,561936,estruturais,0
+9407,Alto Vera Cruz/Dom Bosco,561936,estruturais,1
+9408,Santa Efigênia/Padre Eustáquio,561794,estruturais,0
+9408,Santa Efigênia/Padre Eustáquio,561794,estruturais,1
+9410,Sagrada Família/Coração Eucarístico,561918,estruturais,0
+9410,Sagrada Família/Coração Eucarístico,561918,estruturais,1
+9411,Casa Branca/São José,562250,estruturais,0
+9411,Casa Branca/São José,562250,estruturais,1
+9412,Conjunto Taquaril/Padre Eustáquio,562060,estruturais,0
+9412,Conjunto Taquaril/Padre Eustáquio,562060,estruturais,1
+9414,Santa Inês/João Pinheiro,561979,estruturais,0
+9414,Santa Inês/João Pinheiro,561979,estruturais,1
+9415,Nossa Senhora de Fátima/Bonfim,562132,estruturais,0
+9501,São Lucas/Jaraguá,561858,estruturais,0
+9501,São Lucas/Jaraguá,561858,estruturais,1
+9502,São Geraldo/São Francisco Via Esplanada,561843,estruturais,0
+9502,São Geraldo/São Francisco Via Esplanada,561843,estruturais,1
+9503,Taquaril/Jaraguá,561904,estruturais,0
+9503,Taquaril/Jaraguá,561904,estruturais,1
+9550,Casa Branca/São Francisco Via Estação José Cândido,561853,estruturais,0
+9550,Casa Branca/São Francisco Via Estação José Cândido,561853,estruturais,1
+9801,Saudade/Santa Cruz,562113,estruturais,0
+9801,Saudade/Santa Cruz,562113,estruturais,1
+9805,Santa Efigênia/Renascença,562085,estruturais,0
+9805,Santa Efigênia/Renascença,562085,estruturais,1
+1404A,Palmeiras / Alipio de Melo,561973,alimentadoras,0
+1404A,Palmeiras / Alipio de Melo,561973,alimentadoras,1
+1404C,Palmeiras / São Salvador,562096,alimentadoras,0
+1404C,Palmeiras / São Salvador,562096,alimentadoras,1
+1505R,Conjunto Felicidade / Centro,562337,troncais_convencionais,0
+3301A,Santa Terezinha / Hospitais,562220,alimentadoras,0
+3301B,Castelo / Centro - Via Avenida Carlos Luz,562072,troncais_convencionais,0
+3302A,Nova Pampulha/Centro - Via Zoológico,561891,troncais_convencionais,0
+3302B,Trevo / Centro - Via Braunas,562030,troncais_convencionais,0
+3302D,Braúnas / Centro,561805,troncais_convencionais,0
+3501A,Jardim Alvorada/São Marcos,561838,alimentadoras,0
+3501A,Jardim Alvorada/São Marcos,561838,alimentadoras,1
+3501B,Ouro Preto 3a Gleba/Bairro Ipe Via Jardim Montanhes,562313,alimentadoras,0
+3501B,Ouro Preto 3a Gleba/Bairro Ipe Via Jardim Montanhes,562313,alimentadoras,1
+3503A,Santa Terezinha/São Gabriel,561985,alimentadoras,0
+3503A,Santa Terezinha/São Gabriel,561985,alimentadoras,1
+4801A,Jardim Filadelfia/Boa Vista A,561944,alimentadoras,0
+4801A,Jardim Filadelfia/Boa Vista A,561944,alimentadoras,1
+4802A,Pindorama/Boa Vista,562204,alimentadoras,0
+4802A,Pindorama/Boa Vista,562204,alimentadoras,1
+5502C,Pousada Santo Antônio / Centro / Hospitais,561848,troncais_convencionais,0
+5503A,Goiânia A / Centro / Hospitais,561934,troncais_convencionais,0
+5503B,Goiânia B / Centro / Hospitais,562168,troncais_convencionais,0
+8001A,Santa Inês/BH Shopping,561947,alimentadoras,0
+8001A,Santa Inês/BH Shopping,561947,alimentadoras,1
+83D,Estação São Gabriel / Centro - Direta,562171,troncais_move,0
+83P,Estação São Gabriel / Centro - Paradora,562185,troncais_move,0
+S10,BH Shopping / São Francisco,562437,troncais_convencionais,0
+S19,Hospital Evangélico/Shopping Boulevard,562443,troncais_convencionais,0
+S20,Palmeiras / Serra,562422,troncais_convencionais,0
+S21,Dom Cabral / BH Shopping,562439,troncais_convencionais,0
+S22,Buritis / Metrô Calafate,562442,metro,0
+S22,Buritis / Metrô Calafate,562442,metro,1
+S31,Petrópolis / Barreiro,562435,troncais_convencionais,0
+S32,Itaipu / Cardoso,562441,troncais_convencionais,0
+S32,Itaipu / Cardoso,562441,troncais_convencionais,1
+S33,Lindéia / Milionários,562448,troncais_convencionais,0
+S33,Lindéia / Milionários,562448,troncais_convencionais,1
+S41,Conjunto Califórnia / Prado,562438,vilas_favelas,0
+S53,Confisco / Ouro Minas,562429,troncais_convencionais,0
+S53,Confisco / Ouro Minas,562429,troncais_convencionais,1
+S54,Dom Bosco / Shopping Del Rey,562424,troncais_convencionais,0
+S55,Santa Monica / Minas Shopping,562436,troncais_convencionais,0
+S56,São José/Vilarinho,562425,troncais_convencionais,0
+S56,São José/Vilarinho,562425,troncais_convencionais,1
+S60,Etelvina Carneiro/Jardim Leblon Via Venda Nova,562451,troncais_convencionais,0
+S61,Mantiqueira / Estação Vilarinho,562427,troncais_convencionais,0
+S63,Campo Alegre/Céu Azul Via Rio Branco,562453,troncais_convencionais,0
+S64,Campo Alegre/Céu Azul Via Venda Nova,562426,troncais_convencionais,0
+S65,São Bernardo / Minas Caixa,562433,troncais_convencionais,0
+S66,Tupi / Europa,562440,troncais_convencionais,0
+S70,Conjunto Felicidade / Shopping Del Rey,562423,vilas_favelas,0
+S80,Jardim Vitória / Estação Vila Oeste,562444,vilas_favelas,0
+S80,Jardim Vitória / Estação Vila Oeste,562444,vilas_favelas,1
+S84,São Gabriel / Floresta - Via Hospital Belo Horizonte,637901,troncais_convencionais,0
+S85,Minas Shopping / Santa Ines,562445,troncais_convencionais,0
+S92,Esplanada/Buritis,562434,troncais_convencionais,0
+S92,Esplanada/Buritis,562434,troncais_convencionais,1
+SC01A,Contorno A,561868,estruturais,0
+SC01B,Contorno B,562032,estruturais,0
+SC01R,Contorno/Praca Milton Campos,562122,estruturais,0
+SC02A,Praca 7/Savassi Via Pca da Liberdade - Santa Casa,561837,estruturais,0
+SC03A,Hospital Felicio Rocho/Hospital Militar A,561791,estruturais,0
+SC04A,Santa Casa/Savassi/Rodoviaria A,561955,estruturais,0
+SC04B,Santa Casa/Rodoviaria/Savassi B,561963,estruturais,0

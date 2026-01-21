@@ -18,6 +18,13 @@ export interface RouteSegment {
   to: string;
   duration: number;
   distance: number;
+  path?: [number, number][]; // Path específico deste segmento
+  fromLocation?: { lat: number; lng: number }; // Coordenadas da origem do segmento
+  toLocation?: { lat: number; lng: number }; // Coordenadas do destino do segmento (baldeação)
+  departureTime?: string; // Horário de partida (formato HH:mm)
+  arrivalTime?: string; // Horário de chegada (formato HH:mm)
+  walkingTimeBefore?: number; // Tempo de caminhada antes deste segmento (minutos)
+  walkingTimeAfter?: number; // Tempo de caminhada depois deste segmento (minutos)
 }
 
 export interface Route {
@@ -29,6 +36,8 @@ export interface Route {
   integrations: number;
   path: [number, number][];
   badges: ('economico' | 'rapido' | 'equilibrado')[];
+  departureTime?: string; // Horário de partida total (formato HH:mm)
+  arrivalTime?: string; // Horário de chegada total (formato HH:mm)
 }
 
 export interface RouteRequest {

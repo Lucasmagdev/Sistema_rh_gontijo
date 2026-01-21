@@ -1,0 +1,3191 @@
+{
+  "total_linhas": 454,
+  "classificacao": {
+    "troncais_move": 195,
+    "vilas_favelas": 7,
+    "estruturais": 182,
+    "troncais_convencionais": 51,
+    "alimentadoras": 17,
+    "metro": 2
+  },
+  "linhas": [
+    {
+      "linha": "10",
+      "nome_linha": "Madrugão / Circular Noturno",
+      "route_id": "989341",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "30",
+      "nome_linha": "Estação Diamante/Centro",
+      "route_id": "562172",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "32",
+      "nome_linha": "Estação Barreiro/Centro-Tamoios",
+      "route_id": "562016",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "33",
+      "nome_linha": "Estação Barreiro/Centro-Hospitais",
+      "route_id": "561808",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "35",
+      "nome_linha": "Estação Barreiro/Centro",
+      "route_id": "562088",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "50",
+      "nome_linha": "Estação Pampulha / Centro - Direta",
+      "route_id": "561929",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "51",
+      "nome_linha": "Estação Pampulha / Centro / Hospitais",
+      "route_id": "562134",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "52",
+      "nome_linha": "Estação Pampulha / Avenida Antonio Carlos",
+      "route_id": "562165",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "61",
+      "nome_linha": "Estação Venda Nova/Centro-Direta",
+      "route_id": "561937",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "62",
+      "nome_linha": "Estação Venda Nova/Savassi Via Hospitais",
+      "route_id": "561896",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "62",
+      "nome_linha": "Estação Venda Nova/Savassi Via Hospitais",
+      "route_id": "561896",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "63",
+      "nome_linha": "Estação Venda Nova / Avenida Antônio Carlos",
+      "route_id": "562059",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "64",
+      "nome_linha": "Estação Venda Nova/Assembleia Via Carlos Luz",
+      "route_id": "561870",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "65",
+      "nome_linha": "Estação Vilarinho/Centro Via Antônio Carlos-Direta",
+      "route_id": "562193",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "66",
+      "nome_linha": "Estação Vilarinho/Centro/Hospitais Via Cristiano Machado (Direta)",
+      "route_id": "562052",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "66",
+      "nome_linha": "Estação Vilarinho/Centro/Hospitais Via Cristiano Machado (Direta)",
+      "route_id": "562052",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "67",
+      "nome_linha": "Estação Vilarinho/Santo Agostinho Via Carlos Luz",
+      "route_id": "562121",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "68",
+      "nome_linha": "Estação Vilarinho / Avenida Antônio Carlos",
+      "route_id": "561882",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "82",
+      "nome_linha": "Estação São Gabriel / Savassi Via Hospitais",
+      "route_id": "561968",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "85",
+      "nome_linha": "Estação São Gabriel / Centro Via Floresta",
+      "route_id": "561824",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "101",
+      "nome_linha": "Aglomerado Santa Lúcia / São Pedro",
+      "route_id": "562367",
+      "tipo_servico": "vilas_favelas",
+      "direction_id": "0"
+    },
+    {
+      "linha": "102",
+      "nome_linha": "Nossa Senhora de Fatima/Hospital Evangelico",
+      "route_id": "562225",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "103",
+      "nome_linha": "Vila Cafezal/Rua Pouso Alto",
+      "route_id": "561847",
+      "tipo_servico": "vilas_favelas",
+      "direction_id": "0"
+    },
+    {
+      "linha": "104",
+      "nome_linha": "Estação Lagoinha / Avenida",
+      "route_id": "562240",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "105",
+      "nome_linha": "Estação Central / Lourdes",
+      "route_id": "561829",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "107",
+      "nome_linha": "Vila Marçola / Rua do Ouro",
+      "route_id": "562163",
+      "tipo_servico": "vilas_favelas",
+      "direction_id": "0"
+    },
+    {
+      "linha": "201",
+      "nome_linha": "Morro Das Pedras / Hospital Madre Teresa",
+      "route_id": "562066",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "202",
+      "nome_linha": "Estação Vila Oeste",
+      "route_id": "561845",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "203",
+      "nome_linha": "Morro Das Pedras/Ventosa",
+      "route_id": "561831",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "204",
+      "nome_linha": "Estação Vila Oeste / Nova Gameleira",
+      "route_id": "561946",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "205",
+      "nome_linha": "Metro Calafate/Buritis",
+      "route_id": "562349",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "206",
+      "nome_linha": "Circular Oeste",
+      "route_id": "562026",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "208",
+      "nome_linha": "Estação Barreiro/Betania Via Novo Das Industrias",
+      "route_id": "562202",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "209",
+      "nome_linha": "Circular Saúde Havaí",
+      "route_id": "701774",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "301",
+      "nome_linha": "Estação Diamante/Novo Santa Cecília via Brasil Industrial",
+      "route_id": "561924",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "302",
+      "nome_linha": "Estação Diamante / Vila Pinho",
+      "route_id": "562184",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "303",
+      "nome_linha": "Estação Diamante / Santa Cecilia Via Castanheiras",
+      "route_id": "562140",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "304",
+      "nome_linha": "Estação Diamante / Jatoba Iv",
+      "route_id": "562241",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "305",
+      "nome_linha": "Estação Diamante / Mangueiras",
+      "route_id": "561860",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "308",
+      "nome_linha": "Estação Barreiro / Tirol",
+      "route_id": "562175",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "309",
+      "nome_linha": "Estação Diamante / Bairro Petropolis",
+      "route_id": "561803",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "309",
+      "nome_linha": "Estação Diamante / Bairro Petropolis",
+      "route_id": "561803",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "310",
+      "nome_linha": "Estação Diamante / 3 E 4 Secao",
+      "route_id": "562021",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "311",
+      "nome_linha": "Estação Diamante / Independencia",
+      "route_id": "561900",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "311",
+      "nome_linha": "Estação Diamante / Independencia",
+      "route_id": "561900",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "313",
+      "nome_linha": "Estação Diamante / Olaria",
+      "route_id": "561930",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "314",
+      "nome_linha": "Estação Diamante/Estação Barreiro Via Santa Helena",
+      "route_id": "562000",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "315",
+      "nome_linha": "Estação Barreiro / Barreiro / Maldonado",
+      "route_id": "561859",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "318",
+      "nome_linha": "Estação Barreiro/Jardim Liberdade Via Milionarios",
+      "route_id": "561939",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "318",
+      "nome_linha": "Estação Barreiro/Jardim Liberdade Via Milionarios",
+      "route_id": "561939",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "319",
+      "nome_linha": "Vila Cemig/Conjunto Esperanca",
+      "route_id": "561823",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "321",
+      "nome_linha": "Olhos D Agua / Pilar",
+      "route_id": "562178",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "325",
+      "nome_linha": "Estação Barreiro / Flavio Marques Lisboa",
+      "route_id": "562105",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "326",
+      "nome_linha": "Estação Barreiro / Vale do Jatoba",
+      "route_id": "561787",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "327",
+      "nome_linha": "Estação Barreiro / Cardoso A",
+      "route_id": "561975",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "328",
+      "nome_linha": "Estação Barreiro / Cardoso B",
+      "route_id": "561804",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "328",
+      "nome_linha": "Estação Barreiro / Cardoso B",
+      "route_id": "561804",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "329",
+      "nome_linha": "Estação Barreiro / Jatoba",
+      "route_id": "561919",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "330",
+      "nome_linha": "Estação Barreiro / Independencia",
+      "route_id": "561894",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "330",
+      "nome_linha": "Estação Barreiro / Independencia",
+      "route_id": "561894",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "331",
+      "nome_linha": "Estação Barreiro / Conjunto Antônio Teixeira Dias",
+      "route_id": "561969",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "332",
+      "nome_linha": "Estação Barreiro / Milionarios - Bonsucesso",
+      "route_id": "561920",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "335",
+      "nome_linha": "Estação Barreiro / Lindeia",
+      "route_id": "562033",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "336",
+      "nome_linha": "Vila Bernadete / Jardim Liberdade",
+      "route_id": "562153",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "337",
+      "nome_linha": "Estação Barreiro / Itaipu",
+      "route_id": "561960",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "338",
+      "nome_linha": "Estação Barreiro/Pilar - Olhos Dagua",
+      "route_id": "561812",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "340",
+      "nome_linha": "Estação Barreiro / Vila Mangueiras",
+      "route_id": "562155",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "341",
+      "nome_linha": "Estação Barreiro / Estação Diamante Via Saude",
+      "route_id": "561806",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "342",
+      "nome_linha": "Estação Barreiro / Solar Via Estação Diamante",
+      "route_id": "561886",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "342",
+      "nome_linha": "Estação Barreiro / Solar Via Estação Diamante",
+      "route_id": "561886",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "343",
+      "nome_linha": "Vila Ecológica / Independência - Via Centro de Saúde",
+      "route_id": "987722",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "401",
+      "nome_linha": "Metro Cidade Industrial/Santa Maria",
+      "route_id": "561817",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "402",
+      "nome_linha": "Metro Cidade Industrial/Camargos",
+      "route_id": "561839",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "406",
+      "nome_linha": "Estação Ponto São José / Pindorama  - Via Glória",
+      "route_id": "561982",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "407",
+      "nome_linha": "Califórnia/Glória via Centro de Saúde Califórnia",
+      "route_id": "954089",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "503",
+      "nome_linha": "Estação São Gabriel / Aparecida / Santa Rosa",
+      "route_id": "562138",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "504",
+      "nome_linha": "Estação São Gabriel / Santa Rosa / Aparecida",
+      "route_id": "562144",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "506",
+      "nome_linha": "Estação Ponto São Jose / Avenida Antonio Carlos",
+      "route_id": "561852",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "510",
+      "nome_linha": "Estação Pampulha / Xangrila Via Trevo",
+      "route_id": "561865",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "510",
+      "nome_linha": "Estação Pampulha / Xangrila Via Trevo",
+      "route_id": "561865",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "511",
+      "nome_linha": "Estação Ponto São Jose / Jardim Alvorada",
+      "route_id": "561903",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "513",
+      "nome_linha": "Estação Pampulha / Dandara via Braúnas",
+      "route_id": "608000",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "533",
+      "nome_linha": "Castelo / Shopping Del Rey",
+      "route_id": "562152",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "533",
+      "nome_linha": "Castelo / Shopping Del Rey",
+      "route_id": "562152",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "535",
+      "nome_linha": "Trevo Via Braunas / Shopping Del Rey",
+      "route_id": "562237",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "535",
+      "nome_linha": "Trevo Via Braunas / Shopping Del Rey",
+      "route_id": "562237",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "607",
+      "nome_linha": "Estação Vilarinho / Esplendor",
+      "route_id": "562167",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "607",
+      "nome_linha": "Estação Vilarinho / Esplendor",
+      "route_id": "562167",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "608",
+      "nome_linha": "Estação Venda Nova / Nova Pampulha",
+      "route_id": "561801",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "609",
+      "nome_linha": "Serra Verde/Santa Monica",
+      "route_id": "562084",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "614",
+      "nome_linha": "Céu Azul A / Estação Pampulha - Via Avenida Portugal",
+      "route_id": "561872",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "614",
+      "nome_linha": "Céu Azul A / Estação Pampulha - Via Avenida Portugal",
+      "route_id": "561872",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "615",
+      "nome_linha": "Céu Azul B / Estação Pampulha - Via Garças",
+      "route_id": "561813",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "615",
+      "nome_linha": "Céu Azul B / Estação Pampulha - Via Garças",
+      "route_id": "561813",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "616",
+      "nome_linha": "Estação Pampulha / Ceu Azul C",
+      "route_id": "561949",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "616",
+      "nome_linha": "Estação Pampulha / Ceu Azul C",
+      "route_id": "561949",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "617",
+      "nome_linha": "Estação Pampulha / Piratininga Via Rio Branco",
+      "route_id": "562181",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "617",
+      "nome_linha": "Estação Pampulha / Piratininga Via Rio Branco",
+      "route_id": "562181",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "618",
+      "nome_linha": "Estação Pampulha/Rio Branco Via Jardim Leblon",
+      "route_id": "561945",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "618",
+      "nome_linha": "Estação Pampulha/Rio Branco Via Jardim Leblon",
+      "route_id": "561945",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "619",
+      "nome_linha": "Estação Pampulha/Santa Monica Via Santa Branca",
+      "route_id": "561846",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "619",
+      "nome_linha": "Estação Pampulha/Santa Monica Via Santa Branca",
+      "route_id": "561846",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "620",
+      "nome_linha": "Estação Pampulha / Santa Monica Via Santa Amelia",
+      "route_id": "561948",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "620",
+      "nome_linha": "Estação Pampulha / Santa Monica Via Santa Amelia",
+      "route_id": "561948",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "621",
+      "nome_linha": "Estação Venda Nova / Lagoa",
+      "route_id": "561956",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "622",
+      "nome_linha": "Estação Venda Nova / Lagoinha",
+      "route_id": "561933",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "623",
+      "nome_linha": "Estação Venda Nova / Vila Santa Branca",
+      "route_id": "562407",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "624",
+      "nome_linha": "Estação Venda Nova / Maria Helena A",
+      "route_id": "562304",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "625",
+      "nome_linha": "Estação Venda Nova / Maria Helena B",
+      "route_id": "561830",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "626",
+      "nome_linha": "Estação Venda Nova/Esplendor Via Nova America",
+      "route_id": "562083",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "626",
+      "nome_linha": "Estação Venda Nova/Esplendor Via Nova America",
+      "route_id": "562083",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "627",
+      "nome_linha": "Estação Venda Nova/Mantiqueira",
+      "route_id": "561799",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "631",
+      "nome_linha": "Estação Vilarinho / Serra Verde Via Minas Caixa",
+      "route_id": "561912",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "633",
+      "nome_linha": "Estação Vilarinho / Jardim dos Comerciarios",
+      "route_id": "561875",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "634",
+      "nome_linha": "Estação Vilarinho/Nova York Via Jardim dos Comerciarios",
+      "route_id": "561833",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "634",
+      "nome_linha": "Estação Vilarinho/Nova York Via Jardim dos Comerciarios",
+      "route_id": "561833",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "635",
+      "nome_linha": "Estação Vilarinho / Jardim dos Comerciarios C",
+      "route_id": "562351",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "635",
+      "nome_linha": "Estação Vilarinho / Jardim dos Comerciarios C",
+      "route_id": "562351",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "636",
+      "nome_linha": "Estação Vilarinho / Jardim Europa - Via Cenáculo",
+      "route_id": "562341",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "637",
+      "nome_linha": "Estação Vilarinho / Canaa Via Serra Verde",
+      "route_id": "561811",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "638",
+      "nome_linha": "Estação Vilarinho/Minas Caixa",
+      "route_id": "562323",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "639",
+      "nome_linha": "Braunas / Shopping Del Rey",
+      "route_id": "562075",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "639",
+      "nome_linha": "Braunas / Shopping Del Rey",
+      "route_id": "562075",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "640",
+      "nome_linha": "Estação Venda Nova / Jardim Leblon Via Rio Branco",
+      "route_id": "562160",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "641",
+      "nome_linha": "Estação Vilarinho/Serra Verde",
+      "route_id": "561926",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "641",
+      "nome_linha": "Estação Vilarinho/Serra Verde",
+      "route_id": "561926",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "642",
+      "nome_linha": "Estação Venda Nova/Estação Vilarinho/Cidade Administrativa",
+      "route_id": "561992",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "643",
+      "nome_linha": "Estação Pampulha / Copacabana Via Monte Carmelo",
+      "route_id": "561883",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "643",
+      "nome_linha": "Estação Pampulha / Copacabana Via Monte Carmelo",
+      "route_id": "561883",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "644",
+      "nome_linha": "Estação Pampulha / São Joao Batista",
+      "route_id": "561832",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "644",
+      "nome_linha": "Estação Pampulha / São Joao Batista",
+      "route_id": "561832",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "645",
+      "nome_linha": "Estação Pampulha / Santa Monica Via Jardim Atlântico",
+      "route_id": "561959",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "645",
+      "nome_linha": "Estação Pampulha / Santa Monica Via Jardim Atlântico",
+      "route_id": "561959",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "646",
+      "nome_linha": "Estação Vilarinho/Zoológico Via Estação Venda Nova",
+      "route_id": "603413",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "702",
+      "nome_linha": "Estação Vilarinho/Xodo-Marize Via Jardim Guanabara",
+      "route_id": "562410",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "703",
+      "nome_linha": "Estação São Gabriel / Guarani - Via Primeiro de Maio",
+      "route_id": "562230",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "705",
+      "nome_linha": "Estação São Gabriel / São Tomaz",
+      "route_id": "561972",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "706",
+      "nome_linha": "Estação São Gabriel / Heliópolis",
+      "route_id": "562111",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "707",
+      "nome_linha": "Estação São Gabriel / Jardim Guanabara",
+      "route_id": "562013",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "708",
+      "nome_linha": "Estação São Gabriel / Felicidade",
+      "route_id": "562272",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "709",
+      "nome_linha": "Estação São Gabriel / Tupi",
+      "route_id": "561987",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "710",
+      "nome_linha": "Estação São Gabriel / Providência",
+      "route_id": "562227",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "711",
+      "nome_linha": "Estação São Gabriel / Solimões",
+      "route_id": "562412",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "712",
+      "nome_linha": "Estação Pampulha / São Bernardo",
+      "route_id": "561796",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "712",
+      "nome_linha": "Estação Pampulha / São Bernardo",
+      "route_id": "561796",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "713",
+      "nome_linha": "Estação São Gabriel / Lajedo",
+      "route_id": "561925",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "714",
+      "nome_linha": "Estação São Gabriel / Casas Populares",
+      "route_id": "562001",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "715",
+      "nome_linha": "Estação São Gabriel / Monte Azul",
+      "route_id": "562363",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "716",
+      "nome_linha": "Estação São Gabriel / Novo Aarão Reis",
+      "route_id": "561828",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "717",
+      "nome_linha": "Campo Alegre / Estação Pampulha - Via Planalto",
+      "route_id": "561849",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "717",
+      "nome_linha": "Campo Alegre / Estação Pampulha - Via Planalto",
+      "route_id": "561849",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "718",
+      "nome_linha": "Planalto / Estação Pampulha - Via Itapõa",
+      "route_id": "561836",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "718",
+      "nome_linha": "Planalto / Estação Pampulha - Via Itapõa",
+      "route_id": "561836",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "719",
+      "nome_linha": "Estação Pampulha / Floramar",
+      "route_id": "561827",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "719",
+      "nome_linha": "Estação Pampulha / Floramar",
+      "route_id": "561827",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "720",
+      "nome_linha": "Circular Saúde MG20",
+      "route_id": "573119",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "721",
+      "nome_linha": "Estação São Gabriel / Maria Teresa Via Parque Cerrado",
+      "route_id": "596937",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "732",
+      "nome_linha": "Estação São Gabriel / Tupi-Felicidade",
+      "route_id": "562125",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "734",
+      "nome_linha": "Estação São Gabriel / Aarão Reis Via Minaslândia",
+      "route_id": "562136",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "735",
+      "nome_linha": "Estação Vilarinho/Juliana A",
+      "route_id": "562327",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "736",
+      "nome_linha": "Estação Vilarinho/Juliana B",
+      "route_id": "562050",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "737",
+      "nome_linha": "Estação Vilarinho/Jaqueline",
+      "route_id": "562054",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "737",
+      "nome_linha": "Estação Vilarinho/Jaqueline",
+      "route_id": "562054",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "738",
+      "nome_linha": "Estação Vilarinho/Conjunto Zilah Sposito",
+      "route_id": "561814",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "738",
+      "nome_linha": "Estação Vilarinho/Conjunto Zilah Sposito",
+      "route_id": "561814",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "739",
+      "nome_linha": "Estação Vilarinho/Jaqueline 2ª Seção Via Frei Leopoldo",
+      "route_id": "562101",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "739",
+      "nome_linha": "Estação Vilarinho/Jaqueline 2ª Seção Via Frei Leopoldo",
+      "route_id": "562101",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "740",
+      "nome_linha": "Tupi / Mirante",
+      "route_id": "562264",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "806",
+      "nome_linha": "Estação São Gabriel / Vista do Sol Via Nazaré",
+      "route_id": "562058",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "806",
+      "nome_linha": "Estação São Gabriel / Vista do Sol Via Nazaré",
+      "route_id": "562058",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "807",
+      "nome_linha": "Estação São Gabriel / Ribeiro de Abreu A",
+      "route_id": "562120",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "808",
+      "nome_linha": "Estação São Gabriel / Paulo VI",
+      "route_id": "561802",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "808",
+      "nome_linha": "Estação São Gabriel / Paulo VI",
+      "route_id": "561802",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "809",
+      "nome_linha": "Estação São Gabriel / Belmonte",
+      "route_id": "562284",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "810",
+      "nome_linha": "Estação São Gabriel/Parque Belmonte via Dom Silverio",
+      "route_id": "562302",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "811",
+      "nome_linha": "Estação São Gabriel / Vista do Sol Via PUC",
+      "route_id": "562189",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "812",
+      "nome_linha": "Estação São Gabriel / São Gabriel A",
+      "route_id": "562093",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "813",
+      "nome_linha": "Estação São Gabriel/Paulo VI Via Ribeiro de Abreu",
+      "route_id": "561999",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "814",
+      "nome_linha": "Estação São Gabriel / Jardim Vitoria",
+      "route_id": "561917",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "815",
+      "nome_linha": "Estação São Gabriel / Conjunto Paulo VI",
+      "route_id": "561856",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "815",
+      "nome_linha": "Estação São Gabriel / Conjunto Paulo VI",
+      "route_id": "561856",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "821",
+      "nome_linha": "Goiânia / Metrô Estação José Cândido",
+      "route_id": "561951",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "822",
+      "nome_linha": "Santa Inês / Vila Maria - Via Estação José Cândido",
+      "route_id": "562378",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "823",
+      "nome_linha": "Estação São Gabriel / Bairro Vitoria",
+      "route_id": "561821",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "823",
+      "nome_linha": "Estação São Gabriel / Bairro Vitoria",
+      "route_id": "561821",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "825",
+      "nome_linha": "Estação São Gabriel/Vitoria II Via Upa-Nordeste",
+      "route_id": "562074",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "825",
+      "nome_linha": "Estação São Gabriel/Vitoria II Via Upa-Nordeste",
+      "route_id": "562074",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "826",
+      "nome_linha": "Montes Claros / Rua São Romulo",
+      "route_id": "562288",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "832",
+      "nome_linha": "Estação São Gabriel / Capitao Eduardo",
+      "route_id": "562146",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "832",
+      "nome_linha": "Estação São Gabriel / Capitao Eduardo",
+      "route_id": "562146",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "836",
+      "nome_linha": "Estação São Gabriel / Ribeiro de Abreu B",
+      "route_id": "562127",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "836",
+      "nome_linha": "Estação São Gabriel / Ribeiro de Abreu B",
+      "route_id": "562127",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "837",
+      "nome_linha": "Estação São Gabriel / Conjunto Ribeiro de Abreu",
+      "route_id": "562156",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "838",
+      "nome_linha": "Estação São Gabriel/Palmares Via Maria Virginia",
+      "route_id": "561893",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "901",
+      "nome_linha": "Circular Leste / Baleia / Hospitais",
+      "route_id": "561966",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "902",
+      "nome_linha": "Taquaril / Castanheiras",
+      "route_id": "562027",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "903",
+      "nome_linha": "Granja de Freitas / Taquaril via Alto Vera Cruz",
+      "route_id": "562397",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "1030",
+      "nome_linha": "Avenida",
+      "route_id": "562004",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "1145",
+      "nome_linha": "Bairro Das Indústrias",
+      "route_id": "562358",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "1170",
+      "nome_linha": "Santa Lucia / Mangabeiras - Via Savassi",
+      "route_id": "562252",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "1502",
+      "nome_linha": "Vista Alegre / Guarani",
+      "route_id": "561822",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "1502",
+      "nome_linha": "Vista Alegre / Guarani",
+      "route_id": "561822",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "1505",
+      "nome_linha": "Alto dos Pinheiros/Tupi",
+      "route_id": "561993",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "1505",
+      "nome_linha": "Alto dos Pinheiros/Tupi",
+      "route_id": "561993",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "1509",
+      "nome_linha": "California/Tupi",
+      "route_id": "561826",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "1509",
+      "nome_linha": "California/Tupi",
+      "route_id": "561826",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "1510",
+      "nome_linha": "Madre Gertrudes/Providencia",
+      "route_id": "562361",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "1510",
+      "nome_linha": "Madre Gertrudes/Providencia",
+      "route_id": "562361",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "2033",
+      "nome_linha": "Betania / Centro",
+      "route_id": "562290",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "2034",
+      "nome_linha": "Conjunto Betania / Centro",
+      "route_id": "561850",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "2035",
+      "nome_linha": "Bairro Das Industrias / Centro",
+      "route_id": "562388",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "2036",
+      "nome_linha": "Alto Havaí/Centro/Hospitais",
+      "route_id": "701772",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "2101",
+      "nome_linha": "Grajau/Sion",
+      "route_id": "562210",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "2101",
+      "nome_linha": "Grajau/Sion",
+      "route_id": "562210",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "2102",
+      "nome_linha": "Gameleira / Serra",
+      "route_id": "561851",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "2102",
+      "nome_linha": "Gameleira / Serra",
+      "route_id": "561851",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "2103",
+      "nome_linha": "Prado/Anchieta",
+      "route_id": "561923",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "2103",
+      "nome_linha": "Prado/Anchieta",
+      "route_id": "561923",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "2104",
+      "nome_linha": "Nova Gameleira/Bh Shopping",
+      "route_id": "562370",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "2104",
+      "nome_linha": "Nova Gameleira/Bh Shopping",
+      "route_id": "562370",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "2150",
+      "nome_linha": "Grajau/Sion Via Contorno",
+      "route_id": "561899",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "2150",
+      "nome_linha": "Grajau/Sion Via Contorno",
+      "route_id": "561899",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "2151",
+      "nome_linha": "Vista Alegre/Serra",
+      "route_id": "561841",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "2151",
+      "nome_linha": "Vista Alegre/Serra",
+      "route_id": "561841",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "2152",
+      "nome_linha": "Salgado Filho/Cruzeiro - Via Savassi",
+      "route_id": "562218",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "2152",
+      "nome_linha": "Salgado Filho/Cruzeiro - Via Savassi",
+      "route_id": "562218",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "3029",
+      "nome_linha": "Regina / Centro",
+      "route_id": "561869",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3030",
+      "nome_linha": "Pilar-Olhos D Agua / Centro",
+      "route_id": "562053",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3050",
+      "nome_linha": "Estação Diamante/Hospitais Via Bh Shopping",
+      "route_id": "561943",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3051",
+      "nome_linha": "Flavio Marques Lisboa / Savassi Via N.S.Carmo",
+      "route_id": "561880",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3052",
+      "nome_linha": "Estação Diamante/Bh Shopping-Via Havai",
+      "route_id": "562079",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3053",
+      "nome_linha": "Estação Barreiro/B.Preto",
+      "route_id": "561825",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3054",
+      "nome_linha": "Milionarios/Centro",
+      "route_id": "561971",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3055",
+      "nome_linha": "Estação Barreiro/Savassi Via Bhshopping",
+      "route_id": "561905",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3150",
+      "nome_linha": "Regina-Lindeia/BH Shopping via Anel Rodoviário",
+      "route_id": "637902",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3250",
+      "nome_linha": "Estação Diamante/Buritis Via Palmeiras",
+      "route_id": "562157",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3350",
+      "nome_linha": "Estação Barreiro / Estação Diamante - Via Hospital Metropolitano",
+      "route_id": "561950",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3502",
+      "nome_linha": "Ouro Preto/São Gabriel",
+      "route_id": "561970",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3502",
+      "nome_linha": "Ouro Preto/São Gabriel",
+      "route_id": "561970",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "4031",
+      "nome_linha": "Santa Maria / Hospitais",
+      "route_id": "562023",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4032",
+      "nome_linha": "Caicara /Savassi/ Praca da Liberdade",
+      "route_id": "561862",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4033",
+      "nome_linha": "Camargos/Centro",
+      "route_id": "562090",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4034",
+      "nome_linha": "Novo Dom Bosco / Savassi Via Padre Eustaquio",
+      "route_id": "561952",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4037",
+      "nome_linha": "Glória / Centro - Via Padre Eustáquio",
+      "route_id": "561864",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4102",
+      "nome_linha": "Aparecida/Serra",
+      "route_id": "562109",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4102",
+      "nome_linha": "Aparecida/Serra",
+      "route_id": "562109",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "4103",
+      "nome_linha": "Aparecida/Parque das Mangabeiras",
+      "route_id": "561964",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4103",
+      "nome_linha": "Aparecida/Parque das Mangabeiras",
+      "route_id": "561964",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "4106",
+      "nome_linha": "São Cristovao / Santo Antônio - Via Savassi",
+      "route_id": "562331",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4107",
+      "nome_linha": "Alto Caicara/Serra",
+      "route_id": "562137",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4107",
+      "nome_linha": "Alto Caicara/Serra",
+      "route_id": "562137",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "4108",
+      "nome_linha": "Pedro II/Mangabeiras",
+      "route_id": "561798",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4110",
+      "nome_linha": "Dom Cabral/Belvedere",
+      "route_id": "561915",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4110",
+      "nome_linha": "Dom Cabral/Belvedere",
+      "route_id": "561915",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "4111",
+      "nome_linha": "Dom Cabral/Anchieta",
+      "route_id": "561855",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4111",
+      "nome_linha": "Dom Cabral/Anchieta",
+      "route_id": "561855",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "4113",
+      "nome_linha": "Bom Jesus/Belvedere",
+      "route_id": "561953",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4113",
+      "nome_linha": "Bom Jesus/Belvedere",
+      "route_id": "561953",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "4150",
+      "nome_linha": "Shopping Del Rey/Bh Shopping",
+      "route_id": "562303",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4150",
+      "nome_linha": "Shopping Del Rey/Bh Shopping",
+      "route_id": "562303",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "4201",
+      "nome_linha": "Alto Caicara/Nova Cintra",
+      "route_id": "562068",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4201",
+      "nome_linha": "Alto Caicara/Nova Cintra",
+      "route_id": "562068",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "4205",
+      "nome_linha": "Ermelinda / Salgado Filho - Via Prado",
+      "route_id": "561792",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4205",
+      "nome_linha": "Ermelinda / Salgado Filho - Via Prado",
+      "route_id": "561792",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "4405",
+      "nome_linha": "Coqueiros / Centro / Hospitais",
+      "route_id": "561928",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4501",
+      "nome_linha": "California II / São Paulo",
+      "route_id": "561921",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4501",
+      "nome_linha": "California II / São Paulo",
+      "route_id": "561921",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "5033",
+      "nome_linha": "Santa Terezinha/Praca da Liberdade via Tancredo Neves",
+      "route_id": "562389",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5034",
+      "nome_linha": "Urca/Centro Via Confisco",
+      "route_id": "600190",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5035",
+      "nome_linha": "Zoológico/Hospitais Via Serrano",
+      "route_id": "603188",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5036",
+      "nome_linha": "Celso Machado/Centro",
+      "route_id": "603888",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5102",
+      "nome_linha": "UFMG/Santo Antonio",
+      "route_id": "562055",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5104",
+      "nome_linha": "Suzana/Cruzeiro-Via Universitario",
+      "route_id": "561892",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5104",
+      "nome_linha": "Suzana/Cruzeiro-Via Universitario",
+      "route_id": "561892",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "5106",
+      "nome_linha": "Bandeirantes / Bh Shopping",
+      "route_id": "561988",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5106",
+      "nome_linha": "Bandeirantes / Bh Shopping",
+      "route_id": "561988",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "5107",
+      "nome_linha": "Estação Pampulha/Savassi",
+      "route_id": "561834",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5201",
+      "nome_linha": "Dona Clara/Buritis",
+      "route_id": "561890",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5201",
+      "nome_linha": "Dona Clara/Buritis",
+      "route_id": "561890",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "5203",
+      "nome_linha": "Castelo/Estrela do Oriente-Via Manacas",
+      "route_id": "562003",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5203",
+      "nome_linha": "Castelo/Estrela do Oriente-Via Manacas",
+      "route_id": "562003",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "5250",
+      "nome_linha": "Estação Pampulha / Betania",
+      "route_id": "561807",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5250",
+      "nome_linha": "Estação Pampulha / Betania",
+      "route_id": "561807",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "5401",
+      "nome_linha": "São Luiz/Dom Cabral",
+      "route_id": "561974",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5401",
+      "nome_linha": "São Luiz/Dom Cabral",
+      "route_id": "561974",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "5550",
+      "nome_linha": "Estação Pampulha / Estação Ponto São Jose",
+      "route_id": "562360",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5550",
+      "nome_linha": "Estação Pampulha / Estação Ponto São Jose",
+      "route_id": "562360",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "6030",
+      "nome_linha": "Cidade Administrativa/Savassi Via Hospitais",
+      "route_id": "561935",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "6030",
+      "nome_linha": "Cidade Administrativa/Savassi Via Hospitais",
+      "route_id": "561935",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "6031",
+      "nome_linha": "Cidade Administrativa/Centro",
+      "route_id": "562271",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "6031",
+      "nome_linha": "Cidade Administrativa/Centro",
+      "route_id": "562271",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "6350",
+      "nome_linha": "Estação Vilarinho/Estação Barreiro Via Anel Rodoviario",
+      "route_id": "562239",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "6350",
+      "nome_linha": "Estação Vilarinho/Estação Barreiro Via Anel Rodoviario",
+      "route_id": "562239",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8101",
+      "nome_linha": "Santa Cruz/Alto Santa Lúcia",
+      "route_id": "561809",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8101",
+      "nome_linha": "Santa Cruz/Alto Santa Lúcia",
+      "route_id": "561809",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8102",
+      "nome_linha": "União/Carmo Sion",
+      "route_id": "561907",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8102",
+      "nome_linha": "União/Carmo Sion",
+      "route_id": "561907",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8103",
+      "nome_linha": "Nova Floresta/Santa Lúcia - Via Lourdes",
+      "route_id": "562043",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8103",
+      "nome_linha": "Nova Floresta/Santa Lúcia - Via Lourdes",
+      "route_id": "562043",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8106",
+      "nome_linha": "Santa Cruz/BH Shopping Via Belvedere",
+      "route_id": "561879",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8106",
+      "nome_linha": "Santa Cruz/BH Shopping Via Belvedere",
+      "route_id": "561879",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8107",
+      "nome_linha": "Concórdia/São Pedro - Via Colégio Batista",
+      "route_id": "561835",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8107",
+      "nome_linha": "Concórdia/São Pedro - Via Colégio Batista",
+      "route_id": "561835",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8108",
+      "nome_linha": "Cidade Nova/Savassi - Via Rua da Bahia",
+      "route_id": "561998",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8150",
+      "nome_linha": "União / Serra - Via Floresta / Hospitais",
+      "route_id": "562294",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8150",
+      "nome_linha": "União / Serra - Via Floresta / Hospitais",
+      "route_id": "562294",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8151",
+      "nome_linha": "Estação São Gabriel/BH Shopping Via Anel Rodoviario",
+      "route_id": "562008",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8151",
+      "nome_linha": "Estação São Gabriel/BH Shopping Via Anel Rodoviario",
+      "route_id": "562008",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8203",
+      "nome_linha": "Renascenca/Buritis - Via Nova Suiça",
+      "route_id": "561874",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8203",
+      "nome_linha": "Renascenca/Buritis - Via Nova Suiça",
+      "route_id": "561874",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8205",
+      "nome_linha": "Maria Goretti/Nova Granada",
+      "route_id": "561795",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8205",
+      "nome_linha": "Maria Goretti/Nova Granada",
+      "route_id": "561795",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8207",
+      "nome_linha": "Maria Goretti/Estrela Dalva",
+      "route_id": "562310",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8207",
+      "nome_linha": "Maria Goretti/Estrela Dalva",
+      "route_id": "562310",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8208",
+      "nome_linha": "Santa Cruz / Buritis - Via Avenida Barão",
+      "route_id": "562253",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8208",
+      "nome_linha": "Santa Cruz / Buritis - Via Avenida Barão",
+      "route_id": "562253",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8350",
+      "nome_linha": "Estação São Gabriel/Estação Barreiro",
+      "route_id": "562347",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8350",
+      "nome_linha": "Estação São Gabriel/Estação Barreiro",
+      "route_id": "562347",
+      "tipo_servico": "troncais_move",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8401",
+      "nome_linha": "Cachoeirinha/São Jose",
+      "route_id": "561901",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8405",
+      "nome_linha": "Palmares/Bela Vista",
+      "route_id": "561932",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8405",
+      "nome_linha": "Palmares/Bela Vista",
+      "route_id": "561932",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8501",
+      "nome_linha": "Maria Goretti / Engenho Nogueira via Ouro Preto",
+      "route_id": "561898",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8501",
+      "nome_linha": "Maria Goretti / Engenho Nogueira via Ouro Preto",
+      "route_id": "561898",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "8550",
+      "nome_linha": "Estação São Gabriel / Zoológico via Estação Pampulha",
+      "route_id": "562217",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8551",
+      "nome_linha": "Estação São Gabriel / Estação UFMG via Anel Rodoviário",
+      "route_id": "561958",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9030",
+      "nome_linha": "Castanheiras/Centro",
+      "route_id": "561957",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9032",
+      "nome_linha": "Granja de Freitas / Centro - Via Avenida dos Andradas",
+      "route_id": "562035",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9034",
+      "nome_linha": "Taquaril/Centro",
+      "route_id": "561983",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9101",
+      "nome_linha": "Alto Vera Cruz/São Bento",
+      "route_id": "561916",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9101",
+      "nome_linha": "Alto Vera Cruz/São Bento",
+      "route_id": "561916",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9103",
+      "nome_linha": "Santa Tereza/Santo Antônio",
+      "route_id": "562020",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9104",
+      "nome_linha": "Sagrada Família/Luxemburgo",
+      "route_id": "561885",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9104",
+      "nome_linha": "Sagrada Família/Luxemburgo",
+      "route_id": "561885",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9105",
+      "nome_linha": "Nova Vista/Sion",
+      "route_id": "562051",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9105",
+      "nome_linha": "Nova Vista/Sion",
+      "route_id": "562051",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9106",
+      "nome_linha": "Sagrada Família/Serra",
+      "route_id": "561790",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9106",
+      "nome_linha": "Sagrada Família/Serra",
+      "route_id": "561790",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9201",
+      "nome_linha": "Baleia/Nova Granada",
+      "route_id": "561888",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9201",
+      "nome_linha": "Baleia/Nova Granada",
+      "route_id": "561888",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9202",
+      "nome_linha": "Pompéia/Jardim América",
+      "route_id": "561942",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9204",
+      "nome_linha": "Santa Efigênia/Estoril",
+      "route_id": "562049",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9204",
+      "nome_linha": "Santa Efigênia/Estoril",
+      "route_id": "562049",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9205",
+      "nome_linha": "Nova Vista/Nova Cintra",
+      "route_id": "561889",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9205",
+      "nome_linha": "Nova Vista/Nova Cintra",
+      "route_id": "561889",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9206",
+      "nome_linha": "Vera Cruz/Buritis - Via Avenida Raja Gabáglia",
+      "route_id": "562393",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9206",
+      "nome_linha": "Vera Cruz/Buritis - Via Avenida Raja Gabáglia",
+      "route_id": "562393",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9208",
+      "nome_linha": "Taquaril/Conjunto Santa Maria",
+      "route_id": "561914",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9208",
+      "nome_linha": "Taquaril/Conjunto Santa Maria",
+      "route_id": "561914",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9209",
+      "nome_linha": "Sagrada Família/Gutierrez",
+      "route_id": "562064",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9209",
+      "nome_linha": "Sagrada Família/Gutierrez",
+      "route_id": "562064",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9210",
+      "nome_linha": "Santa Teresa/Prado",
+      "route_id": "562034",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9210",
+      "nome_linha": "Santa Teresa/Prado",
+      "route_id": "562034",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9211",
+      "nome_linha": "Caetano Furquim/Havaí",
+      "route_id": "561788",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9211",
+      "nome_linha": "Caetano Furquim/Havaí",
+      "route_id": "561788",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9250",
+      "nome_linha": "Caetano Furquim/Nova Cintra Via Savassi",
+      "route_id": "561810",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9250",
+      "nome_linha": "Caetano Furquim/Nova Cintra Via Savassi",
+      "route_id": "561810",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9402",
+      "nome_linha": "Santa Inês/Santo André",
+      "route_id": "562106",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9402",
+      "nome_linha": "Santa Inês/Santo André",
+      "route_id": "562106",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9403",
+      "nome_linha": "Paraiso/Caiçara",
+      "route_id": "561961",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9403",
+      "nome_linha": "Paraiso/Caiçara",
+      "route_id": "561961",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9404",
+      "nome_linha": "São Lucas/Nova Esperança",
+      "route_id": "562012",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9404",
+      "nome_linha": "São Lucas/Nova Esperança",
+      "route_id": "562012",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9405",
+      "nome_linha": "Instituto Agronômico/Monsenhor Messias",
+      "route_id": "562047",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9405",
+      "nome_linha": "Instituto Agronômico/Monsenhor Messias",
+      "route_id": "562047",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9407",
+      "nome_linha": "Alto Vera Cruz/Dom Bosco",
+      "route_id": "561936",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9407",
+      "nome_linha": "Alto Vera Cruz/Dom Bosco",
+      "route_id": "561936",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9408",
+      "nome_linha": "Santa Efigênia/Padre Eustáquio",
+      "route_id": "561794",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9408",
+      "nome_linha": "Santa Efigênia/Padre Eustáquio",
+      "route_id": "561794",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9410",
+      "nome_linha": "Sagrada Família/Coração Eucarístico",
+      "route_id": "561918",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9410",
+      "nome_linha": "Sagrada Família/Coração Eucarístico",
+      "route_id": "561918",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9411",
+      "nome_linha": "Casa Branca/São José",
+      "route_id": "562250",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9411",
+      "nome_linha": "Casa Branca/São José",
+      "route_id": "562250",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9412",
+      "nome_linha": "Conjunto Taquaril/Padre Eustáquio",
+      "route_id": "562060",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9412",
+      "nome_linha": "Conjunto Taquaril/Padre Eustáquio",
+      "route_id": "562060",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9414",
+      "nome_linha": "Santa Inês/João Pinheiro",
+      "route_id": "561979",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9414",
+      "nome_linha": "Santa Inês/João Pinheiro",
+      "route_id": "561979",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9415",
+      "nome_linha": "Nossa Senhora de Fátima/Bonfim",
+      "route_id": "562132",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9501",
+      "nome_linha": "São Lucas/Jaraguá",
+      "route_id": "561858",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9501",
+      "nome_linha": "São Lucas/Jaraguá",
+      "route_id": "561858",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9502",
+      "nome_linha": "São Geraldo/São Francisco Via Esplanada",
+      "route_id": "561843",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9502",
+      "nome_linha": "São Geraldo/São Francisco Via Esplanada",
+      "route_id": "561843",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9503",
+      "nome_linha": "Taquaril/Jaraguá",
+      "route_id": "561904",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9503",
+      "nome_linha": "Taquaril/Jaraguá",
+      "route_id": "561904",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9550",
+      "nome_linha": "Casa Branca/São Francisco Via Estação José Cândido",
+      "route_id": "561853",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9550",
+      "nome_linha": "Casa Branca/São Francisco Via Estação José Cândido",
+      "route_id": "561853",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9801",
+      "nome_linha": "Saudade/Santa Cruz",
+      "route_id": "562113",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9801",
+      "nome_linha": "Saudade/Santa Cruz",
+      "route_id": "562113",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "9805",
+      "nome_linha": "Santa Efigênia/Renascença",
+      "route_id": "562085",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "9805",
+      "nome_linha": "Santa Efigênia/Renascença",
+      "route_id": "562085",
+      "tipo_servico": "estruturais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "1404A",
+      "nome_linha": "Palmeiras / Alipio de Melo",
+      "route_id": "561973",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "0"
+    },
+    {
+      "linha": "1404A",
+      "nome_linha": "Palmeiras / Alipio de Melo",
+      "route_id": "561973",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "1"
+    },
+    {
+      "linha": "1404C",
+      "nome_linha": "Palmeiras / São Salvador",
+      "route_id": "562096",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "0"
+    },
+    {
+      "linha": "1404C",
+      "nome_linha": "Palmeiras / São Salvador",
+      "route_id": "562096",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "1"
+    },
+    {
+      "linha": "1505R",
+      "nome_linha": "Conjunto Felicidade / Centro",
+      "route_id": "562337",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3301A",
+      "nome_linha": "Santa Terezinha / Hospitais",
+      "route_id": "562220",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3301B",
+      "nome_linha": "Castelo / Centro - Via Avenida Carlos Luz",
+      "route_id": "562072",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3302A",
+      "nome_linha": "Nova Pampulha/Centro - Via Zoológico",
+      "route_id": "561891",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3302B",
+      "nome_linha": "Trevo / Centro - Via Braunas",
+      "route_id": "562030",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3302D",
+      "nome_linha": "Braúnas / Centro",
+      "route_id": "561805",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3501A",
+      "nome_linha": "Jardim Alvorada/São Marcos",
+      "route_id": "561838",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3501A",
+      "nome_linha": "Jardim Alvorada/São Marcos",
+      "route_id": "561838",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "1"
+    },
+    {
+      "linha": "3501B",
+      "nome_linha": "Ouro Preto 3a Gleba/Bairro Ipe Via Jardim Montanhes",
+      "route_id": "562313",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3501B",
+      "nome_linha": "Ouro Preto 3a Gleba/Bairro Ipe Via Jardim Montanhes",
+      "route_id": "562313",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "1"
+    },
+    {
+      "linha": "3503A",
+      "nome_linha": "Santa Terezinha/São Gabriel",
+      "route_id": "561985",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "0"
+    },
+    {
+      "linha": "3503A",
+      "nome_linha": "Santa Terezinha/São Gabriel",
+      "route_id": "561985",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "1"
+    },
+    {
+      "linha": "4801A",
+      "nome_linha": "Jardim Filadelfia/Boa Vista A",
+      "route_id": "561944",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4801A",
+      "nome_linha": "Jardim Filadelfia/Boa Vista A",
+      "route_id": "561944",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "1"
+    },
+    {
+      "linha": "4802A",
+      "nome_linha": "Pindorama/Boa Vista",
+      "route_id": "562204",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "0"
+    },
+    {
+      "linha": "4802A",
+      "nome_linha": "Pindorama/Boa Vista",
+      "route_id": "562204",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "1"
+    },
+    {
+      "linha": "5502C",
+      "nome_linha": "Pousada Santo Antônio / Centro / Hospitais",
+      "route_id": "561848",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5503A",
+      "nome_linha": "Goiânia A / Centro / Hospitais",
+      "route_id": "561934",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "5503B",
+      "nome_linha": "Goiânia B / Centro / Hospitais",
+      "route_id": "562168",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8001A",
+      "nome_linha": "Santa Inês/BH Shopping",
+      "route_id": "561947",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "0"
+    },
+    {
+      "linha": "8001A",
+      "nome_linha": "Santa Inês/BH Shopping",
+      "route_id": "561947",
+      "tipo_servico": "alimentadoras",
+      "direction_id": "1"
+    },
+    {
+      "linha": "83D",
+      "nome_linha": "Estação São Gabriel / Centro - Direta",
+      "route_id": "562171",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "83P",
+      "nome_linha": "Estação São Gabriel / Centro - Paradora",
+      "route_id": "562185",
+      "tipo_servico": "troncais_move",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S10",
+      "nome_linha": "BH Shopping / São Francisco",
+      "route_id": "562437",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S19",
+      "nome_linha": "Hospital Evangélico/Shopping Boulevard",
+      "route_id": "562443",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S20",
+      "nome_linha": "Palmeiras / Serra",
+      "route_id": "562422",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S21",
+      "nome_linha": "Dom Cabral / BH Shopping",
+      "route_id": "562439",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S22",
+      "nome_linha": "Buritis / Metrô Calafate",
+      "route_id": "562442",
+      "tipo_servico": "metro",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S22",
+      "nome_linha": "Buritis / Metrô Calafate",
+      "route_id": "562442",
+      "tipo_servico": "metro",
+      "direction_id": "1"
+    },
+    {
+      "linha": "S31",
+      "nome_linha": "Petrópolis / Barreiro",
+      "route_id": "562435",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S32",
+      "nome_linha": "Itaipu / Cardoso",
+      "route_id": "562441",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S32",
+      "nome_linha": "Itaipu / Cardoso",
+      "route_id": "562441",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "S33",
+      "nome_linha": "Lindéia / Milionários",
+      "route_id": "562448",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S33",
+      "nome_linha": "Lindéia / Milionários",
+      "route_id": "562448",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "S41",
+      "nome_linha": "Conjunto Califórnia / Prado",
+      "route_id": "562438",
+      "tipo_servico": "vilas_favelas",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S53",
+      "nome_linha": "Confisco / Ouro Minas",
+      "route_id": "562429",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S53",
+      "nome_linha": "Confisco / Ouro Minas",
+      "route_id": "562429",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "S54",
+      "nome_linha": "Dom Bosco / Shopping Del Rey",
+      "route_id": "562424",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S55",
+      "nome_linha": "Santa Monica / Minas Shopping",
+      "route_id": "562436",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S56",
+      "nome_linha": "São José/Vilarinho",
+      "route_id": "562425",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S56",
+      "nome_linha": "São José/Vilarinho",
+      "route_id": "562425",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "S60",
+      "nome_linha": "Etelvina Carneiro/Jardim Leblon Via Venda Nova",
+      "route_id": "562451",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S61",
+      "nome_linha": "Mantiqueira / Estação Vilarinho",
+      "route_id": "562427",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S63",
+      "nome_linha": "Campo Alegre/Céu Azul Via Rio Branco",
+      "route_id": "562453",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S64",
+      "nome_linha": "Campo Alegre/Céu Azul Via Venda Nova",
+      "route_id": "562426",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S65",
+      "nome_linha": "São Bernardo / Minas Caixa",
+      "route_id": "562433",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S66",
+      "nome_linha": "Tupi / Europa",
+      "route_id": "562440",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S70",
+      "nome_linha": "Conjunto Felicidade / Shopping Del Rey",
+      "route_id": "562423",
+      "tipo_servico": "vilas_favelas",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S80",
+      "nome_linha": "Jardim Vitória / Estação Vila Oeste",
+      "route_id": "562444",
+      "tipo_servico": "vilas_favelas",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S80",
+      "nome_linha": "Jardim Vitória / Estação Vila Oeste",
+      "route_id": "562444",
+      "tipo_servico": "vilas_favelas",
+      "direction_id": "1"
+    },
+    {
+      "linha": "S84",
+      "nome_linha": "São Gabriel / Floresta - Via Hospital Belo Horizonte",
+      "route_id": "637901",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S85",
+      "nome_linha": "Minas Shopping / Santa Ines",
+      "route_id": "562445",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S92",
+      "nome_linha": "Esplanada/Buritis",
+      "route_id": "562434",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "S92",
+      "nome_linha": "Esplanada/Buritis",
+      "route_id": "562434",
+      "tipo_servico": "troncais_convencionais",
+      "direction_id": "1"
+    },
+    {
+      "linha": "SC01A",
+      "nome_linha": "Contorno A",
+      "route_id": "561868",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "SC01B",
+      "nome_linha": "Contorno B",
+      "route_id": "562032",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "SC01R",
+      "nome_linha": "Contorno/Praca Milton Campos",
+      "route_id": "562122",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "SC02A",
+      "nome_linha": "Praca 7/Savassi Via Pca da Liberdade - Santa Casa",
+      "route_id": "561837",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "SC03A",
+      "nome_linha": "Hospital Felicio Rocho/Hospital Militar A",
+      "route_id": "561791",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "SC04A",
+      "nome_linha": "Santa Casa/Savassi/Rodoviaria A",
+      "route_id": "561955",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    },
+    {
+      "linha": "SC04B",
+      "nome_linha": "Santa Casa/Rodoviaria/Savassi B",
+      "route_id": "561963",
+      "tipo_servico": "estruturais",
+      "direction_id": "0"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Save, X, Plus, Trash2, MapPin } from 'lucide-react';
-import { Employee, EmployeeFormData, Address } from '../types/employee';
+import { Save, X, Plus, Trash2, MapPin, CreditCard } from 'lucide-react';
+import { Employee, EmployeeFormData, Address, BusCard } from '../types/employee';
 import { createEmployee, updateEmployee } from '../services/employeeService';
 
 interface EmployeeFormProps {
@@ -19,6 +19,7 @@ export function EmployeeForm({ employee, onSave, onCancel }: EmployeeFormProps) 
     position: '',
     department: '',
     addresses: [],
+    busCards: [],
   });
   const [isLoading, setIsLoading] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -44,6 +45,12 @@ export function EmployeeForm({ employee, onSave, onCancel }: EmployeeFormProps) 
           lat: addr.lat,
           lng: addr.lng,
           isMain: addr.isMain,
+        })),
+        busCards: (employee.busCards || []).map(card => ({
+          id: card.id,
+          cardNumber: card.cardNumber,
+          cardType: card.cardType || '',
+          isActive: card.isActive,
         })),
       });
     }
@@ -80,6 +87,22 @@ export function EmployeeForm({ employee, onSave, onCancel }: EmployeeFormProps) 
     }
     if (mainAddresses.length > 1) {
       newErrors.addresses = 'Apenas um endereço pode ser marcado como principal';
+    }
+
+    // Validar cartões de ônibus
+    formData.busCards.forEach((card, index) => {
+      if (card.cardNumber && !card.cardNumber.trim()) {
+        newErrors[`busCard_${index}_cardNumber`] = 'Número do cartão não pode estar vazio';
+      }
+      // Validar formato básico do número do cartão (opcional)
+      if (card.cardNumber && card.cardNumber.trim().length < 8) {
+        newErrors[`busCard_${index}_cardNumber`] = 'Número do cartão deve ter pelo menos 8 dígitos';
+      }
+    });
+
+    // Validar limite de cartões
+    if (formData.busCards.length > 2) {
+      newErrors.busCards = 'Máximo de 2 cartões permitidos';
     }
 
     setErrors(newErrors);
@@ -150,6 +173,38 @@ export function EmployeeForm({ employee, onSave, onCancel }: EmployeeFormProps) 
     if (errors[field]) {
       setErrors({ ...errors, [field]: '' });
     }
+  };
+
+  // Funções para gerenciar cartões de ônibus
+  const addBusCard = () => {
+    if (formData.busCards.length >= 2) {
+      alert('Você pode cadastrar no máximo 2 cartões de ônibus.');
+      return;
+    }
+    setFormData({
+      ...formData,
+      busCards: [
+        ...formData.busCards,
+        {
+          cardNumber: '',
+          cardType: '',
+          isActive: true,
+        },
+      ],
+    });
+  };
+
+  const removeBusCard = (index: number) => {
+    setFormData({
+      ...formData,
+      busCards: formData.busCards.filter((_, i) => i !== index),
+    });
+  };
+
+  const updateBusCard = (index: number, field: keyof BusCard, value: string | boolean) => {
+    const newBusCards = [...formData.busCards];
+    newBusCards[index] = { ...newBusCards[index], [field]: value };
+    setFormData({ ...formData, busCards: newBusCards });
   };
 
   return (
@@ -429,6 +484,117 @@ export function EmployeeForm({ employee, onSave, onCancel }: EmployeeFormProps) 
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+
+        {/* Seção de Cartões de Ônibus */}
+        <div>
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-2">
+              <CreditCard className="w-5 h-5 text-[#C4161C]" />
+              <h3 className="text-lg font-bold text-gray-800">Cartões de Ônibus</h3>
+              <span className="text-xs text-gray-500">(Máximo 2 cartões)</span>
+            </div>
+            {formData.busCards.length < 2 && (
+              <motion.button
+                type="button"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={addBusCard}
+                className="bg-[#C4161C]/10 text-[#C4161C] px-4 py-2 rounded-lg font-semibold text-sm hover:bg-[#C4161C]/20 transition-colors flex items-center gap-2"
+              >
+                <Plus className="w-4 h-4" />
+                Adicionar Cartão
+              </motion.button>
+            )}
+          </div>
+
+          <div className="space-y-4">
+            {formData.busCards.map((card, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-200"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-2">
+                    <CreditCard className="w-5 h-5 text-[#C4161C]" />
+                    <h4 className="text-sm font-semibold text-gray-700">
+                      Cartão {index + 1}
+                    </h4>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <label className="flex items-center gap-2 text-sm text-gray-700">
+                      <input
+                        type="checkbox"
+                        checked={card.isActive}
+                        onChange={(e) => updateBusCard(index, 'isActive', e.target.checked)}
+                        className="w-4 h-4 text-[#C4161C] rounded focus:ring-[#C4161C]"
+                      />
+                      Ativo
+                    </label>
+                    <motion.button
+                      type="button"
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      onClick={() => removeBusCard(index)}
+                      className="text-red-600 hover:text-red-700"
+                    >
+                      <Trash2 className="w-5 h-5" />
+                    </motion.button>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-xs font-semibold text-gray-700 mb-1">
+                      Número do Cartão *
+                    </label>
+                    <input
+                      type="text"
+                      value={card.cardNumber}
+                      onChange={(e) => updateBusCard(index, 'cardNumber', e.target.value)}
+                      placeholder="Ex: 1234567890123456"
+                      maxLength={20}
+                      className={`w-full px-3 py-2 bg-white border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#C4161C] ${
+                        errors[`busCard_${index}_cardNumber`] ? 'border-red-500' : 'border-gray-200'
+                      }`}
+                    />
+                    {errors[`busCard_${index}_cardNumber`] && (
+                      <p className="text-red-500 text-xs mt-1">{errors[`busCard_${index}_cardNumber`]}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-semibold text-gray-700 mb-1">
+                      Tipo de Cartão
+                    </label>
+                    <select
+                      value={card.cardType}
+                      onChange={(e) => updateBusCard(index, 'cardType', e.target.value)}
+                      className="w-full px-3 py-2 bg-white border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#C4161C]"
+                    >
+                      <option value="">Selecione o tipo</option>
+                      <option value="Bilhete Único">Bilhete Único</option>
+                      <option value="Vale Transporte">Vale Transporte</option>
+                      <option value="Cartão Estudante">Cartão Estudante</option>
+                      <option value="Cartão Idoso">Cartão Idoso</option>
+                      <option value="Cartão PCD">Cartão PCD</option>
+                      <option value="Outro">Outro</option>
+                    </select>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+
+            {formData.busCards.length === 0 && (
+              <div className="text-center py-8 text-gray-500 text-sm">
+                <CreditCard className="w-12 h-12 mx-auto mb-2 opacity-50" />
+                <p>Nenhum cartão cadastrado</p>
+                <p className="text-xs mt-1">Clique em "Adicionar Cartão" para cadastrar</p>
+              </div>
+            )}
           </div>
         </div>
 

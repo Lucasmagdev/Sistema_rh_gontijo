@@ -1,0 +1,324 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+561787,37926,326,Estação Barreiro / Vale do Jatoba,,3,,012841,FFFFFF
+561788,37926,9211,Caetano Furquim/Havaí,,3,,012841,FFFFFF
+561790,37926,9106,Sagrada Família/Serra,,3,,012841,FFFFFF
+561791,37926,SC03A,Hospital Felicio Rocho/Hospital Militar A,,3,,012841,FFFFFF
+561792,37926,4205,Ermelinda / Salgado Filho - Via Prado,,3,,012841,FFFFFF
+561794,37926,9408,Santa Efigênia/Padre Eustáquio,,3,,012841,FFFFFF
+561795,37926,8205,Maria Goretti/Nova Granada,,3,,012841,FFFFFF
+561796,37926,712,Estação Pampulha / São Bernardo,,3,,012841,FFFFFF
+561798,37926,4108,Pedro II/Mangabeiras,,3,,012841,FFFFFF
+561799,37926,627,Estação Venda Nova/Mantiqueira,,3,,012841,FFFFFF
+561801,37926,608,Estação Venda Nova / Nova Pampulha,,3,,012841,FFFFFF
+561802,37926,808,Estação São Gabriel / Paulo VI,,3,,012841,FFFFFF
+561803,37926,309,Estação Diamante / Bairro Petropolis,,3,,012841,FFFFFF
+561804,37926,328,Estação Barreiro / Cardoso B,,3,,012841,FFFFFF
+561805,37926,3302D,Braúnas / Centro,,3,,012841,FFFFFF
+561806,37926,341,Estação Barreiro / Estação Diamante Via Saude,,3,,012841,FFFFFF
+561807,37926,5250,Estação Pampulha / Betania,,3,,BED000,000000
+561808,37926,33,Estação Barreiro/Centro-Hospitais,,3,,012841,FFFFFF
+561809,37926,8101,Santa Cruz/Alto Santa Lúcia,,3,,BED000,000000
+561810,37926,9250,Caetano Furquim/Nova Cintra Via Savassi,,3,,012841,FFFFFF
+561811,37926,637,Estação Vilarinho / Canaa Via Serra Verde,,3,,012841,FFFFFF
+561812,37926,338,Estação Barreiro/Pilar - Olhos Dagua,,3,,012841,FFFFFF
+561813,37926,615,Céu Azul B / Estação Pampulha - Via Garças,,3,,012841,FFFFFF
+561814,37926,738,Estação Vilarinho/Conjunto Zilah Sposito,,3,,012841,FFFFFF
+561817,37926,401,Metro Cidade Industrial/Santa Maria,,3,,012841,FFFFFF
+561821,37926,823,Estação São Gabriel / Bairro Vitoria,,3,,012841,FFFFFF
+561822,37926,1502,Vista Alegre / Guarani,,3,,012841,FFFFFF
+561823,37926,319,Vila Cemig/Conjunto Esperanca,,3,,012841,FFFFFF
+561824,37926,85,Estação São Gabriel / Centro Via Floresta,,3,,BED000,000000
+561825,37926,3053,Estação Barreiro/B.Preto,,3,,012841,FFFFFF
+561826,37926,1509,California/Tupi,,3,,012841,FFFFFF
+561827,37926,719,Estação Pampulha / Floramar,,3,,012841,FFFFFF
+561828,37926,716,Estação São Gabriel / Novo Aarão Reis,,3,,012841,FFFFFF
+561829,37926,105,Estação Central / Lourdes,,3,,012841,FFFFFF
+561830,37926,625,Estação Venda Nova / Maria Helena B,,3,,012841,FFFFFF
+561831,37926,203,Morro Das Pedras/Ventosa,,3,,012841,FFFFFF
+561832,37926,644,Estação Pampulha / São Joao Batista,,3,,012841,FFFFFF
+561833,37926,634,Estação Vilarinho/Nova York Via Jardim dos Comerciarios,,3,,012841,FFFFFF
+561834,37926,5107,Estação Pampulha/Savassi,,3,,BED000,000000
+561835,37926,8107,Concórdia/São Pedro - Via Colégio Batista,,3,,012841,FFFFFF
+561836,37926,718,Planalto / Estação Pampulha - Via Itapõa,,3,,012841,FFFFFF
+561837,37926,SC02A,Praca 7/Savassi Via Pca da Liberdade - Santa Casa,,3,,012841,FFFFFF
+561838,37926,3501A,Jardim Alvorada/São Marcos,,3,,012841,FFFFFF
+561839,37926,402,Metro Cidade Industrial/Camargos,,3,,012841,FFFFFF
+561841,37926,2151,Vista Alegre/Serra,,3,,012841,FFFFFF
+561843,37926,9502,São Geraldo/São Francisco Via Esplanada,,3,,012841,FFFFFF
+561845,37926,202,Estação Vila Oeste,,3,,012841,FFFFFF
+561846,37926,619,Estação Pampulha/Santa Monica Via Santa Branca,,3,,012841,FFFFFF
+561847,37926,103,Vila Cafezal/Rua Pouso Alto,,3,,012841,FFFFFF
+561848,37926,5502C,Pousada Santo Antônio / Centro / Hospitais,,3,,012841,FFFFFF
+561849,37926,717,Campo Alegre / Estação Pampulha - Via Planalto,,3,,012841,FFFFFF
+561850,37926,2034,Conjunto Betania / Centro,,3,,012841,FFFFFF
+561851,37926,2102,Gameleira / Serra,,3,,012841,FFFFFF
+561852,37926,506,Estação Ponto São Jose / Avenida Antonio Carlos,,3,,012841,FFFFFF
+561853,37926,9550,Casa Branca/São Francisco Via Estação José Cândido,,3,,012841,FFFFFF
+561855,37926,4111,Dom Cabral/Anchieta,,3,,012841,FFFFFF
+561856,37926,815,Estação São Gabriel / Conjunto Paulo VI,,3,,012841,FFFFFF
+561858,37926,9501,São Lucas/Jaraguá,,3,,012841,FFFFFF
+561859,37926,315,Estação Barreiro / Barreiro / Maldonado,,3,,012841,FFFFFF
+561860,37926,305,Estação Diamante / Mangueiras,,3,,012841,FFFFFF
+561862,37926,4032,Caicara /Savassi/ Praca da Liberdade,,3,,012841,FFFFFF
+561864,37926,4037,Glória / Centro - Via Padre Eustáquio,,3,,012841,FFFFFF
+561865,37926,510,Estação Pampulha / Xangrila Via Trevo,,3,,012841,FFFFFF
+561868,37926,SC01A,Contorno A,,3,,012841,FFFFFF
+561869,37926,3029,Regina / Centro,,3,,012841,FFFFFF
+561870,37926,64,Estação Venda Nova/Assembleia Via Carlos Luz,,3,,BED000,000000
+561872,37926,614,Céu Azul A / Estação Pampulha - Via Avenida Portugal,,3,,012841,FFFFFF
+561874,37926,8203,Renascenca/Buritis - Via Nova Suiça,,3,,012841,FFFFFF
+561875,37926,633,Estação Vilarinho / Jardim dos Comerciarios,,3,,012841,FFFFFF
+561879,37926,8106,Santa Cruz/BH Shopping Via Belvedere,,3,,012841,FFFFFF
+561880,37926,3051,Flavio Marques Lisboa / Savassi Via N.S.Carmo,,3,,012841,FFFFFF
+561882,37926,68,Estação Vilarinho / Avenida Antônio Carlos,,3,,BED000,000000
+561883,37926,643,Estação Pampulha / Copacabana Via Monte Carmelo,,3,,012841,FFFFFF
+561885,37926,9104,Sagrada Família/Luxemburgo,,3,,012841,FFFFFF
+561886,37926,342,Estação Barreiro / Solar Via Estação Diamante,,3,,012841,FFFFFF
+561888,37926,9201,Baleia/Nova Granada,,3,,012841,FFFFFF
+561889,37926,9205,Nova Vista/Nova Cintra,,3,,012841,FFFFFF
+561890,37926,5201,Dona Clara/Buritis,,3,,BED000,000000
+561891,37926,3302A,Nova Pampulha/Centro - Via Zoológico,,3,,012841,FFFFFF
+561892,37926,5104,Suzana/Cruzeiro-Via Universitario,,3,,012841,FFFFFF
+561893,37926,838,Estação São Gabriel/Palmares Via Maria Virginia,,3,,012841,FFFFFF
+561894,37926,330,Estação Barreiro / Independencia,,3,,012841,FFFFFF
+561896,37926,62,Estação Venda Nova/Savassi Via Hospitais,,3,,BED000,000000
+561898,37926,8501,Maria Goretti / Engenho Nogueira via Ouro Preto,,3,,012841,FFFFFF
+561899,37926,2150,Grajau/Sion Via Contorno,,3,,012841,FFFFFF
+561900,37926,311,Estação Diamante / Independencia,,3,,012841,FFFFFF
+561901,37926,8401,Cachoeirinha/São Jose,,3,,012841,FFFFFF
+561903,37926,511,Estação Ponto São Jose / Jardim Alvorada,,3,,012841,FFFFFF
+561904,37926,9503,Taquaril/Jaraguá,,3,,012841,FFFFFF
+561905,37926,3055,Estação Barreiro/Savassi Via Bhshopping,,3,,012841,FFFFFF
+561907,37926,8102,União/Carmo Sion,,3,,012841,FFFFFF
+561912,37926,631,Estação Vilarinho / Serra Verde Via Minas Caixa,,3,,012841,FFFFFF
+561914,37926,9208,Taquaril/Conjunto Santa Maria,,3,,012841,FFFFFF
+561915,37926,4110,Dom Cabral/Belvedere,,3,,012841,FFFFFF
+561916,37926,9101,Alto Vera Cruz/São Bento,,3,,012841,FFFFFF
+561917,37926,814,Estação São Gabriel / Jardim Vitoria,,3,,012841,FFFFFF
+561918,37926,9410,Sagrada Família/Coração Eucarístico,,3,,012841,FFFFFF
+561919,37926,329,Estação Barreiro / Jatoba,,3,,012841,FFFFFF
+561920,37926,332,Estação Barreiro / Milionarios - Bonsucesso,,3,,012841,FFFFFF
+561921,37926,4501,California II / São Paulo,,3,,012841,FFFFFF
+561923,37926,2103,Prado/Anchieta,,3,,012841,FFFFFF
+561924,37926,301,Estação Diamante/Novo Santa Cecília via Brasil Industrial,,3,,012841,FFFFFF
+561925,37926,713,Estação São Gabriel / Lajedo,,3,,012841,FFFFFF
+561926,37926,641,Estação Vilarinho/Serra Verde,,3,,012841,FFFFFF
+561928,37926,4405,Coqueiros / Centro / Hospitais,,3,,012841,FFFFFF
+561929,37926,50,Estação Pampulha / Centro - Direta,,3,,BED000,000000
+561930,37926,313,Estação Diamante / Olaria,,3,,012841,FFFFFF
+561932,37926,8405,Palmares/Bela Vista,,3,,012841,FFFFFF
+561933,37926,622,Estação Venda Nova / Lagoinha,,3,,012841,FFFFFF
+561934,37926,5503A,Goiânia A / Centro / Hospitais,,3,,012841,FFFFFF
+561935,37926,6030,Cidade Administrativa/Savassi Via Hospitais,,3,,BED000,000000
+561936,37926,9407,Alto Vera Cruz/Dom Bosco,,3,,012841,FFFFFF
+561937,37926,61,Estação Venda Nova/Centro-Direta,,3,,BED000,000000
+561939,37926,318,Estação Barreiro/Jardim Liberdade Via Milionarios,,3,,012841,FFFFFF
+561942,37926,9202,Pompéia/Jardim América,,3,,012841,FFFFFF
+561943,37926,3050,Estação Diamante/Hospitais Via Bh Shopping,,3,,012841,FFFFFF
+561944,37926,4801A,Jardim Filadelfia/Boa Vista A,,3,,012841,FFFFFF
+561945,37926,618,Estação Pampulha/Rio Branco Via Jardim Leblon,,3,,012841,FFFFFF
+561946,37926,204,Estação Vila Oeste / Nova Gameleira,,3,,012841,FFFFFF
+561947,37926,8001A,Santa Inês/BH Shopping,,3,,012841,FFFFFF
+561948,37926,620,Estação Pampulha / Santa Monica Via Santa Amelia,,3,,012841,FFFFFF
+561949,37926,616,Estação Pampulha / Ceu Azul C,,3,,012841,FFFFFF
+561950,37926,3350,Estação Barreiro / Estação Diamante - Via Hospital Metropolitano,,3,,012841,FFFFFF
+561951,37926,821,Goiânia / Metrô Estação José Cândido,,3,,012841,FFFFFF
+561952,37926,4034,Novo Dom Bosco / Savassi Via Padre Eustaquio,,3,,012841,FFFFFF
+561953,37926,4113,Bom Jesus/Belvedere,,3,,012841,FFFFFF
+561955,37926,SC04A,Santa Casa/Savassi/Rodoviaria A,,3,,012841,FFFFFF
+561956,37926,621,Estação Venda Nova / Lagoa,,3,,012841,FFFFFF
+561957,37926,9030,Castanheiras/Centro,,3,,012841,FFFFFF
+561958,37926,8551,Estação São Gabriel / Estação UFMG via Anel Rodoviário,,3,,BED000,000000
+561959,37926,645,Estação Pampulha / Santa Monica Via Jardim Atlântico,,3,,012841,FFFFFF
+561960,37926,337,Estação Barreiro / Itaipu,,3,,012841,FFFFFF
+561961,37926,9403,Paraiso/Caiçara,,3,,012841,FFFFFF
+561963,37926,SC04B,Santa Casa/Rodoviaria/Savassi B,,3,,012841,FFFFFF
+561964,37926,4103,Aparecida/Parque das Mangabeiras,,3,,012841,FFFFFF
+561966,37926,901,Circular Leste / Baleia / Hospitais,,3,,012841,FFFFFF
+561968,37926,82,Estação São Gabriel / Savassi Via Hospitais,,3,,BED000,000000
+561969,37926,331,Estação Barreiro / Conjunto Antônio Teixeira Dias,,3,,012841,FFFFFF
+561970,37926,3502,Ouro Preto/São Gabriel,,3,,012841,FFFFFF
+561971,37926,3054,Milionarios/Centro,,3,,012841,FFFFFF
+561972,37926,705,Estação São Gabriel / São Tomaz,,3,,012841,FFFFFF
+561973,37926,1404A,Palmeiras / Alipio de Melo,,3,,012841,FFFFFF
+561974,37926,5401,São Luiz/Dom Cabral,,3,,BED000,000000
+561975,37926,327,Estação Barreiro / Cardoso A,,3,,012841,FFFFFF
+561979,37926,9414,Santa Inês/João Pinheiro,,3,,012841,FFFFFF
+561982,37926,406,Estação Ponto São José / Pindorama  - Via Glória,,3,,012841,FFFFFF
+561983,37926,9034,Taquaril/Centro,,3,,012841,FFFFFF
+561985,37926,3503A,Santa Terezinha/São Gabriel,,3,,012841,FFFFFF
+561987,37926,709,Estação São Gabriel / Tupi,01 - Principal,3,,012841,FFFFFF
+561988,37926,5106,Bandeirantes / Bh Shopping,,3,,BED000,000000
+561992,37926,642,Estação Venda Nova/Estação Vilarinho/Cidade Administrativa,,3,,012841,FFFFFF
+561993,37926,1505,Alto dos Pinheiros/Tupi,,3,,012841,FFFFFF
+561998,37926,8108,Cidade Nova/Savassi - Via Rua da Bahia,,3,,012841,FFFFFF
+561999,37926,813,Estação São Gabriel/Paulo VI Via Ribeiro de Abreu,,3,,012841,FFFFFF
+562000,37926,314,Estação Diamante/Estação Barreiro Via Santa Helena,,3,,012841,FFFFFF
+562001,37926,714,Estação São Gabriel / Casas Populares,,3,,012841,FFFFFF
+562003,37926,5203,Castelo/Estrela do Oriente-Via Manacas,,3,,012841,FFFFFF
+562004,37926,1030,Avenida,,3,,012841,FFFFFF
+562008,37926,8151,Estação São Gabriel/BH Shopping Via Anel Rodoviario,,3,,012841,FFFFFF
+562012,37926,9404,São Lucas/Nova Esperança,,3,,012841,FFFFFF
+562013,37926,707,Estação São Gabriel / Jardim Guanabara,,3,,012841,FFFFFF
+562016,37926,32,Estação Barreiro/Centro-Tamoios,,3,,012841,FFFFFF
+562020,37926,9103,Santa Tereza/Santo Antônio,,3,,012841,FFFFFF
+562021,37926,310,Estação Diamante / 3 E 4 Secao,,3,,012841,FFFFFF
+562023,37926,4031,Santa Maria / Hospitais,,3,,012841,FFFFFF
+562026,37926,206,Circular Oeste,,3,,012841,FFFFFF
+562027,37926,902,Taquaril / Castanheiras,,3,,012841,FFFFFF
+562030,37926,3302B,Trevo / Centro - Via Braunas,,3,,012841,FFFFFF
+562032,37926,SC01B,Contorno B,,3,,012841,FFFFFF
+562033,37926,335,Estação Barreiro / Lindeia,,3,,012841,FFFFFF
+562034,37926,9210,Santa Teresa/Prado,,3,,012841,FFFFFF
+562035,37926,9032,Granja de Freitas / Centro - Via Avenida dos Andradas,,3,,012841,FFFFFF
+562043,37926,8103,Nova Floresta/Santa Lúcia - Via Lourdes,,3,,012841,FFFFFF
+562047,37926,9405,Instituto Agronômico/Monsenhor Messias,,3,,012841,FFFFFF
+562049,37926,9204,Santa Efigênia/Estoril,,3,,012841,FFFFFF
+562050,37926,736,Estação Vilarinho/Juliana B,,3,,012841,FFFFFF
+562051,37926,9105,Nova Vista/Sion,,3,,012841,FFFFFF
+562052,37926,66,Estação Vilarinho/Centro/Hospitais Via Cristiano Machado (Direta),,3,,BED000,000000
+562053,37926,3030,Pilar-Olhos D Agua / Centro,,3,,012841,FFFFFF
+562054,37926,737,Estação Vilarinho/Jaqueline,,3,,012841,FFFFFF
+562055,37926,5102,UFMG/Santo Antonio,,3,,012841,FFFFFF
+562058,37926,806,Estação São Gabriel / Vista do Sol Via Nazaré,,3,,012841,FFFFFF
+562059,37926,63,Estação Venda Nova / Avenida Antônio Carlos,,3,,BED000,000000
+562060,37926,9412,Conjunto Taquaril/Padre Eustáquio,,3,,012841,FFFFFF
+562064,37926,9209,Sagrada Família/Gutierrez,,3,,012841,FFFFFF
+562066,37926,201,Morro Das Pedras / Hospital Madre Teresa,,3,,012841,FFFFFF
+562068,37926,4201,Alto Caicara/Nova Cintra,,3,,012841,FFFFFF
+562072,37926,3301B,Castelo / Centro - Via Avenida Carlos Luz,,3,,012841,FFFFFF
+562074,37926,825,Estação São Gabriel/Vitoria II Via Upa-Nordeste,,3,,012841,FFFFFF
+562075,37926,639,Braunas / Shopping Del Rey,,3,,012841,FFFFFF
+562079,37926,3052,Estação Diamante/Bh Shopping-Via Havai,,3,,012841,FFFFFF
+562083,37926,626,Estação Venda Nova/Esplendor Via Nova America,,3,,012841,FFFFFF
+562084,37926,609,Serra Verde/Santa Monica,,3,,012841,FFFFFF
+562085,37926,9805,Santa Efigênia/Renascença,,3,,012841,FFFFFF
+562088,37926,35,Estação Barreiro/Centro,,3,,012841,FFFFFF
+562090,37926,4033,Camargos/Centro,,3,,012841,FFFFFF
+562093,37926,812,Estação São Gabriel / São Gabriel A,,3,,012841,FFFFFF
+562096,37926,1404C,Palmeiras / São Salvador,,3,,012841,FFFFFF
+562101,37926,739,Estação Vilarinho/Jaqueline 2ª Seção Via Frei Leopoldo,,3,,012841,FFFFFF
+562105,37926,325,Estação Barreiro / Flavio Marques Lisboa,,3,,012841,FFFFFF
+562106,37926,9402,Santa Inês/Santo André,,3,,012841,FFFFFF
+562109,37926,4102,Aparecida/Serra,,3,,012841,FFFFFF
+562111,37926,706,Estação São Gabriel / Heliópolis,,3,,012841,FFFFFF
+562113,37926,9801,Saudade/Santa Cruz,,3,,012841,FFFFFF
+562120,37926,807,Estação São Gabriel / Ribeiro de Abreu A,,3,,012841,FFFFFF
+562121,37926,67,Estação Vilarinho/Santo Agostinho Via Carlos Luz,,3,,BED000,000000
+562122,37926,SC01R,Contorno/Praca Milton Campos,,3,,012841,FFFFFF
+562125,37926,732,Estação São Gabriel / Tupi-Felicidade,,3,,012841,FFFFFF
+562127,37926,836,Estação São Gabriel / Ribeiro de Abreu B,,3,,012841,FFFFFF
+562132,37926,9415,Nossa Senhora de Fátima/Bonfim,,3,,012841,FFFFFF
+562134,37926,51,Estação Pampulha / Centro / Hospitais,,3,,BED000,000000
+562136,37926,734,Estação São Gabriel / Aarão Reis Via Minaslândia,,3,,012841,FFFFFF
+562137,37926,4107,Alto Caicara/Serra,,3,,012841,FFFFFF
+562138,37926,503,Estação São Gabriel / Aparecida / Santa Rosa,,3,,012841,FFFFFF
+562140,37926,303,Estação Diamante / Santa Cecilia Via Castanheiras,,3,,012841,FFFFFF
+562144,37926,504,Estação São Gabriel / Santa Rosa / Aparecida,,3,,012841,FFFFFF
+562146,37926,832,Estação São Gabriel / Capitao Eduardo,,3,,012841,FFFFFF
+562152,37926,533,Castelo / Shopping Del Rey,,3,,012841,FFFFFF
+562153,37926,336,Vila Bernadete / Jardim Liberdade,,3,,012841,FFFFFF
+562155,37926,340,Estação Barreiro / Vila Mangueiras,,3,,012841,FFFFFF
+562156,37926,837,Estação São Gabriel / Conjunto Ribeiro de Abreu,,3,,012841,FFFFFF
+562157,37926,3250,Estação Diamante/Buritis Via Palmeiras,,3,,012841,FFFFFF
+562160,37926,640,Estação Venda Nova / Jardim Leblon Via Rio Branco,,3,,012841,FFFFFF
+562163,37926,107,Vila Marçola / Rua do Ouro,,3,,012841,FFFFFF
+562165,37926,52,Estação Pampulha / Avenida Antonio Carlos,,3,,BED000,000000
+562167,37926,607,Estação Vilarinho / Esplendor,,3,,012841,FFFFFF
+562168,37926,5503B,Goiânia B / Centro / Hospitais,,3,,012841,FFFFFF
+562171,37926,83D,Estação São Gabriel / Centro - Direta,,3,,BED000,000000
+562172,37926,30,Estação Diamante/Centro,,3,,012841,FFFFFF
+562175,37926,308,Estação Barreiro / Tirol,,3,,012841,FFFFFF
+562178,37926,321,Olhos D Agua / Pilar,,3,,012841,FFFFFF
+562181,37926,617,Estação Pampulha / Piratininga Via Rio Branco,,3,,012841,FFFFFF
+562184,37926,302,Estação Diamante / Vila Pinho,,3,,012841,FFFFFF
+562185,37926,83P,Estação São Gabriel / Centro - Paradora,,3,,BED000,000000
+562189,37926,811,Estação São Gabriel / Vista do Sol Via PUC,,3,,012841,FFFFFF
+562193,37926,65,Estação Vilarinho/Centro Via Antônio Carlos-Direta,,3,,BED000,000000
+562202,37926,208,Estação Barreiro/Betania Via Novo Das Industrias,,3,,012841,FFFFFF
+562204,37926,4802A,Pindorama/Boa Vista,,3,,012841,FFFFFF
+562210,37926,2101,Grajau/Sion,,3,,012841,FFFFFF
+562217,37926,8550,Estação São Gabriel / Zoológico via Estação Pampulha,,3,,BED000,000000
+562218,37926,2152,Salgado Filho/Cruzeiro - Via Savassi,,3,,012841,FFFFFF
+562220,37926,3301A,Santa Terezinha / Hospitais,,3,,012841,FFFFFF
+562225,37926,102,Nossa Senhora de Fatima/Hospital Evangelico,,3,,012841,FFFFFF
+562227,37926,710,Estação São Gabriel / Providência,,3,,012841,FFFFFF
+562230,37926,703,Estação São Gabriel / Guarani - Via Primeiro de Maio,,3,,012841,FFFFFF
+562237,37926,535,Trevo Via Braunas / Shopping Del Rey,,3,,012841,FFFFFF
+562239,37926,6350,Estação Vilarinho/Estação Barreiro Via Anel Rodoviario,,3,,BED000,000000
+562240,37926,104,Estação Lagoinha / Avenida,,3,,012841,FFFFFF
+562241,37926,304,Estação Diamante / Jatoba Iv,,3,,012841,FFFFFF
+562250,37926,9411,Casa Branca/São José,,3,,012841,FFFFFF
+562252,37926,1170,Santa Lucia / Mangabeiras - Via Savassi,,3,,012841,FFFFFF
+562253,37926,8208,Santa Cruz / Buritis - Via Avenida Barão,,3,,012841,FFFFFF
+562264,37926,740,Tupi / Mirante,,3,,012841,FFFFFF
+562271,37926,6031,Cidade Administrativa/Centro,,3,,BED000,000000
+562272,37926,708,Estação São Gabriel / Felicidade,,3,,012841,FFFFFF
+562284,37926,809,Estação São Gabriel / Belmonte,,3,,012841,FFFFFF
+562288,37926,826,Montes Claros / Rua São Romulo,,3,,012841,FFFFFF
+562290,37926,2033,Betania / Centro,,3,,012841,FFFFFF
+562294,37926,8150,União / Serra - Via Floresta / Hospitais,,3,,012841,FFFFFF
+562302,37926,810,Estação São Gabriel/Parque Belmonte via Dom Silverio,,3,,012841,FFFFFF
+562303,37926,4150,Shopping Del Rey/Bh Shopping,,3,,012841,FFFFFF
+562304,37926,624,Estação Venda Nova / Maria Helena A,,3,,012841,FFFFFF
+562310,37926,8207,Maria Goretti/Estrela Dalva,,3,,012841,FFFFFF
+562313,37926,3501B,Ouro Preto 3a Gleba/Bairro Ipe Via Jardim Montanhes,,3,,012841,FFFFFF
+562323,37926,638,Estação Vilarinho/Minas Caixa,,3,,012841,FFFFFF
+562327,37926,735,Estação Vilarinho/Juliana A,,3,,012841,FFFFFF
+562331,37926,4106,São Cristovao / Santo Antônio - Via Savassi,,3,,012841,FFFFFF
+562337,37926,1505R,Conjunto Felicidade / Centro,,3,,012841,FFFFFF
+562341,37926,636,Estação Vilarinho / Jardim Europa - Via Cenáculo,,3,,012841,FFFFFF
+562347,37926,8350,Estação São Gabriel/Estação Barreiro,,3,,012841,FFFFFF
+562349,37926,205,Metro Calafate/Buritis,,3,,012841,FFFFFF
+562351,37926,635,Estação Vilarinho / Jardim dos Comerciarios C,,3,,012841,FFFFFF
+562358,37926,1145,Bairro Das Indústrias,,3,,012841,FFFFFF
+562360,37926,5550,Estação Pampulha / Estação Ponto São Jose,,3,,BED000,000000
+562361,37926,1510,Madre Gertrudes/Providencia,,3,,012841,FFFFFF
+562363,37926,715,Estação São Gabriel / Monte Azul,,3,,012841,FFFFFF
+562367,37926,101,Aglomerado Santa Lúcia / São Pedro,,3,,012841,FFFFFF
+562370,37926,2104,Nova Gameleira/Bh Shopping,,3,,012841,FFFFFF
+562378,37926,822,Santa Inês / Vila Maria - Via Estação José Cândido,,3,,012841,FFFFFF
+562388,37926,2035,Bairro Das Industrias / Centro,,3,,012841,FFFFFF
+562389,37926,5033,Santa Terezinha/Praca da Liberdade via Tancredo Neves,,3,,012841,FFFFFF
+562393,37926,9206,Vera Cruz/Buritis - Via Avenida Raja Gabáglia,,3,,012841,FFFFFF
+562397,37926,903,Granja de Freitas / Taquaril via Alto Vera Cruz,,3,,012841,FFFFFF
+562407,37926,623,Estação Venda Nova / Vila Santa Branca,,3,,012841,FFFFFF
+562410,37926,702,Estação Vilarinho/Xodo-Marize Via Jardim Guanabara,,3,,012841,FFFFFF
+562412,37926,711,Estação São Gabriel / Solimões,01 - Principal,3,,012841,FFFFFF
+573119,37926,720,Circular Saúde MG20,,3,,012841,FFFFFF
+596937,37926,721,Estação São Gabriel / Maria Teresa Via Parque Cerrado,,3,,012841,FFFFFF
+600190,37926,5034,Urca/Centro Via Confisco,01,3,,012841,FFFFFF
+603188,37926,5035,Zoológico/Hospitais Via Serrano,,3,,012841,FFFFFF
+603413,37926,646,Estação Vilarinho/Zoológico Via Estação Venda Nova,,3,,012841,FFFFFF
+603888,37926,5036,Celso Machado/Centro,,3,,012841,FFFFFF
+608000,37926,513,Estação Pampulha / Dandara via Braúnas,,3,,012841,FFFFFF
+637902,37926,3150,Regina-Lindeia/BH Shopping via Anel Rodoviário,,3,,012841,FFFFFF
+701772,37926,2036,Alto Havaí/Centro/Hospitais,,3,,012841,FFFFFF
+701774,37926,209,Circular Saúde Havaí,,3,,012841,FFFFFF
+954089,37926,407,Califórnia/Glória via Centro de Saúde Califórnia,,3,,012841,FFFFFF
+987722,37926,343,Vila Ecológica / Independência - Via Centro de Saúde,,3,,012841,FFFFFF
+989341,37926,10,Madrugão / Circular Noturno,,3,,bed000,000000
+562422,39102,S20,Palmeiras / Serra,,3,,EFB12D,000000
+562423,39102,S70,Conjunto Felicidade / Shopping Del Rey,,3,,EFB12D,000000
+562424,39102,S54,Dom Bosco / Shopping Del Rey,,3,,EFB12D,000000
+562425,39102,S56,São José/Vilarinho,,3,,EFB12D,000000
+562426,39102,S64,Campo Alegre/Céu Azul Via Venda Nova,Principal,3,,EFB12D,000000
+562427,39102,S61,Mantiqueira / Estação Vilarinho,,3,,EFB12D,000000
+562429,39102,S53,Confisco / Ouro Minas,,3,,EFB12D,000000
+562433,39102,S65,São Bernardo / Minas Caixa,,3,,EFB12D,000000
+562434,39102,S92,Esplanada/Buritis,,3,,EFB12D,000000
+562435,39102,S31,Petrópolis / Barreiro,,3,,EFB12D,000000
+562436,39102,S55,Santa Monica / Minas Shopping,,3,,EFB12D,000000
+562437,39102,S10,BH Shopping / São Francisco,,3,,EFB12D,000000
+562438,39102,S41,Conjunto Califórnia / Prado,,3,,EFB12D,000000
+562439,39102,S21,Dom Cabral / BH Shopping,,3,,EFB12D,000000
+562440,39102,S66,Tupi / Europa,,3,,EFB12D,000000
+562441,39102,S32,Itaipu / Cardoso,,3,,EFB12D,000000
+562442,39102,S22,Buritis / Metrô Calafate,,3,,EFB12D,000000
+562443,39102,S19,Hospital Evangélico/Shopping Boulevard,,3,,EFB12D,000000
+562444,39102,S80,Jardim Vitória / Estação Vila Oeste,,3,,EFB12D,000000
+562445,39102,S85,Minas Shopping / Santa Ines,,3,,EFB12D,000000
+562448,39102,S33,Lindéia / Milionários,,3,,EFB12D,000000
+562451,39102,S60,Etelvina Carneiro/Jardim Leblon Via Venda Nova,,3,,EFB12D,000000
+562453,39102,S63,Campo Alegre/Céu Azul Via Rio Branco,,3,,EFB12D,000000
+637901,39102,S84,São Gabriel / Floresta - Via Hospital Belo Horizonte,,3,,efb12d,000000

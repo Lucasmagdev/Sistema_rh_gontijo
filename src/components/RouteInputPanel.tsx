@@ -1,18 +1,19 @@
-import { useState, useEffect } from 'react';
-import { MapPin, Navigation, Loader2, Users, X } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { MapPin, Navigation, Loader2, Users, X, Search } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Location } from '../types/route';
 import { Employee } from '../types/employee';
 import { getAllEmployees } from '../services/employeeService';
 import { addressToLocation } from '../utils/addressToLocation';
+import { AddressSearch } from './AddressSearch';
 
 interface RouteInputPanelProps {
   locations: Location[];
-  onCalculate: (origin: Location, destination: Location) => void;
+  onCalculate: (origin: Location, destination: Location, originEmployeeId?: string, destinationEmployeeId?: string) => void;
   isLoading: boolean;
 }
 
-type SelectionType = 'location' | 'employee';
+type SelectionType = 'location' | 'employee' | 'address';
 
 export function RouteInputPanel({ locations, onCalculate, isLoading }: RouteInputPanelProps) {
   const [originType, setOriginType] = useState<SelectionType>('location');
@@ -21,6 +22,8 @@ export function RouteInputPanel({ locations, onCalculate, isLoading }: RouteInpu
   const [destination, setDestination] = useState<string>('');
   const [originEmployee, setOriginEmployee] = useState<Employee | null>(null);
   const [destinationEmployee, setDestinationEmployee] = useState<Employee | null>(null);
+  const [originAddress, setOriginAddress] = useState<Location | null>(null);
+  const [destinationAddress, setDestinationAddress] = useState<Location | null>(null);
   const [employees, setEmployees] = useState<Employee[]>([]);
   const [isLoadingEmployees, setIsLoadingEmployees] = useState(false);
 
@@ -39,6 +42,18 @@ export function RouteInputPanel({ locations, onCalculate, isLoading }: RouteInpu
     loadEmployees();
   }, []);
 
+  // Cleanup do timeout quando componente desmontar
+  useEffect(() => {
+    return () => {
+      if (debounceTimeoutRef.current) {
+        clearTimeout(debounceTimeoutRef.current);
+      }
+    };
+  }, []);
+
+  // Ref para armazenar timeout do debounce
+  const debounceTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -52,6 +67,8 @@ export function RouteInputPanel({ locations, onCalculate, isLoading }: RouteInpu
         return;
       }
       originLocation = addressToLocation(mainAddress, originEmployee.name);
+    } else if (originType === 'address' && originAddress) {
+      originLocation = originAddress;
     } else {
       originLocation = locations.find(l => l.id === origin);
     }
@@ -63,12 +80,27 @@ export function RouteInputPanel({ locations, onCalculate, isLoading }: RouteInpu
         return;
       }
       destinationLocation = addressToLocation(mainAddress, destinationEmployee.name);
+    } else if (destinationType === 'address' && destinationAddress) {
+      destinationLocation = destinationAddress;
     } else {
       destinationLocation = locations.find(l => l.id === destination);
     }
 
     if (originLocation && destinationLocation) {
-      onCalculate(originLocation, destinationLocation);
+      // Limpar timeout anterior se existir
+      if (debounceTimeoutRef.current) {
+        clearTimeout(debounceTimeoutRef.current);
+      }
+      
+      // Debounce: aguardar 800ms após última submissão antes de calcular
+      debounceTimeoutRef.current = setTimeout(() => {
+        onCalculate(
+          originLocation!, 
+          destinationLocation!,
+          originType === 'employee' && originEmployee ? originEmployee.id : undefined,
+          destinationType === 'employee' && destinationEmployee ? destinationEmployee.id : undefined
+        );
+      }, 800);
     }
   };
 
@@ -111,29 +143,47 @@ export function RouteInputPanel({ locations, onCalculate, isLoading }: RouteInpu
               onClick={() => {
                 setOriginType('location');
                 setOriginEmployee(null);
+                setOriginAddress(null);
                 setOrigin('');
               }}
-              className={`flex-1 px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
+              className={`flex-1 px-2 py-2 rounded-lg text-xs font-semibold transition-all ${
                 originType === 'location'
                   ? 'bg-[#C4161C] text-white shadow-md'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              Localização
+              Lista
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setOriginType('address');
+                setOriginEmployee(null);
+                setOrigin('');
+              }}
+              className={`flex-1 px-2 py-2 rounded-lg text-xs font-semibold transition-all ${
+                originType === 'address'
+                  ? 'bg-[#C4161C] text-white shadow-md'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              }`}
+            >
+              <Search className="w-3 h-3 inline mr-1" />
+              Buscar
             </button>
             <button
               type="button"
               onClick={() => {
                 setOriginType('employee');
+                setOriginAddress(null);
                 setOrigin('');
               }}
-              className={`flex-1 px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
+              className={`flex-1 px-2 py-2 rounded-lg text-xs font-semibold transition-all ${
                 originType === 'employee'
                   ? 'bg-[#C4161C] text-white shadow-md'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              <Users className="w-4 h-4 inline mr-1" />
+              <Users className="w-3 h-3 inline mr-1" />
               Colaborador
             </button>
           </div>
@@ -152,6 +202,16 @@ export function RouteInputPanel({ locations, onCalculate, isLoading }: RouteInpu
                 </option>
               ))}
             </select>
+          ) : originType === 'address' ? (
+            <AddressSearch
+              value={originAddress?.name || ''}
+              onChange={(location) => {
+                setOriginAddress(location);
+                setOrigin('');
+              }}
+              placeholder="Digite o endereço de origem (ex: Rua X, 123, Belo Horizonte)"
+              required={originType === 'address'}
+            />
           ) : (
             <div className="space-y-2">
               <select
@@ -234,29 +294,47 @@ export function RouteInputPanel({ locations, onCalculate, isLoading }: RouteInpu
               onClick={() => {
                 setDestinationType('location');
                 setDestinationEmployee(null);
+                setDestinationAddress(null);
                 setDestination('');
               }}
-              className={`flex-1 px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
+              className={`flex-1 px-2 py-2 rounded-lg text-xs font-semibold transition-all ${
                 destinationType === 'location'
                   ? 'bg-[#C4161C] text-white shadow-md'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              Localização
+              Lista
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setDestinationType('address');
+                setDestinationEmployee(null);
+                setDestination('');
+              }}
+              className={`flex-1 px-2 py-2 rounded-lg text-xs font-semibold transition-all ${
+                destinationType === 'address'
+                  ? 'bg-[#C4161C] text-white shadow-md'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              }`}
+            >
+              <Search className="w-3 h-3 inline mr-1" />
+              Buscar
             </button>
             <button
               type="button"
               onClick={() => {
                 setDestinationType('employee');
+                setDestinationAddress(null);
                 setDestination('');
               }}
-              className={`flex-1 px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
+              className={`flex-1 px-2 py-2 rounded-lg text-xs font-semibold transition-all ${
                 destinationType === 'employee'
                   ? 'bg-[#C4161C] text-white shadow-md'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              <Users className="w-4 h-4 inline mr-1" />
+              <Users className="w-3 h-3 inline mr-1" />
               Colaborador
             </button>
           </div>
@@ -275,6 +353,16 @@ export function RouteInputPanel({ locations, onCalculate, isLoading }: RouteInpu
                 </option>
               ))}
             </select>
+          ) : destinationType === 'address' ? (
+            <AddressSearch
+              value={destinationAddress?.name || ''}
+              onChange={(location) => {
+                setDestinationAddress(location);
+                setDestination('');
+              }}
+              placeholder="Digite o endereço de destino (ex: Rua Y, 456, Belo Horizonte)"
+              required={destinationType === 'address'}
+            />
           ) : (
             <div className="space-y-2">
               <select
@@ -351,8 +439,10 @@ export function RouteInputPanel({ locations, onCalculate, isLoading }: RouteInpu
             isLoading ||
             (originType === 'location' && !origin) ||
             (originType === 'employee' && !originEmployee) ||
+            (originType === 'address' && !originAddress) ||
             (destinationType === 'location' && !destination) ||
-            (destinationType === 'employee' && !destinationEmployee)
+            (destinationType === 'employee' && !destinationEmployee) ||
+            (destinationType === 'address' && !destinationAddress)
           }
           whileHover={{ scale: 1.02, y: -2 }}
           whileTap={{ scale: 0.98 }}

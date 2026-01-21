@@ -1,0 +1,455 @@
+linha	nome_linha	direction_id	headsign_comum	origem_stop_name	origem_lat	origem_lon	destino_stop_name	destino_lat	destino_lon	viagens_contadas	route_id	origem_stop_id	destino_stop_id
+10	Madrugão / Circular Noturno	0	Circular Centro	Rua Aarao Reis 510	-19.9193217	-43.9344224	Rua Aarao Reis 510	-19.9193217	-43.9344224	36	989341	14788902	14788902
+30	Estação Diamante/Centro	0	Estação Diamante (Carnaval)	Estação Diamante - Plataforma E6	-19.99474173	-44.02405225	Estação Diamante - Plataforma E6	-19.99474173	-44.02405225	1003	562172	15246212	15246212
+32	Estação Barreiro/Centro-Tamoios	0	Estação Barreiro (Paradora)	Estação Barreiro - Plataforma D4	-19.97382751	-44.0213642	Estação Barreiro - Plataforma D4	-19.97382751	-44.0213642	342	562016	15140121	15140121
+33	Estação Barreiro/Centro-Hospitais	0	Estação Barreiro	Estação Barreiro - Plataforma E3	-19.97367878	-44.02116303	Estação Barreiro - Plataforma E3	-19.97367878	-44.02116303	547	561808	15140124	15140124
+35	Estação Barreiro/Centro	0	Estação Barreiro	Estação Barreiro - Plataforma D3	-19.97378718	-44.0211617	Estação Barreiro - Plataforma D3	-19.97378718	-44.0211617	175	562088	15140118	15140118
+50	Estação Pampulha / Centro - Direta	0	Estação Pampulha	Estação Pampulha - Plataforma G4	-19.84347457	-43.96700111	Estação Pampulha - Plataforma G4	-19.84347457	-43.96700111	890	561929	15252270	15252270
+51	Estação Pampulha / Centro / Hospitais	0	Estação Pampulha	Estação Pampulha - Plataforma G1	-19.84229939	-43.96757599	Estação Pampulha - Plataforma G1	-19.84229939	-43.96757599	904	562134	15252267	15252267
+52	Estação Pampulha / Avenida Antonio Carlos	0	Estação Pampulha	Estação Pampulha - Plataforma F1	-19.84218665	-43.96739753	Estação Pampulha - Plataforma F1	-19.84218665	-43.96739753	209	562165	15252282	15252282
+61	Estação Venda Nova/Centro-Direta	0	Estação Venda Nova	Estação Venda Nova - Plataforma D1	-19.80934976	-43.96994457	Estação Venda Nova - Plataforma D1	-19.80934976	-43.96994457	449	561937	15328780	15328780
+62	Estação Venda Nova/Savassi Via Hospitais	0	Estação Venda Nova	Estação Venda Nova - Plataforma E1	-19.80924882	-43.9701806	Estação Venda Nova - Plataforma E1	-19.80924882	-43.9701806	856	561896	15328781	15328781
+62	Estação Venda Nova/Savassi Via Hospitais	1	Estação Venda Nova (Estacao Venda Nova/Savassi)	Rua Claudio Manoel 713	-19.93390311	-43.93182622	Estação Venda Nova - Plataforma E1	-19.80924882	-43.9701806	9	561896	14790167	15328781
+63	Estação Venda Nova / Avenida Antônio Carlos	0	Estação Venda Nova (Centro Via Estacao Vilarinho)	Estação Venda Nova - Plataforma F1	-19.80930686	-43.9702718	Estação Venda Nova - Plataforma F1	-19.80930686	-43.9702718	499	562059	15328783	15328783
+64	Estação Venda Nova/Assembleia Via Carlos Luz	0	Estação Venda Nova	Estação Venda Nova - Plataforma F3	-19.80979137	-43.96986679	Estação Venda Nova - Plataforma F3	-19.80979137	-43.96986679	626	561870	15328784	15328784
+65	Estação Vilarinho/Centro Via Antônio Carlos-Direta	0	Estacão Vilarinho	Estação Vilarinho - Plataforma C12	-19.82147397	-43.94835858	Estação Vilarinho - Plataforma C12	-19.82147397	-43.94835858	490	562193	15328634	15328634
+66	Estação Vilarinho/Centro/Hospitais Via Cristiano Machado (Direta)	0	Estação Vilarinho (Carnaval)	Estação Vilarinho - Plataforma C4	-19.82189536	-43.94710063	Estação Vilarinho - Plataforma C4	-19.82189536	-43.94710063	446	562052	15328630	15328630
+66	Estação Vilarinho/Centro/Hospitais Via Cristiano Machado (Direta)	1	Estação Vilarinho (DIRETA)	Avenida Augusto De Lima 635	-19.92368347	-43.94181373	Estação Vilarinho - Plataforma C4	-19.82189536	-43.94710063	7	562052	14793331	15328630
+67	Estação Vilarinho/Santo Agostinho Via Carlos Luz	0	Estação Vilarinho	Estação Vilarinho - Plataforma C10	-19.82155472	-43.94810109	Estação Vilarinho - Plataforma C10	-19.82155472	-43.94810109	398	562121	15328633	15328633
+68	Estação Vilarinho / Avenida Antônio Carlos	0	Estação Vilarinho	Estação Vilarinho - Plataforma C6	-19.82178182	-43.94740908	Estação Vilarinho - Plataforma C6	-19.82178182	-43.94740908	188	561882	15328631	15328631
+82	Estação São Gabriel / Savassi Via Hospitais	0	Estação São Gabriel	Estação São Gabriel	-19.86417845	-43.92725253	Estação São Gabriel	-19.86417845	-43.92725253	243	561968	15140042	15140042
+85	Estação São Gabriel / Centro Via Floresta	0	Estação São Gabriel	Estação São Gabriel	-19.86380872	-43.92665724	Estação São Gabriel	-19.86380872	-43.92665724	140	561824	15140040	15140040
+101	Aglomerado Santa Lúcia / São Pedro	0	Santa Lúcia	Rua Emilio Pinheiro De Barros 342	-19.95701403	-43.94608324	Rua Emilio Pinheiro De Barros 342	-19.95701403	-43.94608324	212	562367	14786746	14786746
+102	Nossa Senhora de Fatima/Hospital Evangelico	0	Nossa Senhora De Fátima	Rua Sao Miguel Arcanjo 1	-19.93197453	-43.90326299	Rua Sao Miguel Arcanjo 1	-19.93197453	-43.90326299	286	562225	14790953	14790953
+103	Vila Cafezal/Rua Pouso Alto	0	Vila Cafezal	Rua Maria Carmem Valadares 521	-19.92752986	-43.90937954	Rua Maria Carmem Valadares 521	-19.92752986	-43.90937954	301	561847	14788579	14788579
+104	Estação Lagoinha / Avenida	0	Avenida do Contorno	Avenida Do Contorno 11671	-19.91313812	-43.94237021	Avenida Do Contorno 11671	-19.91313812	-43.94237021	199	562240	14787443	14787443
+105	Estação Central / Lourdes	0	Estação Central	Rua Aarao Reis 510	-19.9193217	-43.9344224	Rua Aarao Reis 510	-19.9193217	-43.9344224	82	561829	14788902	14788902
+107	Vila Marçola / Rua do Ouro	0	Vila Marçola	Rua Da Agua 1	-19.94118098	-43.90912797	Rua Da Agua 1	-19.94118098	-43.90912797	174	562163	14792424	14792424
+201	Morro Das Pedras / Hospital Madre Teresa	0	Morro Das Pedras (Via Rua Nascimento Gurgel)	Rua Sereno 2431	-19.94393795	-43.96198275	Rua Sereno 2431	-19.94393795	-43.96198275	171	562066	14791629	14791629
+202	Estação Vila Oeste	0	Vila Oeste	Rua Dois Mil Quatrocentos E Vinte Sete 89	-19.93908721	-44.00274095	Rua Dois Mil Quatrocentos E Vinte Sete 89	-19.93908721	-44.00274095	294	561845	14785791	14785791
+203	Morro Das Pedras/Ventosa	0	Vila Leonina	Pca Do Ensino 219	-19.95595625	-43.96558033	Pca Do Ensino 219	-19.95595625	-43.96558033	162	561831	14789753	14789753
+204	Estação Vila Oeste / Nova Gameleira	0	Estação Vila Oeste	Rua Dois Mil Quatrocentos E Vinte Sete 89	-19.93908721	-44.00274095	Rua Dois Mil Quatrocentos E Vinte Sete 89	-19.93908721	-44.00274095	188	561946	14785791	14785791
+205	Metro Calafate/Buritis	0	Metro Calafate	Avenida Guaratan, 1049	-19.92266822	-43.96991798	Avenida Guaratan, 1049	-19.92266822	-43.96991798	216	562349	14791995	14791995
+206	Circular Oeste	0	Upa Oeste	Rua Professor Tavares Paes 10	-19.94950846	-43.96926701	Rua Professor Tavares Paes 10	-19.94950846	-43.96926701	216	562026	14792546	14792546
+208	Estação Barreiro/Betania Via Novo Das Industrias	0	Estação Barreiro	Estação Barreiro - Plataforma B3	-19.97400397	-44.02110135	Estação Barreiro - Plataforma B3	-19.97400397	-44.02110135	234	562202	15140085	15140085
+209	Circular Saúde Havaí	0	Havaí	Rua Deputado Sebastião Nascimento, 640	-19.96586154	-43.97314423	Rua Deputado Sebastião Nascimento, 640	-19.96586154	-43.97314423	12	701774	22378736	22378736
+301	Estação Diamante/Novo Santa Cecília via Brasil Industrial	0	Estação Diamante	Estação Diamante - Plataforma A5	-19.99433587	-44.02420383	Estação Diamante - Plataforma A5	-19.99433587	-44.02420383	227	561924	15246200	15246200
+302	Estação Diamante / Vila Pinho	0	Estação Diamante (Via Conjunto Aguas Claras)	Estação Diamante - Plataforma A6	-19.99443291	-44.02429904	Estação Diamante - Plataforma A6	-19.99443291	-44.02429904	468	562184	15246201	15246201
+303	Estação Diamante / Santa Cecilia Via Castanheiras	0	Estação Diamante	Estação Diamante - Plataforma A2	-19.99406068	-44.02390878	Estação Diamante - Plataforma A2	-19.99406068	-44.02390878	257	562140	15246198	15246198
+304	Estação Diamante / Jatoba Iv	0	Estação Diamante	Estação Diamante	-19.99395276	-44.02380015	Estação Diamante	-19.99395276	-44.02380015	261	562241	15246197	15246197
+305	Estação Diamante / Mangueiras	0	Estação Diamante	Estação Diamante - Plataforma B5	-19.99442174	-44.02416911	Estação Diamante - Plataforma B5	-19.99442174	-44.02416911	424	561860	15246206	15246206
+308	Estação Barreiro / Tirol	0	Estação Barreiro	Estação Barreiro - Plataforma C6	-19.97406195	-44.02175447	Estação Barreiro - Plataforma C6	-19.97406195	-44.02175447	283	562175	15140107	15140107
+309	Estação Diamante / Bairro Petropolis	0	Estação Diamante (Principal)	Estação Diamante - Plataforma B3	-19.99423143	-44.02396258	Estação Diamante - Plataforma B3	-19.99423143	-44.02396258	354	561803	15246204	15246204
+309	Estação Diamante / Bairro Petropolis	1	Estação Diamante	Rua Flor De Pitangueira 119	-20.02028479	-44.02933102	Estação Diamante - Plataforma B3	-19.99423143	-44.02396258	6	561803	14788050	15246204
+310	Estação Diamante / 3 E 4 Secao	0	Estação Diamante	Estação Diamante - Plataforma B2	-19.99412305	-44.02385529	Estação Diamante - Plataforma B2	-19.99412305	-44.02385529	278	562021	15246203	15246203
+311	Estação Diamante / Independencia	0	Estação Diamante	Estação Diamante - Plataforma B6	-19.99452634	-44.02426567	Estação Diamante - Plataforma B6	-19.99452634	-44.02426567	357	561900	15246207	15246207
+311	Estação Diamante / Independencia	1	Estação Diamante (Rua Flor de Pitangueira/Estacao Diamante)	Rua Flor De Pitangueira 119	-20.02028479	-44.02933102	Estação Diamante - Plataforma B6	-19.99452634	-44.02426567	35	561900	14788050	15246207
+313	Estação Diamante / Olaria	0	Estação Diamante	Estação Diamante - Plataforma B3	-19.99423143	-44.02396258	Estação Diamante - Plataforma B3	-19.99423143	-44.02396258	243	561930	15246204	15246204
+314	Estação Diamante/Estação Barreiro Via Santa Helena	0	Estação Diamante	Estação Diamante - Plataforma A2	-19.99406068	-44.02390878	Estação Diamante - Plataforma A2	-19.99406068	-44.02390878	254	562000	15246198	15246198
+315	Estação Barreiro / Barreiro / Maldonado	0	Estação Barreiro	Estação Barreiro - Plataforma C2	-19.97384264	-44.02083447	Estação Barreiro - Plataforma C2	-19.97384264	-44.02083447	241	561859	15140102	15140102
+318	Estação Barreiro/Jardim Liberdade Via Milionarios	0	Estação Barreiro (Principal)	Estação Barreiro - Plataforma B2	-19.97393843	-44.02081167	Estação Barreiro - Plataforma C2	-19.97384264	-44.02083447	335	561939	15140084	15140102
+318	Estação Barreiro/Jardim Liberdade Via Milionarios	1	Estação Barreiro (Partidas da Rua Jeremias)	Rua Jeremias 88	-19.99151828	-43.98401686	Estação Barreiro - Plataforma B2	-19.97393843	-44.02081167	5	561939	14787861	15140084
+319	Vila Cemig/Conjunto Esperanca	0	Conjunto Esperanca	Rua Atlanta 14	-19.99328732	-43.98971693	Rua Atlanta 14	-19.99328732	-43.98971693	216	561823	14785044	14785044
+321	Olhos D Agua / Pilar	0	Olhos dagua	Rua Chaquibe Hassan Souki 98	-19.99219233	-43.96578177	Rua Chaquibe Hassan Souki 98	-19.99219233	-43.96578177	187	562178	14790254	14790254
+325	Estação Barreiro / Flavio Marques Lisboa	0	Barreiro	Estação Barreiro - Plataforma C1	-19.97378213	-44.0206038	Estação Barreiro - Plataforma C1	-19.97378213	-44.0206038	316	562105	15140101	15140101
+326	Estação Barreiro / Vale do Jatoba	0	Barreiro	Estação Barreiro - Plataforma A6	-19.97429891	-44.02171289	Estação Barreiro - Plataforma A6	-19.97429891	-44.02171289	263	561787	15140072	15140072
+327	Estação Barreiro / Cardoso A	0	Estação Barreiro	Estação Barreiro - Plataforma A2	-19.97406952	-44.0207768	Estação Barreiro - Plataforma A2	-19.97406952	-44.0207768	300	561975	15140070	15140070
+328	Estação Barreiro / Cardoso B	0	Estação Barreiro	Estação Barreiro - Plataforma A3	-19.97414514	-44.02105575	Estação Barreiro - Plataforma A3	-19.97414514	-44.02105575	302	561804	15140071	15140071
+328	Estação Barreiro / Cardoso B	1	Estação Barreiro (Partida - Rua Lucas de Carvalho Santos)	Rua Lucas De Carvalho Santos 135	-20.00655313	-44.00467056	Estação Barreiro - Plataforma A3	-19.97414514	-44.02105575	10	561804	14786884	15140071
+329	Estação Barreiro / Jatoba	0	Estação Barreiro	Estação Barreiro - Plataforma C4	-19.97395103	-44.02132799	Estação Barreiro - Plataforma C4	-19.97395103	-44.02132799	291	561919	15140105	15140105
+330	Estação Barreiro / Independencia	0	Estação Barreiro	Estação Barreiro - Plataforma B5	-19.97411489	-44.02157342	Estação Barreiro - Plataforma B5	-19.97411489	-44.02157342	331	561894	15140093	15140093
+330	Estação Barreiro / Independencia	1	Estação Barreiro (Rua Flor de Pitangueira/Mineirao)	Rua Flor De Pitangueira 114	-20.01994757	-44.02921257	Estação Barreiro - Plataforma B5	-19.97411489	-44.02157342	25	561894	14788056	15140093
+331	Estação Barreiro / Conjunto Antônio Teixeira Dias	0	Estação Barreiro	Estação Barreiro - Plataforma A1	-19.97401657	-44.02056491	Estação Barreiro - Plataforma A1	-19.97401657	-44.02056491	271	561969	15140067	15140067
+332	Estação Barreiro / Milionarios - Bonsucesso	0	Estação Barreiro	Estação Barreiro - Plataforma B1	-19.97388297	-44.02058368	Estação Barreiro - Plataforma B1	-19.97388297	-44.02058368	289	561920	15140083	15140083
+335	Estação Barreiro / Lindeia	0	Estação Barreiro	Estação Barreiro - Plataforma C5	-19.97401658	-44.02159085	Estação Barreiro - Plataforma C5	-19.97401658	-44.02159085	267	562033	15140106	15140106
+336	Vila Bernadete / Jardim Liberdade	0	Vila Bernadete	Rua Marselhesa, 97	-19.98532005	-43.98819989	Rua Marselhesa, 97	-19.98532005	-43.98819989	204	562153	22283368	22283368
+337	Estação Barreiro / Itaipu	0	Estação Barreiro	Estação Barreiro - Plataforma C3	-19.97389809	-44.02112415	Estação Barreiro - Plataforma C3	-19.97389809	-44.02112415	250	561960	15140103	15140103
+338	Estação Barreiro/Pilar - Olhos Dagua	0	Estação Barreiro	Estação Barreiro - Plataforma C3	-19.97389809	-44.02112415	Estação Barreiro - Plataforma C3	-19.97389809	-44.02112415	54	561812	15140103	15140103
+340	Estação Barreiro / Vila Mangueiras	0	Estação Barreiro	Estação Barreiro - Plataforma B4	-19.97404431	-44.02129447	Estação Barreiro - Plataforma B4	-19.97404431	-44.02129447	268	562155	15140092	15140092
+341	Estação Barreiro / Estação Diamante Via Saude	0	Estação Barreiro	Estação Barreiro - Plataforma A4	-19.97419304	-44.02125691	Estação Barreiro - Plataforma A4	-19.97419304	-44.02125691	366	561806	15140080	15140080
+342	Estação Barreiro / Solar Via Estação Diamante	0	Estação Barreiro	Estação Barreiro - Plataforma A5	-19.97426362	-44.02153587	Estação Barreiro - Plataforma A5	-19.97426362	-44.02153587	443	561886	15140079	15140079
+342	Estação Barreiro / Solar Via Estação Diamante	1	Estação Barreiro (Partidas da Rua Luiz Pongelupe)	Rua Luiz Pongelupe 320	-20.00778206	-44.00929519	Estação Barreiro - Plataforma A5	-19.97426362	-44.02153587	15	561886	14788943	15140079
+343	Vila Ecológica / Independência - Via Centro de Saúde	0	Indepêndencia	Rua Flor De Pitangueira 119	-20.02028479	-44.02933102	Rua Flor De Pitangueira 119	-20.02028479	-44.02933102	65	987722	14788050	14788050
+401	Metro Cidade Industrial/Santa Maria	0	Cidade Industrial	Rua Claudio Oliveira Neves 3	-19.94537355	-44.01621466	Rua Claudio Oliveira Neves 3	-19.94537355	-44.01621466	92	561817	14789789	14789789
+402	Metro Cidade Industrial/Camargos	0	Cidade Industrial (Via Santa Maria)	Rua Claudio Oliveira Neves 3	-19.94537355	-44.01621466	Rua Claudio Oliveira Neves 3	-19.94537355	-44.01621466	188	561839	14789789	14789789
+406	Estação Ponto São José / Pindorama  - Via Glória	0	Estação Ponto São Jose	Estação Ponto São José	-19.90118634	-43.99107657	Estação Ponto São José	-19.90118634	-43.99107657	163	561982	14784715	14784715
+407	Califórnia/Glória via Centro de Saúde Califórnia	0	Califórnia/Glória via Centro de Saúde Califórnia	Rua Joao Avelino Pereira 226	-19.92588539	-44.01306022	Rua Joao Avelino Pereira 226	-19.92588539	-44.01306022	11	954089	14789420	14789420
+503	Estação São Gabriel / Aparecida / Santa Rosa	0	Santa Rosa	Rua Oswaldo Crivellari 100	-19.86438158	-43.94446965	Rua Oswaldo Crivellari 100	-19.86438158	-43.94446965	272	562138	14792911	14792911
+504	Estação São Gabriel / Santa Rosa / Aparecida	0	Santa Rosa	Rua Oswaldo Crivellari 100	-19.86438158	-43.94446965	Rua Oswaldo Crivellari 100	-19.86438158	-43.94446965	279	562144	14792911	14792911
+506	Estação Ponto São Jose / Avenida Antonio Carlos	0	Estação Ponto São Jose	Estação Ponto São José	-19.90118634	-43.99107657	Estação Ponto São José	-19.90118634	-43.99107657	88	561852	14784715	14784715
+510	Estação Pampulha / Xangrila Via Trevo	0	Xangrila	Rua Brusque, 296	-19.83458525	-44.02866245	Rua Brusque, 296	-19.83458525	-44.02866245	274	561865	14784215	14784215
+510	Estação Pampulha / Xangrila Via Trevo	1	Xangrila (Partidas Da Estacao Pampulha)	Estação Pampulha - Plataforma E4	-19.84272111	-43.96675174	Estação Pampulha - Plataforma E4	-19.84272111	-43.96675174	31	561865	15276966	15276966
+511	Estação Ponto São Jose / Jardim Alvorada	0	Estação Ponto São José	Estação Ponto São José	-19.90118634	-43.99107657	Estação Ponto São José	-19.90118634	-43.99107657	197	561903	14784715	14784715
+513	Estação Pampulha / Dandara via Braúnas	0	Dandara	Estação Pampulha - Plataforma E4	-19.84272111	-43.96675174	Estação Pampulha - Plataforma E4	-19.84272111	-43.96675174	77	608000	15276966	15276966
+533	Castelo / Shopping Del Rey	0	Shopping Del Rey	Avenida Altamiro Avelino Soares 1215	-19.87900977	-44.00469498	Avenida Del Rey 75	-19.88989748	-43.96925841	23	562152	14791492	14790363
+533	Castelo / Shopping Del Rey	1	Castelo	Avenida Del Rey 75	-19.88989748	-43.96925841	Avenida Altamiro Avelino Soares 1215	-19.87900977	-44.00469498	23	562152	14790363	14791492
+535	Trevo Via Braunas / Shopping Del Rey	0	Shopping Del Rey	Rua Sete 57	-19.8247651	-44.01840195	Avenida Del Rey 75	-19.88989748	-43.96925841	23	562237	14792432	14790363
+535	Trevo Via Braunas / Shopping Del Rey	1	Trevo	Avenida Del Rey 75	-19.88989748	-43.96925841	Rua Sete 57	-19.8247651	-44.01840195	23	562237	14790363	14792432
+607	Estação Vilarinho / Esplendor	0	Esplendor	Rua Sara Queren Teixeira 232	-19.77621196	-43.99021809	Rua Sara Queren Teixeira 232	-19.77621196	-43.99021809	365	562167	14789931	14789931
+607	Estação Vilarinho / Esplendor	1	Esplendor (Partidas Da Estacao Vilarinho)	Estação Vilarinho - Plataforma B18	-19.8217897	-43.94814948	Estação Vilarinho - Plataforma B18	-19.8217897	-43.94814948	93	562167	15282967	15282967
+608	Estação Venda Nova / Nova Pampulha	0	Venda Nova	Estação Venda Nova - Plataforma C1	-19.80914501	-43.96996689	Estação Venda Nova - Plataforma C1	-19.80914501	-43.96996689	297	561801	15328814	15328814
+609	Serra Verde/Santa Monica	0	Serra Verde	Rua Vera Goncalves Terra 545	-19.79796086	-43.95331268	Rua Vera Goncalves Terra 545	-19.79796086	-43.95331268	267	562084	14791837	14791837
+614	Céu Azul A / Estação Pampulha - Via Avenida Portugal	0	Ceu Azul	Rua Elpidio Pereira Pires 56	-19.82101022	-44.00596859	Rua Elpidio Pereira Pires 56	-19.82101022	-44.00596859	447	561872	14786662	14786662
+614	Céu Azul A / Estação Pampulha - Via Avenida Portugal	1	Ceu Azul (Noturno)	Estação Pampulha - Plataforma D3	-19.84258852	-43.96671084	Estação Pampulha - Plataforma D3	-19.84258852	-43.96671084	79	561872	15276954	15276954
+615	Céu Azul B / Estação Pampulha - Via Garças	0	Ceu Azul	Rua Radialista Geraldo Lara 9	-19.81447933	-44.00248873	Rua Radialista Geraldo Lara 9	-19.81447933	-44.00248873	307	561813	14792058	14792058
+615	Céu Azul B / Estação Pampulha - Via Garças	1	Céu Azul (Estação/Bairro/Estação)	Estação Pampulha - Plataforma D2	-19.84246994	-43.96719095	Estação Pampulha - Plataforma D2	-19.84246994	-43.96719095	72	561813	15276953	15276953
+616	Estação Pampulha / Ceu Azul C	0	Ceu Azul	Rua Cleide Aparecida 285	-19.81322949	-44.01226694	Rua Cleide Aparecida 285	-19.81322949	-44.01226694	111	561949	14792193	14792193
+616	Estação Pampulha / Ceu Azul C	1	Ceu Azul (Partidas Da Estacao Pampulha)	Estação Pampulha - Plataforma D1	-19.84234379	-43.9677113	Estação Pampulha - Plataforma D1	-19.84234379	-43.9677113	206	561949	15276952	15276952
+617	Estação Pampulha / Piratininga Via Rio Branco	0	Piratininga	Rua Zelia 227	-19.81471569	-43.99351594	Rua Zelia 227	-19.81471569	-43.99351594	404	562181	14787287	14787287
+617	Estação Pampulha / Piratininga Via Rio Branco	1	Piratininga (Piratininga/Estacao Pampulha)	Estação Pampulha - Plataforma A2	-19.84210633	-43.96690345	Rua Zelia 227	-19.81471569	-43.99351594	113	562181	15252284	14787287
+618	Estação Pampulha/Rio Branco Via Jardim Leblon	0	Rio Branco	Rua Manoel Augusto De Almeida 60	-19.8178141	-43.98496635	Rua Manoel Augusto De Almeida 60	-19.8178141	-43.98496635	494	561945	14784760	14784760
+618	Estação Pampulha/Rio Branco Via Jardim Leblon	1	Rio Branco (Partidas Da Estacao Pampulha)	Estação Pampulha - Plataforma C2	-19.84240563	-43.96686543	Estação Pampulha - Plataforma C2	-19.84240563	-43.96686543	92	561945	15258310	15258310
+619	Estação Pampulha/Santa Monica Via Santa Branca	0	Santa Monica	Avenida Francisca Gregory 284	-19.83229063	-43.97705141	Avenida Francisca Gregory 284	-19.83229063	-43.97705141	266	561846	14784180	14784180
+619	Estação Pampulha/Santa Monica Via Santa Branca	1	Santa Monica (Partidas da Estacao Pampulha)	Estação Pampulha - Plataforma C3	-19.84247375	-43.96658916	Estação Pampulha - Plataforma C3	-19.84247375	-43.96658916	84	561846	15258311	15258311
+620	Estação Pampulha / Santa Monica Via Santa Amelia	0	Santa Monica	Rua Newton Pinto De Souza 65	-19.82397988	-43.97554389	Rua Newton Pinto De Souza 65	-19.82397988	-43.97554389	209	561948	14789473	14789473
+620	Estação Pampulha / Santa Monica Via Santa Amelia	1	Santa Monica (Partidas Da Estacao Pampulha)	Estação Pampulha - Plataforma E1	-19.84241331	-43.96801506	Estação Pampulha - Plataforma E1	-19.84241331	-43.96801506	52	561948	15276963	15276963
+621	Estação Venda Nova / Lagoa	0	Estação Venda Nova	Estação Venda Nova - Plataforma A1	-19.8090747	-43.96973535	Estação Venda Nova - Plataforma A1	-19.8090747	-43.96973535	351	561956	15328769	15328769
+622	Estação Venda Nova / Lagoinha	0	Estação Venda Nova	Estação Venda Nova - Plataforma A2	-19.80916555	-43.96964684	Estação Venda Nova - Plataforma A2	-19.80916555	-43.96964684	36	561933	15328770	15328770
+623	Estação Venda Nova / Vila Santa Branca	0	Estação Venda Nova	Estação Venda Nova - Plataforma A1	-19.8090747	-43.96973535	Estação Venda Nova - Plataforma A1	-19.8090747	-43.96973535	244	562407	15328769	15328769
+624	Estação Venda Nova / Maria Helena A	0	Estação Venda Nova	Estação Venda Nova - Plataforma B1	-19.80910498	-43.96985874	Estação Venda Nova - Plataforma B1	-19.80910498	-43.96985874	311	562304	15328773	15328773
+625	Estação Venda Nova / Maria Helena B	0	Estação Venda Nova	Estação Venda Nova - Plataforma B2	-19.8092362	-43.96975145	Estação Venda Nova - Plataforma B2	-19.8092362	-43.96975145	290	561830	15328774	15328774
+626	Estação Venda Nova/Esplendor Via Nova America	0	Esplendor (Principal)	Rua Quinze 247	-19.78166656	-43.9868511	Rua Quinze 247	-19.78166656	-43.9868511	49	562083	14791826	14791826
+626	Estação Venda Nova/Esplendor Via Nova America	1	Esplendor (Partidas da Estacao Venda Nova)	Estação Venda Nova - Plataforma B3	-19.80951883	-43.96951541	Estação Venda Nova - Plataforma B3	-19.80951883	-43.96951541	417	562083	15328775	15328775
+627	Estação Venda Nova/Mantiqueira	0	Estação Venda Nova (Principal)	Estação Venda Nova - Plataforma C3	-19.80958697	-43.96960393	Estação Venda Nova - Plataforma C3	-19.80958697	-43.96960393	518	561799	15328778	15328778
+631	Estação Vilarinho / Serra Verde Via Minas Caixa	0	Estação Vilarinho	Estação Vilarinho - Plataforma B7	-19.82209747	-43.94729915	Estação Vilarinho - Plataforma B7	-19.82209747	-43.94729915	27	561912	15276995	15276995
+633	Estação Vilarinho / Jardim dos Comerciarios	0	Estação Vilarinho	Estação Vilarinho - Plataforma B16	-19.82184521	-43.94798318	Estação Vilarinho - Plataforma B16	-19.82184521	-43.94798318	298	561875	15282966	15282966
+634	Estação Vilarinho/Nova York Via Jardim dos Comerciarios	0	Jardim Dos Comerciarios	Avenida Oceano Atlantico 332	-19.79121407	-43.96403303	Avenida Oceano Atlantico 332	-19.79121407	-43.96403303	333	561833	14792117	14792117
+634	Estação Vilarinho/Nova York Via Jardim dos Comerciarios	1	Jardim dos Comerciários (Partidas da Estação Vilarinho Via Estação Venda Nova)	Estação Vilarinho - Plataforma B20	-19.82174932	-43.94830773	Estação Vilarinho - Plataforma B20	-19.82174932	-43.94830773	119	561833	15282968	15282968
+635	Estação Vilarinho / Jardim dos Comerciarios C	0	Estação Vilarinho (Principal)	Estação Vilarinho - Plataforma B15	-19.82188309	-43.94787408	Estação Vilarinho - Plataforma B15	-19.82188309	-43.94787408	272	562351	15282965	15282965
+635	Estação Vilarinho / Jardim dos Comerciarios C	1	Partidas do Jardim dos Comerciários C	Rua Sete De Outubro 788	-19.79045541	-43.9768203	Estação Vilarinho - Plataforma C10	-19.82155472	-43.94810109	9	562351	14788997	15328633
+636	Estação Vilarinho / Jardim Europa - Via Cenáculo	0	Estação Vilarinho (Principal)	Estação Vilarinho - Plataforma B13	-19.82194329	-43.94772055	Estação Vilarinho - Plataforma B13	-19.82194329	-43.94772055	282	562341	15282924	15282924
+637	Estação Vilarinho / Canaa Via Serra Verde	0	Estação Vilarinho	Estação Vilarinho - Plataforma B9	-19.82201234	-43.94749939	Estação Vilarinho - Plataforma B9	-19.82201234	-43.94749939	244	561811	15276996	15276996
+638	Estação Vilarinho/Minas Caixa	0	Estação Vilarinho	Estação Vilarinho - Plataforma B7	-19.82209747	-43.94729915	Estação Vilarinho - Plataforma B7	-19.82209747	-43.94729915	263	562323	15276995	15276995
+639	Braunas / Shopping Del Rey	0	Shopping Del Rey	Rua Marciano Jose De Souza 260	-19.81527395	-44.01604114	Avenida Del Rey 75	-19.88989748	-43.96925841	24	562075	14793177	14790363
+639	Braunas / Shopping Del Rey	1	Braunas	Avenida Del Rey 75	-19.88989748	-43.96925841	Rua Marciano Jose De Souza 72	-19.81532207	-44.01593871	24	562075	14790363	14792082
+640	Estação Venda Nova / Jardim Leblon Via Rio Branco	0	Estação Venda Nova	Estação Venda Nova - Plataforma A4	-19.80958697	-43.9693062	Estação Venda Nova - Plataforma A4	-19.80958697	-43.9693062	271	562160	15328772	15328772
+641	Estação Vilarinho/Serra Verde	0	Serra Verde	Rua Vera Goncalves Terra 545	-19.79796086	-43.95331268	Rua Vera Goncalves Terra 545	-19.79796086	-43.95331268	257	561926	14791837	14791837
+641	Estação Vilarinho/Serra Verde	1	Serra Verde (Partidas Da Estacao Vilarinho)	Estação Vilarinho - Plataforma B5	-19.82216194	-43.94709101	Estação Vilarinho - Plataforma B5	-19.82216194	-43.94709101	77	561926	15276990	15276990
+642	Estação Venda Nova/Estação Vilarinho/Cidade Administrativa	0	Cidade Administrativa (Estacao Venda Nova/Estacao Vilarinho)	Estação Venda Nova - Plataforma B2	-19.8092362	-43.96975145	Estação Venda Nova - Plataforma B2	-19.8092362	-43.96975145	164	561992	15328774	15328774
+643	Estação Pampulha / Copacabana Via Monte Carmelo	0	Copacabana	Rua Universo 1016	-19.83339425	-43.98863033	Rua Universo 1016	-19.83339425	-43.98863033	211	561883	14791849	14791849
+643	Estação Pampulha / Copacabana Via Monte Carmelo	1	Copacabana (Partidas da Estacao Pampulha)	Estação Pampulha - Plataforma C1	-19.84234255	-43.96717388	Estação Pampulha - Plataforma C1	-19.84234255	-43.96717388	44	561883	15258309	15258309
+644	Estação Pampulha / São Joao Batista	0	São Joao Batista	Pca Jose Nogueira De Sa 51	-19.81599921	-43.9799612	Pca Jose Nogueira De Sa 51	-19.81599921	-43.9799612	204	561832	14788171	14788171
+644	Estação Pampulha / São Joao Batista	1	São Joao Batista (Partidas da Estacao Pampulha)	Estação Pampulha - Plataforma A3	-19.84217445	-43.96662182	Estação Pampulha - Plataforma A3	-19.84217445	-43.96662182	81	561832	15252285	15252285
+645	Estação Pampulha / Santa Monica Via Jardim Atlântico	0	Santa Monica	Rua X 521	-19.82138663	-43.98599251	Rua X 521	-19.82138663	-43.98599251	248	561959	14793410	14793410
+645	Estação Pampulha / Santa Monica Via Jardim Atlântico	1	Santa Monica (Partidas da Estacao Pampulha)	Estação Pampulha - Plataforma E2	-19.84250161	-43.96761273	Estação Pampulha - Plataforma E2	-19.84250161	-43.96761273	39	561959	15276964	15276964
+646	Estação Vilarinho/Zoológico Via Estação Venda Nova	0	Estação Vilarinho / Zoológico Via Estação Venda Nova	Estação Vilarinho - Plataforma C10	-19.82155472	-43.94810109	Estação Vilarinho - Plataforma C8	-19.82166322	-43.94777923	18	603413	15328633	15328632
+702	Estação Vilarinho/Xodo-Marize Via Jardim Guanabara	0	Estação Vilarinho	Estação Vilarinho - Plataforma A5	-19.82223362	-43.94711274	Estação Vilarinho - Plataforma A5	-19.82223362	-43.94711274	242	562410	15276969	15276969
+703	Estação São Gabriel / Guarani - Via Primeiro de Maio	0	Estação São Gabriel	Estação São Gabriel	-19.86389932	-43.92762136	Estação São Gabriel	-19.86389932	-43.92762136	244	562230	15140098	15140098
+705	Estação São Gabriel / São Tomaz	0	Estação São Gabriel	Estação São Gabriel	-19.86401687	-43.9275475	Estação São Gabriel	-19.86401687	-43.9275475	259	561972	15140111	15140111
+706	Estação São Gabriel / Heliópolis	0	Estação São Gabriel	Estação São Gabriel	-19.86410517	-43.92766283	Estação São Gabriel	-19.86410517	-43.92766283	256	562111	15140110	15140110
+707	Estação São Gabriel / Jardim Guanabara	0	Estação São Gabriel	Estação São Gabriel	-19.86385669	-43.92731012	Estação São Gabriel	-19.86385669	-43.92731012	379	562013	15140112	15140112
+708	Estação São Gabriel / Felicidade	0	Estação São Gabriel	Estação São Gabriel	-19.86370484	-43.92708166	Estação São Gabriel	-19.86370484	-43.92708166	253	562272	15140114	15140114
+709	Estação São Gabriel / Tupi	0	Estação São Gabriel	Estação São Gabriel	-19.86361781	-43.92696096	Estação São Gabriel	-19.86361781	-43.92696096	27	561987	15140115	15140115
+710	Estação São Gabriel / Providência	0	Estação São Gabriel	Estação São Gabriel	-19.86418602	-43.92777288	Estação São Gabriel	-19.86418602	-43.92777288	25	562227	15140066	15140066
+711	Estação São Gabriel / Solimões	0	Estação São Gabriel	Estação São Gabriel	-19.86351651	-43.92702994	Estação São Gabriel	-19.86351651	-43.92702994	308	562412	15140100	15140100
+712	Estação Pampulha / São Bernardo	0	São Bernardo	Rua Souza Gomes 972	-19.84860907	-43.94325672	Rua Souza Gomes 972	-19.84860907	-43.94325672	281	561796	14786879	14786879
+712	Estação Pampulha / São Bernardo	1	São Bernardo (Noturno)	Estação Pampulha - Plataforma A1	-19.84202811	-43.96725483	Estação Pampulha - Plataforma A1	-19.84202811	-43.96725483	67	561796	15252283	15252283
+713	Estação São Gabriel / Lajedo	0	Estação São Gabriel	Estação São Gabriel	-19.86367443	-43.92725939	Estação São Gabriel	-19.86367443	-43.92725939	307	561925	15140097	15140097
+714	Estação São Gabriel / Casas Populares	0	Estação São Gabriel	Estação São Gabriel	-19.86344879	-43.9266981	Estação São Gabriel	-19.86344879	-43.9266981	251	562001	15140117	15140117
+715	Estação São Gabriel / Monte Azul	0	Estação São Gabriel	Estação São Gabriel	-19.86344951	-43.92691354	Estação São Gabriel	-19.86344951	-43.92691354	343	562363	15140104	15140104
+716	Estação São Gabriel / Novo Aarão Reis	0	Estação São Gabriel	Estação São Gabriel	-19.86406115	-43.92786139	Estação São Gabriel	-19.86406115	-43.92786139	259	561828	15140069	15140069
+717	Campo Alegre / Estação Pampulha - Via Planalto	0	Campo Alegre (PRINCIPAL)	Pca Joao Candido Felisberto 39	-19.83053994	-43.94714264	Pca Joao Candido Felisberto 39	-19.83053994	-43.94714264	197	561849	14790333	14790333
+717	Campo Alegre / Estação Pampulha - Via Planalto	1	Campo Alegre (Partidas da Estação Pampulha)	Estação Pampulha - Plataforma B2	-19.84227499	-43.96688325	Estação Pampulha - Plataforma B2	-19.84227499	-43.96688325	45	561849	15252288	15252288
+718	Planalto / Estação Pampulha - Via Itapõa	0	Planalto	Pca Joao Candido Felisberto 39	-19.83053994	-43.94714264	Pca Joao Candido Felisberto 39	-19.83053994	-43.94714264	180	561836	14790333	14790333
+718	Planalto / Estação Pampulha - Via Itapõa	1	Planalto (Partidas da Estação Pampulha)	Estação Pampulha - Plataforma B3	-19.8423305	-43.96663917	Estação Pampulha - Plataforma B3	-19.8423305	-43.96663917	45	561836	15252289	15252289
+719	Estação Pampulha / Floramar	0	Jardim Guanabara	Rua Sebastiao Cardoso Antolin 20	-19.82923557	-43.93656969	Rua Sebastiao Cardoso Antolin 20	-19.82923557	-43.93656969	272	561827	14789722	14789722
+719	Estação Pampulha / Floramar	1	Jardim Guanabara (Partidas da Estação Pampulha)	Estação Pampulha - Plataforma B1	-19.84221191	-43.96715147	Estação Pampulha - Plataforma B1	-19.84221191	-43.96715147	71	561827	15252287	15252287
+720	Circular Saúde MG20	0	Centro de Saúde MG20	Centro de Saúde MG20	-19.81651319	-43.88482044	Centro de Saúde MG20	-19.81651319	-43.88482044	44	573119	14784884	14784884
+721	Estação São Gabriel / Maria Teresa Via Parque Cerrado	0	Estação São Gabriel (Principal)	Estação São Gabriel	-19.86344951	-43.92691354	Estação São Gabriel	-19.86344951	-43.92691354	220	596937	15140104	15140104
+732	Estação São Gabriel / Tupi-Felicidade	0	Estação São Gabriel	Estação São Gabriel	-19.86354087	-43.92684026	Estação São Gabriel	-19.86354087	-43.92684026	22	562125	15140116	15140116
+734	Estação São Gabriel / Aarão Reis Via Minaslândia	0	Estação São Gabriel	Estação São Gabriel	-19.86383462	-43.92749945	Estação São Gabriel	-19.86383462	-43.92749945	197	562136	15140095	15140095
+735	Estação Vilarinho/Juliana A	0	Estação Vilarinho	Estação Vilarinho - Plataforma A6	-19.82217054	-43.94731927	Estação Vilarinho - Plataforma A6	-19.82217054	-43.94731927	314	562327	15276970	15276970
+736	Estação Vilarinho/Juliana B	0	Estação Vilarinho	Estação Vilarinho - Plataforma A8	-19.82212007	-43.94747216	Estação Vilarinho - Plataforma A8	-19.82212007	-43.94747216	263	562050	15276971	15276971
+737	Estação Vilarinho/Jaqueline	0	Jaqueline	Rua Agenor De Paula Estrela 669	-19.79758256	-43.93228695	Rua Agenor De Paula Estrela 669	-19.79758256	-43.93228695	258	562054	14791899	14791899
+737	Estação Vilarinho/Jaqueline	1	Jaqueline (Partidas da Estação Vilarinho)	Estação Vilarinho - Plataforma A13	-19.82201157	-43.94777257	Estação Vilarinho - Plataforma A13	-19.82201157	-43.94777257	85	562054	15276972	15276972
+738	Estação Vilarinho/Conjunto Zilah Sposito	0	Conjunto Zilah Sposito	Rua Carnauba 257	-19.80021183	-43.92359707	Rua Carnauba 257	-19.80021183	-43.92359707	295	561814	14784119	14784119
+738	Estação Vilarinho/Conjunto Zilah Sposito	1	Conjunto Zilah Sposito (Partidas da Estação Vilarinho)	Estação Vilarinho - Plataforma A15	-19.8219283	-43.94799519	Rod Papa Joao Paulo II 275	-19.81780448	-43.94948055	67	561814	15276973	14788358
+739	Estação Vilarinho/Jaqueline 2ª Seção Via Frei Leopoldo	0	Jaqueline	Rua Atanasia Dos Jardins 385	-19.80793628	-43.92785387	Rua Atanasia Dos Jardins 385	-19.80793628	-43.92785387	188	562101	14784987	14784987
+739	Estação Vilarinho/Jaqueline 2ª Seção Via Frei Leopoldo	1	Jaqueline (Estação Vilarinho)	Estação Vilarinho - Plataforma A17	-19.82186774	-43.94820172	Estação Vilarinho - Plataforma A17	-19.82186774	-43.94820172	96	562101	15276974	15276974
+740	Tupi / Mirante	0	Tupi - Mirante	Rua Flor De Pessego 21	-19.82459336	-43.91560393	Rua Flor De Pessego 21	-19.82459336	-43.91560393	165	562264	14787184	14787184
+806	Estação São Gabriel / Vista do Sol Via Nazaré	0	Estação São Gabriel	Estação São Gabriel - Plataforma A4	-19.86367186	-43.92760746	Estação São Gabriel - Plataforma A4	-19.86367186	-43.92760746	365	562058	15140075	15140075
+806	Estação São Gabriel / Vista do Sol Via Nazaré	1	Estação São Gabriel (Retorno Expresso Pico Manhã)	Rua Santa Seconda 129	-19.84647413	-43.89234914	Rua Santa Seconda 129	-19.84647413	-43.89234914	3	562058	14792147	14792147
+807	Estação São Gabriel / Ribeiro de Abreu A	0	Estação São Gabriel	Estação São Gabriel	-19.86375715	-43.92755688	Estação São Gabriel	-19.86375715	-43.92755688	269	562120	15140086	15140086
+808	Estação São Gabriel / Paulo VI	0	Estação São Gabriel	Estação São Gabriel - Plataforma A3	-19.86375339	-43.92772192	Estação São Gabriel - Plataforma A3	-19.86375339	-43.92772192	318	561802	15140074	15140074
+808	Estação São Gabriel / Paulo VI	1	Estação São Gabriel	Pca Tres Mil E Setenta E Tres 27001	-19.8443367	-43.88729635	Estação São Gabriel - Plataforma A3	-19.86375339	-43.92772192	18	561802	14787939	15140074
+809	Estação São Gabriel / Belmonte	0	Estação São Gabriel	Estação São Gabriel	-19.86368784	-43.92744221	Estação São Gabriel	-19.86368784	-43.92744221	276	562284	15140087	15140087
+810	Estação São Gabriel/Parque Belmonte via Dom Silverio	0	Estação São Gabriel	Estação São Gabriel	-19.86352875	-43.92720239	Estação São Gabriel	-19.86352875	-43.92720239	263	562302	15140089	15140089
+811	Estação São Gabriel / Vista do Sol Via PUC	0	Estação São Gabriel	Estação São Gabriel	-19.86337487	-43.92695965	Estação São Gabriel	-19.86337487	-43.92695965	256	562189	15140091	15140091
+812	Estação São Gabriel / São Gabriel A	0	São Gabriel	Estação São Gabriel	-19.86329098	-43.92701555	Estação São Gabriel	-19.86329098	-43.92701555	22	562093	15140082	15140082
+813	Estação São Gabriel/Paulo VI Via Ribeiro de Abreu	0	Estação São Gabriel	Estação São Gabriel - Plataforma A5	-19.86360123	-43.92749213	Estação São Gabriel - Plataforma A5	-19.86360123	-43.92749213	366	561999	15140076	15140076
+814	Estação São Gabriel / Jardim Vitoria	0	Estação São Gabriel	Estação São Gabriel	-19.86344613	-43.92707968	Estação São Gabriel	-19.86344613	-43.92707968	358	561917	15140090	15140090
+815	Estação São Gabriel / Conjunto Paulo VI	0	Estação São Gabriel	Estação São Gabriel	-19.8638997	-43.92780238	Estação São Gabriel	-19.8638997	-43.92780238	547	561856	15140073	15140073
+815	Estação São Gabriel / Conjunto Paulo VI	1	Estação São Gabriel (Conjunto Paulo VI/Estacao)	Rua Das Almas 122	-19.83306087	-43.88313432	Estação São Gabriel	-19.8638997	-43.92780238	23	561856	14785092	15140073
+821	Goiânia / Metrô Estação José Cândido	0	Estação José Cândido	Rua Tiziu 175	-19.86735045	-43.89887481	Rua Tiziu 175	-19.86735045	-43.89887481	206	561951	14792861	14792861
+822	Santa Inês / Vila Maria - Via Estação José Cândido	0	Estação Jose Candido (Via Avenida Magenta)	Rua Conceicao Do Para 1726	-19.8798862	-43.91101605	Rua Vicente Risola 1160	-19.88183283	-43.9097179	114	562378	14785786	14791031
+823	Estação São Gabriel / Bairro Vitoria	0	Estação São Gabriel	Estação São Gabriel	-19.86337171	-43.92713357	Estação São Gabriel	-19.86337171	-43.92713357	336	561821	15140081	15140081
+823	Estação São Gabriel / Bairro Vitoria	1	Estação São Gabriel (Rua Pallas Athena/Estação)	Rua Pallas Athena 495	-19.86037408	-43.87218617	Estação São Gabriel	-19.86418602	-43.92777288	15	561821	14790299	15140066
+825	Estação São Gabriel/Vitoria II Via Upa-Nordeste	0	Estação São Gabriel	Estação São Gabriel	-19.86352177	-43.9273696	Estação São Gabriel	-19.86352177	-43.9273696	286	562074	15140077	15140077
+825	Estação São Gabriel/Vitoria II Via Upa-Nordeste	1	Estação São Gabriel (Partida da Rua dos Borges)	Rua Dos Borges 8	-19.85261553	-43.88859358	Estação São Gabriel	-19.86397664	-43.92791235	16	562074	14792717	15140068
+826	Montes Claros / Rua São Romulo	0	Montes Claros	Rua Quinhentos E Vinte E Seis 85	-19.82655021	-43.8889824	Rua Quinhentos E Vinte E Seis 85	-19.82655021	-43.8889824	151	562288	14788845	14788845
+832	Estação São Gabriel / Capitao Eduardo	0	Capitão Eduardo (Via Rua dos Moreiras/Mangueiras)	Estação São Gabriel	-19.86344609	-43.92725695	Estação São Gabriel	-19.86344609	-43.92725695	372	562146	15140078	15140078
+832	Estação São Gabriel / Capitao Eduardo	1	Estação São Gabriel	Rua Padre Argemiro Moreira 8060	-19.83711309	-43.86970994	Estação São Gabriel - Plataforma A5	-19.86360123	-43.92749213	6	562146	14787013	15140076
+836	Estação São Gabriel / Ribeiro de Abreu B	0	Ribeiro de Abreu	Estação São Gabriel	-19.86367443	-43.92725939	Estação São Gabriel	-19.86367443	-43.92725939	24	562127	15140097	15140097
+836	Estação São Gabriel / Ribeiro de Abreu B	1	Estação São Gabriel	Rua Quintino Simao 19	-19.84059671	-43.90169179	Rua Quintino Simao 19	-19.84059671	-43.90169179	117	562127	14785276	14785276
+837	Estação São Gabriel / Conjunto Ribeiro de Abreu	0	Estação São Gabriel	Estação São Gabriel	-19.86359765	-43.92732218	Estação São Gabriel	-19.86359765	-43.92732218	268	562156	15140088	15140088
+838	Estação São Gabriel/Palmares Via Maria Virginia	0	Palmares	Rua Severina Claudina Machado 60	-19.87259303	-43.93795813	Rua Severina Claudina Machado 60	-19.87259303	-43.93795813	187	561893	14784635	14784635
+901	Circular Leste / Baleia / Hospitais	0	Circular Leste (Carnaval)	Rua Benjamim Guimaraes 1	-19.92409215	-43.89694087	Rua Benjamim Guimaraes 1	-19.92409215	-43.89694087	296	561966	14788851	14788851
+902	Taquaril / Castanheiras	0	Taquaril	Rua Antao Goncalves 200	-19.92104821	-43.88115112	Rua Antao Goncalves 200	-19.92104821	-43.88115112	160	562027	14792688	14792688
+903	Granja de Freitas / Taquaril via Alto Vera Cruz	0	Granja De Freitas	Rua Trezentos E Vinte E Oito 200	-19.90791251	-43.88383385	Rua Trezentos E Vinte E Oito 200	-19.90791251	-43.88383385	145	562397	14791469	14791469
+1030	Avenida	0	Avenida do Contorno (Direta)	Avenida Do Contorno 11671	-19.91313812	-43.94237021	Avenida Do Contorno 11671	-19.91313812	-43.94237021	40	562004	14787443	14787443
+1145	Bairro Das Indústrias	0	Bairro Das Industrias	Rua Daniel Jose De Carvalho 330	-19.97510572	-43.99589004	Rua Daniel Jose De Carvalho 330	-19.97510572	-43.99589004	274	562358	14790106	14790106
+1170	Santa Lucia / Mangabeiras - Via Savassi	0	Mangabeiras	Rua Laplace 525	-19.96404823	-43.94423025	Pca Da Bandeira 50	-19.94918927	-43.91961312	69	562252	14791025	14788800
+1502	Vista Alegre / Guarani	0	Guarani	Avenida Padre Jose Mauricio 1285	-19.95658356	-44.00011139	Rua Waldomiro Lobo 220	-19.84566987	-43.92079265	480	561822	14792559	14786026
+1502	Vista Alegre / Guarani	1	Vista Alegre	Rua Waldomiro Lobo 220	-19.84566987	-43.92079265	Avenida Padre Jose Mauricio 1285	-19.95658356	-44.00011139	492	561822	14786026	14792559
+1505	Alto dos Pinheiros/Tupi	0	Tupi	Rua Bueno Do Prado 793	-19.92858995	-44.00400156	Rua Francisco Vernhagem 27	-19.83238035	-43.92420212	380	561993	14791338	14787886
+1505	Alto dos Pinheiros/Tupi	1	Alto dos Pinheiros (Via Conjunto Felicidade Carnaval)	Rua Juvenil Barbosa Da Silva 146	-19.82885474	-43.92598176	Rua Bueno Do Prado 793	-19.92858995	-44.00400156	282	561993	14790840	14791338
+1509	California/Tupi	0	Tupi (Principal)	Rua Joao Avelino Pereira 226	-19.92588539	-44.01306022	Rua Cacilda Becker 19	-19.83653107	-43.91828286	268	561826	14789420	14793133
+1509	California/Tupi	1	California (Principal)	Rua Cacilda Becker 19	-19.83653107	-43.91828286	Rua Joao Avelino Pereira 226	-19.92588539	-44.01306022	260	561826	14793133	14789420
+1510	Madre Gertrudes/Providencia	0	Providencia	Avenida Padre Jose Mauricio 1285	-19.95658356	-44.00011139	Rua Baldim 85	-19.85662011	-43.925365	218	562361	14792559	14789291
+1510	Madre Gertrudes/Providencia	1	Madre Gertrudes	Rua Baldim 85	-19.85662011	-43.925365	Avenida Padre Jose Mauricio 1285	-19.95658356	-44.00011139	217	562361	14789291	14792559
+2033	Betania / Centro	0	Betania	Avenida Efigenia Miranda Schettino 55	-19.96680942	-43.99292223	Avenida Efigenia Miranda Schettino 55	-19.96680942	-43.99292223	2	562290	14785847	14785847
+2034	Conjunto Betania / Centro	0	Conjunto Betania	Rua Tres 30	-19.96062531	-43.99586983	Rua Tres 30	-19.96062531	-43.99586983	227	561850	14790117	14790117
+2035	Bairro Das Industrias / Centro	0	Bairro Das Industrias-4A Secao	Rua Senador Lucio Bitencourt 372	-19.95400215	-44.00964289	Rua Senador Lucio Bitencourt 372	-19.95400215	-44.00964289	223	562388	14789710	14789710
+2036	Alto Havaí/Centro/Hospitais	0	Alto Havaí	Rua Lirio Montanhes 295	-19.95300897	-43.97731823	Rua Lirio Montanhes 295	-19.95300897	-43.97731823	227	701772	14786496	14786496
+2101	Grajau/Sion	0	Sion	Avenida Silva Lobo 2151	-19.94192954	-43.965208	Rua Professor Mello Cancado 273	-19.95878896	-43.92938108	383	562210	14791636	14787410
+2101	Grajau/Sion	1	Grajau	Rua Professor Mello Cancado 273	-19.95878896	-43.92938108	Avenida Silva Lobo 2151	-19.94192954	-43.965208	396	562210	14787410	14791636
+2102	Gameleira / Serra	0	Serra	Rua Zurick 240	-19.92718058	-43.98207538	Rua Caraca 920	-19.94288353	-43.91382425	244	561851	14787876	14784699
+2102	Gameleira / Serra	1	Gameleira	Rua Caraca 920	-19.94288353	-43.91382425	Rua Zurick 240	-19.92718058	-43.98207538	244	561851	14784699	14787876
+2103	Prado/Anchieta	0	Anchieta	Rua Ubari 6	-19.93340494	-43.9722415	Rua Francisco Deslandes 973	-19.9518658	-43.92742866	268	561923	14790229	14790030
+2103	Prado/Anchieta	1	Prado	Rua Francisco Deslandes 973	-19.9518658	-43.92742866	Rua Ubari 6	-19.93340494	-43.9722415	272	561923	14790030	14790229
+2104	Nova Gameleira/Bh Shopping	0	BH Shopping	Rua Jaboatao 57	-19.94239848	-43.99862813	Ala Da Paisagem 525	-19.97960475	-43.94409657	378	562370	14789092	14784997
+2104	Nova Gameleira/Bh Shopping	1	Nova Gameleira	Ala Da Paisagem 525	-19.97960475	-43.94409657	Rua Jaboatao 57	-19.94239848	-43.99862813	364	562370	14784997	14789092
+2150	Grajau/Sion Via Contorno	0	Sion	Avenida Silva Lobo 1959	-19.94057111	-43.96680508	Rua Professor Mello Cancado 275	-19.95892463	-43.92926903	52	561899	14785590	14787415
+2150	Grajau/Sion Via Contorno	1	Grajau	Rua Professor Mello Cancado 275	-19.95892463	-43.92926903	Avenida Silva Lobo 1959	-19.94057111	-43.96680508	52	561899	14787415	14785590
+2151	Vista Alegre/Serra	0	Serra	Avenida Padre Jose Mauricio 1164	-19.95590379	-43.99866527	Rua Doutor Alipio Goulart 153	-19.93995311	-43.91279208	280	561841	14793140	14789776
+2151	Vista Alegre/Serra	1	Vista Alegre	Rua Doutor Alipio Goulart 153	-19.93995311	-43.91279208	Avenida Padre Jose Mauricio 1164	-19.95590379	-43.99866527	284	561841	14789776	14793140
+2152	Salgado Filho/Cruzeiro - Via Savassi	0	Cruzeiro	Rua Magi Salomon 205	-19.94157761	-43.98173692	Rua Vitorio Marcola 590	-19.94708845	-43.92502318	76	562218	14786220	14788214
+2152	Salgado Filho/Cruzeiro - Via Savassi	1	Salgado Filho	Rua Vitorio Marcola 590	-19.94708845	-43.92502318	Rua Magi Salomon 205	-19.94157761	-43.98173692	81	562218	14788214	14786220
+3029	Regina / Centro	0	Regina	Rua Sebastiao Dos Santos 590	-19.98482339	-44.05208129	Rua Sebastiao Dos Santos 590	-19.98482339	-44.05208129	109	561869	14786367	14786367
+3030	Pilar-Olhos D Agua / Centro	0	Pilar-Olhos D Agua	Rua Alice Teraiama 200	-19.99989268	-43.97570069	Rua Alice Teraiama 200	-19.99989268	-43.97570069	386	562053	14786946	14786946
+3050	Estação Diamante/Hospitais Via Bh Shopping	0	Estação Diamante	Estação Diamante - Plataforma C1	-19.99431446	-44.02388539	Estação Diamante - Plataforma C1	-19.99431446	-44.02388539	836	561943	15246208	15246208
+3051	Flavio Marques Lisboa / Savassi Via N.S.Carmo	0	Flavio Marques Lisboa	Avenida Ximango 600	-19.9986036	-44.00125517	Avenida Ximango 600	-19.9986036	-44.00125517	303	561880	14790365	14790365
+3052	Estação Diamante/Bh Shopping-Via Havai	0	Estação Diamante	Estação Diamante - Plataforma D6	-19.99464717	-44.02408119	Estação Diamante - Plataforma D6	-19.99464717	-44.02408119	430	562079	15246210	15246210
+3053	Estação Barreiro/B.Preto	0	Estação Barreiro (Atendimento A Via Expressa)	Estação Barreiro - Plataforma F3	-19.97357038	-44.02119925	Estação Barreiro - Plataforma F3	-19.97357038	-44.02119925	321	561825	15140108	15140108
+3054	Milionarios/Centro	0	Bairro Milionarios	Rua Dona Lala Fernandes 470	-19.97904473	-44.00330838	Rua Dona Lala Fernandes 470	-19.97904473	-44.00330838	519	561971	14788665	14788665
+3055	Estação Barreiro/Savassi Via Bhshopping	0	Estação Barreiro	Estação Barreiro - Plataforma F5	-19.97369643	-44.02169814	Estação Barreiro - Plataforma F5	-19.97369643	-44.02169814	426	561905	15140109	15140109
+3150	Regina-Lindeia/BH Shopping via Anel Rodoviário	0	Regina-Lindeia (via Anel Rodoviário)	Rua Sebastião dos Santos, 520	-19.98471726	-44.0526669	Rua Sebastião dos Santos, 520	-19.98471726	-44.0526669	67	637902	19595451	19595451
+3250	Estação Diamante/Buritis Via Palmeiras	0	Estação Diamante	Estação Diamante - Plataforma E5	-19.99448711	-44.02378883	Estação Diamante - Plataforma E5	-19.99448711	-44.02378883	334	562157	15246211	15246211
+3350	Estação Barreiro / Estação Diamante - Via Hospital Metropolitano	0	Estação Barreiro	Estação Barreiro - Plataforma B3	-19.97400397	-44.02110135	Estação Barreiro - Plataforma B3	-19.97400397	-44.02110135	235	561950	15140085	15140085
+3502	Ouro Preto/São Gabriel	0	São Gabriel	Rua Sergio Miranda Moreira 267	-19.8801236	-43.98569356	Rua Marica 215	-19.84855519	-43.91254878	171	561970	14785936	14784896
+3502	Ouro Preto/São Gabriel	1	Ouro Preto	Rua Marica 215	-19.84855519	-43.91254878	Rua Sergio Miranda Moreira 267	-19.8801236	-43.98569356	169	561970	14784896	14785936
+4031	Santa Maria / Hospitais	0	Santa Maria	Rua Padre Lopes Cancado 95	-19.94512365	-44.01047916	Rua Padre Lopes Cancado 95	-19.94512365	-44.01047916	281	562023	14791683	14791683
+4032	Caicara /Savassi/ Praca da Liberdade	0	Caicara	Avenida Del Rey 125	-19.88971826	-43.96932882	Avenida Del Rey 125	-19.88971826	-43.96932882	314	561862	14789806	14789806
+4033	Camargos/Centro	0	Camargos	Rua Padre Lopes Cancado 122	-19.94583571	-44.00936869	Rua Padre Lopes Cancado 122	-19.94583571	-44.00936869	241	562090	14791283	14791283
+4034	Novo Dom Bosco / Savassi Via Padre Eustaquio	0	Novo Dom Bosco (Via Novo Dom Bosco e Conjunto Filadelfia)	Avenida Avai 80	-19.91417713	-44.00364415	Avenida Avai 80	-19.91417713	-44.00364415	302	561952	14792264	14792264
+4037	Glória / Centro - Via Padre Eustáquio	0	Nossa Senhora Da Gloria	Rua Volga 12	-19.90270542	-44.02036453	Rua Volga 12	-19.90270542	-44.02036453	256	561864	14789284	14789284
+4102	Aparecida/Serra	0	Serra	Rua Major Delfino De Paula 3126	-19.88513899	-43.96340174	Rua Carlos Etiene De Castro 13	-19.93821374	-43.91134077	278	562109	14785911	14787478
+4102	Aparecida/Serra	1	Aparecida	Rua Carlos Etiene De Castro 13	-19.93821374	-43.91134077	Rua Major Delfino De Paula 3126	-19.88513899	-43.96340174	274	562109	14787478	14785911
+4103	Aparecida/Parque das Mangabeiras	0	Aparecida (Via Amr)	Rua Coronel Ascendino Costa 90	-19.88987107	-43.96602869	Avenida Jose De Patrocinio Pontes 580	-19.95136031	-43.90552137	207	561964	14789191	14787315
+4103	Aparecida/Parque das Mangabeiras	1	Aparecida (Via Praça da Bandeira Carnaval)	Avenida Jose De Patrocinio Pontes 580	-19.95136031	-43.90552137	Rua Coronel Ascendino Costa 90	-19.88987107	-43.96602869	207	561964	14787315	14789191
+4106	São Cristovao / Santo Antônio - Via Savassi	0	São Cristovao	Rua Paranaiba 340	-19.89439184	-43.95170209	Rua Paranaiba 340	-19.89439184	-43.95170209	224	562331	14788821	14788821
+4107	Alto Caicara/Serra	0	Serra	Rua Expedicionario Misael De Freitas 14	-19.89957438	-43.97593471	Avenida Jefferson Coelho Da Silva 342	-19.93970771	-43.91008019	245	562137	14789371	14787860
+4107	Alto Caicara/Serra	1	Alto Caicara	Avenida Jefferson Coelho Da Silva 342	-19.93970771	-43.91008019	Rua Expedicionario Misael De Freitas 14	-19.89957438	-43.97593471	216	562137	14787860	14789371
+4108	Pedro II/Mangabeiras	0	Estação Ponto São Jose	Estação Ponto São José	-19.90118634	-43.99107657	Estação Ponto São José	-19.90118634	-43.99107657	494	561798	14784715	14784715
+4110	Dom Cabral/Belvedere	0	Belvedere (Retorno Trevo do Biocor)	Avenida Trinta E Um De Marco 501	-19.92253715	-43.99569546	Rua Da Fonte 340	-19.97636215	-43.93805592	409	561915	14786084	14787285
+4110	Dom Cabral/Belvedere	1	Dom Cabral	Rua Da Fonte 340	-19.97636215	-43.93805592	Avenida Trinta E Um De Marco 501	-19.92253715	-43.99569546	376	561915	14787285	14786084
+4111	Dom Cabral/Anchieta	0	Anchieta	Avenida Trinta E Um De Marco 501	-19.92253715	-43.99569546	Pca Cidade Do Porto 1	-19.94509306	-43.91631379	291	561855	14786084	14784115
+4111	Dom Cabral/Anchieta	1	Dom Cabral	Pca Cidade Do Porto 1	-19.94509306	-43.91631379	Avenida Trinta E Um De Marco 501	-19.92253715	-43.99569546	292	561855	14784115	14786084
+4113	Bom Jesus/Belvedere	0	Belvedere	Pca Senhor Bom Jesus 15	-19.89658744	-43.95477612	Avenida Professor Cristovam Dos Santos 1100	-19.96735339	-43.93435288	342	561953	14786667	14788822
+4113	Bom Jesus/Belvedere	1	Bom Jesus	Avenida Professor Cristovam Dos Santos 1100	-19.96735339	-43.93435288	Pca Senhor Bom Jesus 15	-19.89658744	-43.95477612	319	561953	14788822	14786667
+4150	Shopping Del Rey/Bh Shopping	0	BH Shopping (Principal)	Avenida Del Rey 5	-19.89013529	-43.96916374	Rua Maria Luiza Santiago 550	-19.97343938	-43.94792478	250	562303	14790350	14789772
+4150	Shopping Del Rey/Bh Shopping	1	Shopping Del Rey (Principal)	Rua Maria Luiza Santiago 550	-19.97343938	-43.94792478	Avenida Del Rey 5	-19.89013529	-43.96916374	240	562303	14789772	14790350
+4201	Alto Caicara/Nova Cintra	0	Nova Cintra	Rua Itarana 110	-19.89302357	-43.96977577	Rua Yara Lucia 13	-19.95118012	-43.98540741	282	562068	14792220	14786031
+4201	Alto Caicara/Nova Cintra	1	Alto Caicara	Rua Yara Lucia 13	-19.95118012	-43.98540741	Rua Itarana 110	-19.89302357	-43.96977577	279	562068	14786031	14792220
+4205	Ermelinda / Salgado Filho - Via Prado	0	Salgado Filho	Rua Henrique Diniz 278	-19.88300388	-43.95530916	Rua Alexandre Siqueira 140	-19.94962523	-43.98120286	252	561792	14786522	14785470
+4205	Ermelinda / Salgado Filho - Via Prado	1	Ermelinda	Rua Alexandre Siqueira 140	-19.94962523	-43.98120286	Rua Henrique Diniz 278	-19.88300388	-43.95530916	258	561792	14785470	14786522
+4405	Coqueiros / Centro / Hospitais	0	Coqueiros	Rua Antonio Peixoto 15	-19.90088372	-44.02479291	Rua Antonio Peixoto 15	-19.90088372	-44.02479291	349	561928	14784606	14784606
+4501	California II / São Paulo	0	São Paulo	Rua Patricio Barbosa 231	-19.91981745	-44.01107772	Rua Jose Bento 93	-19.86596932	-43.91499753	246	561921	14790426	14786521
+4501	California II / São Paulo	1	California II	Rua Jose Bento 93	-19.86596932	-43.91499753	Rua Patricio Barbosa 231	-19.91981745	-44.01107772	248	561921	14786521	14790426
+5033	Santa Terezinha/Praca da Liberdade via Tancredo Neves	0	Santa Terezinha	Rua Monsenhor Nogueira Duarte 379	-19.86975241	-44.01008525	Rua Monsenhor Nogueira Duarte 379	-19.86975241	-44.01008525	359	562389	14792521	14792521
+5034	Urca/Centro Via Confisco	0	Centro Via Confisco	Rua Aracy Guimaraes Rosa 10	-19.86603498	-44.01834659	Rua Aracy Guimaraes Rosa 10	-19.86603498	-44.01834659	309	600190	14787290	14787290
+5035	Zoológico/Hospitais Via Serrano	0	Hospitais Via Serrano	Rua Aracy Guimaraes Rosa 164	-19.86580258	-44.01803667	Rua Aracy Guimaraes Rosa 164	-19.86580258	-44.01803667	398	603188	14787817	14787817
+5036	Celso Machado/Centro	0	Celso Machado/Centro	Rua Urca 671	-19.87209765	-44.01536805	Rua Urca 671	-19.87209765	-44.01536805	207	603888	14792577	14792577
+5102	UFMG/Santo Antonio	0	UFMG	Avenida Reitor Mendes Pimentel 6631	-19.86368161	-43.95954586	Avenida Reitor Mendes Pimentel 256	-19.8642848	-43.9603305	114	562055	14793034	14785654
+5104	Suzana/Cruzeiro-Via Universitario	0	Cruzeiro	Rua Expedito Ribeiro Silva 394	-19.863828	-43.93557611	Rua Opala 1	-19.94230835	-43.92667702	297	561892	14785684	14790892
+5104	Suzana/Cruzeiro-Via Universitario	1	Suzana	Rua Opala 1	-19.94230835	-43.92667702	Rua Expedito Ribeiro Silva 394	-19.863828	-43.93557611	280	561892	14790892	14785684
+5106	Bandeirantes / Bh Shopping	0	BH Shopping	Avenida Sicilia 210	-19.86678861	-43.98813488	Rua Maria Luiza Santiago 550	-19.97343938	-43.94792478	379	561988	14786699	14789772
+5106	Bandeirantes / Bh Shopping	1	Bandeirantes	Rua Maria Luiza Santiago 550	-19.97343938	-43.94792478	Avenida Sicilia 210	-19.86678861	-43.98813488	368	561988	14789772	14786699
+5107	Estação Pampulha/Savassi	0	Estação Pampulha (Carnaval)	Estação Pampulha - Plataforma F5	-19.8438203	-43.96663998	Estação Pampulha - Plataforma F5	-19.8438203	-43.96663998	316	561834	15252278	15252278
+5201	Dona Clara/Buritis	0	Buritis (Principal)	Rua Alvaro Martins 28	-19.85854176	-43.93525013	Rua Deputado Sebastiao Nascimento 279	-19.96506652	-43.97231893	399	561890	14790174	14791442
+5201	Dona Clara/Buritis	1	Dona Clara (Principal)	Rua Deputado Sebastiao Nascimento 279	-19.96506652	-43.97231893	Rua Alvaro Martins 28	-19.85854176	-43.93525013	402	561890	14791442	14790174
+5203	Castelo/Estrela do Oriente-Via Manacas	0	Estrela do Oriente	Avenida Ayres da Mata Machado, 209	-19.87728921	-44.0072446	Rua Emilia Alves Do Vale 34	-19.96555999	-43.98784212	249	562003	22378733	14789380
+5203	Castelo/Estrela do Oriente-Via Manacas	1	Castelo	Rua Emilia Alves Do Vale 34	-19.96555999	-43.98784212	Avenida Ayres da Mata Machado, 209	-19.87728921	-44.0072446	153	562003	14789380	22378733
+5250	Estação Pampulha / Betania	0	Betania	Estação Pampulha - Plataforma G5	-19.84387573	-43.96681068	Avenida Efigenia Miranda Schettino 55	-19.96680942	-43.99292223	432	561807	15252271	14785847
+5250	Estação Pampulha / Betania	1	Estação Pampulha	Avenida Efigenia Miranda Schettino 55	-19.96680942	-43.99292223	Estação Pampulha - Plataforma F4	-19.84340776	-43.96683963	422	561807	14785847	15252279
+5401	São Luiz/Dom Cabral	0	Dom Cabral (Carnaval)	Avenida Chaffir Ferreira 1980	-19.86065798	-43.97460531	Avenida Chaffir Ferreira 1980	-19.86065798	-43.97460531	159	561974	14792926	14792926
+5401	São Luiz/Dom Cabral	1	São Luiz	Avenida Trinta E Um De Marco 133	-19.92011695	-43.99713808	Avenida Chaffir Ferreira 1980	-19.86065798	-43.97460531	121	561974	14788603	14792926
+5550	Estação Pampulha / Estação Ponto São Jose	0	Estação Ponto São Jose	Estação Pampulha - Plataforma F4	-19.84340776	-43.96683963	Estação Ponto São José	-19.90118634	-43.99107657	253	562360	15252279	14784715
+5550	Estação Pampulha / Estação Ponto São Jose	1	Estação Pampulha	Estação Ponto São José	-19.90118634	-43.99107657	Estação Pampulha - Plataforma F4	-19.84340776	-43.96683963	246	562360	14784715	15252279
+6030	Cidade Administrativa/Savassi Via Hospitais	0	Savassi (Via Andradas)	Rod Papa Joao Paulo II 3755	-19.78523838	-43.95515327	Avenida Cristovao Colombo 350	-19.93716334	-43.93604984	9	561935	14786018	14786785
+6030	Cidade Administrativa/Savassi Via Hospitais	1	Cidade Administrativa (Via Andradas)	Avenida Cristovao Colombo 350	-19.93716334	-43.93604984	Rod Papa Joao Paulo II 3759	-19.78087541	-43.95059011	9	561935	14786785	14786023
+6031	Cidade Administrativa/Centro	0	Centro	Rod Papa Joao Paulo II 3755	-19.78523838	-43.95515327	Avenida Parana 304	-19.91921563	-43.94234302	7	562271	14786018	14788728
+6031	Cidade Administrativa/Centro	1	Cidade Administrativa	Rua Padre Belchior 319	-19.92326152	-43.94145206	Rod Papa Joao Paulo II 3759	-19.78087541	-43.95059011	8	562271	14784338	14786023
+6350	Estação Vilarinho/Estação Barreiro Via Anel Rodoviario	0	Estação Barreiro	Estação Vilarinho - Plataforma C8	-19.82166322	-43.94777923	Estação Barreiro - Plataforma E4	-19.97373424	-44.02138298	411	562239	15328632	15140126
+6350	Estação Vilarinho/Estação Barreiro Via Anel Rodoviario	1	Estação Vilarinho	Estação Barreiro - Plataforma E4	-19.97373424	-44.02138298	Estação Vilarinho - Plataforma C8	-19.82166322	-43.94777923	466	562239	15140126	15328632
+8101	Santa Cruz/Alto Santa Lúcia	0	Alto Santa Lúcia	Rua Jose Mauricio Veiga 405	-19.87753446	-43.94394304	Pca Do Olimpo 390	-19.95991939	-43.94651955	239	561809	14789146	14787996
+8101	Santa Cruz/Alto Santa Lúcia	1	Santa Cruz	Pca Do Olimpo 390	-19.95991939	-43.94651955	Rua Jose Mauricio Veiga 405	-19.87753446	-43.94394304	264	561809	14787996	14789146
+8102	União/Carmo Sion	0	União	Rua Silva Fortes 151	-19.88006384	-43.92767879	Rua Silva Fortes 81	-19.87956537	-43.92790831	122	561907	14792073	14792574
+8102	União/Carmo Sion	1	União (Atendimento à Praça Miguel Chiquiloff)	Pca Miguel Chquiloff 41	-19.95659624	-43.93930417	Rua Silva Fortes 81	-19.87956537	-43.92790831	31	561907	14789096	14792574
+8103	Nova Floresta/Santa Lúcia - Via Lourdes	0	Santa Lúcia	Rua Doutor Furtado De Menezes 572	-19.88388133	-43.93181956	Rua Laplace 495	-19.96398091	-43.94451939	302	562043	14792230	14790067
+8103	Nova Floresta/Santa Lúcia - Via Lourdes	1	Nova Floresta	Rua Laplace 495	-19.96398091	-43.94451939	Rua Doutor Furtado De Menezes 572	-19.88388133	-43.93181956	312	562043	14790067	14792230
+8106	Santa Cruz/BH Shopping Via Belvedere	0	BH Shopping	Rua Padre Agostinho 250	-19.88134599	-43.93837063	Rua Maria Luiza Santiago 550	-19.97343938	-43.94792478	266	561879	14789644	14789772
+8106	Santa Cruz/BH Shopping Via Belvedere	1	Santa Cruz	Rua Maria Luiza Santiago 550	-19.97343938	-43.94792478	Rua Padre Agostinho 250	-19.88134599	-43.93837063	261	561879	14789772	14789644
+8107	Concórdia/São Pedro - Via Colégio Batista	0	São Pedro	Rua Ica 21	-19.89549739	-43.93794706	Rua La Paz 151	-19.94958343	-43.9387067	253	561835	14786062	14788436
+8107	Concórdia/São Pedro - Via Colégio Batista	1	Concordia	Rua La Paz 151	-19.94958343	-43.9387067	Rua Jaguaribe 821	-19.89604881	-43.93694383	252	561835	14788436	14789553
+8108	Cidade Nova/Savassi - Via Rua da Bahia	0	Cidade Nova	Praça Bolivia M. Viana, 1	-19.87239325	-43.92431261	Praça Bolivia M. Viana, 1	-19.87239325	-43.92431261	140	561998	31130294	31130294
+8150	União / Serra - Via Floresta / Hospitais	0	Serra	Rua Silva Fortes 120	-19.87976707	-43.92791326	Rua Caraca 890	-19.94344342	-43.91476939	116	562294	14792125	14786048
+8150	União / Serra - Via Floresta / Hospitais	1	Uniao	Rua Caraca 890	-19.94344342	-43.91476939	Rua Silva Fortes 120	-19.87976707	-43.92791326	173	562294	14786048	14792125
+8151	Estação São Gabriel/BH Shopping Via Anel Rodoviario	0	Estação São Gabriel (Partidas da Estacao Sao Gabriel)	Estação São Gabriel	-19.86366204	-43.92637733	Rua Maria Luiza Santiago 550	-19.97343938	-43.94792478	14	562008	15140039	14789772
+8151	Estação São Gabriel/BH Shopping Via Anel Rodoviario	1	Estação São Gabriel	Rua Maria Luiza Santiago 550	-19.97343938	-43.94792478	Rua Maria Luiza Santiago 550	-19.97343938	-43.94792478	251	562008	14789772	14789772
+8203	Renascenca/Buritis - Via Nova Suiça	0	Buritis (Carnaval)	Rua Cachoeirinha 871	-19.88167875	-43.94508849	Avenida Senador José Augusto, 315	-19.98010611	-43.97742069	288	561874	14792727	21193169
+8203	Renascenca/Buritis - Via Nova Suiça	1	Renascença (Carnaval)	Avenida Senador José Augusto, 315	-19.98010611	-43.97742069	Rua Cachoeirinha 871	-19.88167875	-43.94508849	286	561874	21193169	14792727
+8205	Maria Goretti/Nova Granada	0	Nova Granada	Rua Sebastiao Santana Filho 166	-19.87156727	-43.90461739	Rua Franca 45	-19.94462711	-43.96602803	279	561795	14786647	14789181
+8205	Maria Goretti/Nova Granada	1	Maria Goretti (Via Alto Barroca)	Rua Franca 45	-19.94462711	-43.96602803	Rua Sebastiao Santana Filho 166	-19.87156727	-43.90461739	267	561795	14789181	14786647
+8207	Maria Goretti/Estrela Dalva	0	Estrela Dalva	Rua Maria Das Gracas 140	-19.86644643	-43.90903856	Rua Luiz Cosme 430	-19.96274564	-43.97272654	419	562310	14789440	14791207
+8207	Maria Goretti/Estrela Dalva	1	Maria Goretti	Rua Luiz Cosme 430	-19.96274564	-43.97272654	Rua Maria Das Gracas 140	-19.86644643	-43.90903856	406	562310	14791207	14789440
+8208	Santa Cruz / Buritis - Via Avenida Barão	0	Estoril	Rua Jose Nicodemos 36	-19.87825129	-43.93658331	Rua Esmeraldo Botelho 281	-19.97971009	-43.96579136	252	562253	14787930	14785002
+8208	Santa Cruz / Buritis - Via Avenida Barão	1	Santa Cruz	Rua Esmeraldo Botelho 281	-19.97971009	-43.96579136	Rua Jose Nicodemos 36	-19.87825129	-43.93658331	248	562253	14785002	14787930
+8350	Estação São Gabriel/Estação Barreiro	0	Estação Barreiro (Principal)	Estação São Gabriel - Plataforma G1	-19.86408167	-43.92648017	Estação Barreiro - Plataforma E5	-19.97381238	-44.02166193	395	562347	15140037	15140125
+8350	Estação São Gabriel/Estação Barreiro	1	Estação São Gabriel (Principal)	Estação Barreiro - Plataforma E5	-19.97381238	-44.02166193	Estação São Gabriel - Plataforma G1	-19.86408167	-43.92648017	409	562347	15140125	15140037
+8401	Cachoeirinha/São Jose	0	São Jose	Rua Evocacao 630	-19.90527408	-43.98980783	Rua Urucania 13	-19.90528281	-43.99145909	135	561901	14788498	14791077
+8405	Palmares/Bela Vista	0	Bela Vista	Rua Nicolina Pacheco 216	-19.86902226	-43.93444497	Rua Vila Rica 184	-19.92135433	-43.98200405	215	561932	14789660	14789748
+8405	Palmares/Bela Vista	1	Palmares	Rua Vila Rica 184	-19.92135433	-43.98200405	Rua Nicolina Pacheco 216	-19.86902226	-43.93444497	214	561932	14789748	14789660
+8501	Maria Goretti / Engenho Nogueira via Ouro Preto	0	Engenho Nogueira	Rua Santa Alianca 550	-19.86981015	-43.90764503	Rua Engenho Do Norte 50	-19.88819525	-43.98250056	251	561898	14786751	14789815
+8501	Maria Goretti / Engenho Nogueira via Ouro Preto	1	Maria Goretti	Rua Engenho Do Norte 50	-19.88819525	-43.98250056	Rua Santa Alianca 550	-19.86981015	-43.90764503	252	561898	14789815	14786751
+8550	Estação São Gabriel / Zoológico via Estação Pampulha	0	Estação São Gabriel	Estação São Gabriel	-19.86380872	-43.92665724	Estação São Gabriel	-19.86380872	-43.92665724	30	562217	15140040	15140040
+8551	Estação São Gabriel / Estação UFMG via Anel Rodoviário	0	Estação São Gabriel	Estação São Gabriel	-19.86397286	-43.92690812	Estação São Gabriel	-19.86397286	-43.92690812	239	561958	15140041	15140041
+9030	Castanheiras/Centro	0	Castanheira	Avenida Country Club De Belo Horizonte 1	-19.91185825	-43.8737371	Avenida Country Club De Belo Horizonte 1	-19.91185825	-43.8737371	245	561957	14793182	14793182
+9032	Granja de Freitas / Centro - Via Avenida dos Andradas	0	Granja De Freitas	Rua Trezentos E Vinte E Oito 200	-19.90791251	-43.88383385	Rua Trezentos E Vinte E Oito 200	-19.90791251	-43.88383385	346	562035	14791469	14791469
+9034	Taquaril/Centro	0	Taquaril	Rua Antao Goncalves 200	-19.92104821	-43.88115112	Rua Antao Goncalves 200	-19.92104821	-43.88115112	272	561983	14792688	14792688
+9101	Alto Vera Cruz/São Bento	0	Alto Vera Cruz	Rua Fernao Dias 90	-19.90405858	-43.89272101	Avenida Dos Andradas 7602	-19.9035281	-43.89302551	324	561916	14791459	14785695
+9101	Alto Vera Cruz/São Bento	1	Alto Vera Cruz (Alto Santa Lúcia Desvio Feira Afonso Pena)	Pca Do Olimpo 390	-19.95991939	-43.94651955	Rua Fernao Dias 90	-19.90405858	-43.89272101	37	561916	14787996	14791459
+9103	Santa Tereza/Santo Antônio	0	Santa Tereza	Rua Silvianopolis 130	-19.91228492	-43.91103864	Rua Silvianopolis 130	-19.91228492	-43.91103864	162	562020	14791430	14791430
+9104	Sagrada Família/Luxemburgo	0	Luxemburgo	Rua Itajuba 2274	-19.89721277	-43.92663524	Rua Joaquim Candido Filho 802	-19.95039323	-43.95862746	152	561885	14787114	14790367
+9104	Sagrada Família/Luxemburgo	1	Sagrada Familia	Rua Joaquim Candido Filho 802	-19.95039323	-43.95862746	Rua Itajuba 2274	-19.89721277	-43.92663524	200	561885	14790367	14787114
+9105	Nova Vista/Sion	0	Sion	Rua Vieira Dos Santos 270	-19.88179944	-43.895561	Rua Costa Rica 209	-19.95580346	-43.93869971	215	562051	14790314	14785118
+9105	Nova Vista/Sion	1	Nova Vista	Rua Costa Rica 209	-19.95580346	-43.93869971	Rua Vieira Dos Santos 270	-19.88179944	-43.895561	205	562051	14785118	14790314
+9106	Sagrada Família/Serra	0	Serra	Rua Cabrobo 478	-19.89861761	-43.9185547	Rua Caraca 896	-19.94338829	-43.91466419	260	561790	14788403	14786044
+9106	Sagrada Família/Serra	1	Sagrada Família	Rua Caraca 896	-19.94338829	-43.91466419	Rua Cabrobo 478	-19.89861761	-43.9185547	248	561790	14786044	14788403
+9201	Baleia/Nova Granada	0	Nova Granada (Unidade Antônio Mourão Guimarães)	Rua Benjamim Guimaraes 1	-19.92409215	-43.89694087	Avenida Silva Lobo 2379	-19.94309803	-43.96337985	140	561888	14788851	14790546
+9201	Baleia/Nova Granada	1	Baleia (Principal)	Avenida Silva Lobo 2379	-19.94309803	-43.96337985	Rua Benjamim Guimaraes 1	-19.92409215	-43.89694087	151	561888	14790546	14788851
+9202	Pompéia/Jardim América	0	Pompeia (Principal)	Pca Abadia 23	-19.90647013	-43.90162356	Pca Abadia 23	-19.90647013	-43.90162356	388	561942	14788668	14788668
+9204	Santa Efigênia/Estoril	0	Estoril	Avenida Mem De Sa 1901	-19.9315552	-43.90738974	Rua Jose Claudio Rezende 101	-19.96273041	-43.96452597	226	562049	14791345	14793389
+9204	Santa Efigênia/Estoril	1	Santa Efigenia	Rua Jose Claudio Rezende 101	-19.96273041	-43.96452597	Avenida Mem De Sa 1901	-19.9315552	-43.90738974	224	562049	14793389	14791345
+9205	Nova Vista/Nova Cintra	0	Nova Cintra	Rua Professor Bressane 896	-19.88775139	-43.89918665	Avenida Padre Jose Mauricio 592	-19.95336375	-43.99377103	299	561889	14785280	14785153
+9205	Nova Vista/Nova Cintra	1	Nova Vista	Avenida Padre Jose Mauricio 592	-19.95336375	-43.99377103	Rua Professor Bressane 896	-19.88775139	-43.89918665	289	561889	14785153	14785280
+9206	Vera Cruz/Buritis - Via Avenida Raja Gabáglia	0	Buritis	Rua Belem 35	-19.90638195	-43.89848226	Rua Luiz Cosme 540	-19.96344732	-43.97217642	167	562393	14790713	14791798
+9206	Vera Cruz/Buritis - Via Avenida Raja Gabáglia	1	Vera Cruz	Rua Luiz Cosme 540	-19.96344732	-43.97217642	Rua Belem 35	-19.90638195	-43.89848226	162	562393	14791798	14790713
+9208	Taquaril/Conjunto Santa Maria	0	Santa Maria	Rua Fernao Gomes 156	-19.916891	-43.88334984	Rua Alcida Torres 38	-19.95131031	-43.95988488	280	561914	14792591	14789862
+9208	Taquaril/Conjunto Santa Maria	1	Taquaril	Rua Alcida Torres 38	-19.95131031	-43.95988488	Rua Fernao Gomes 156	-19.916891	-43.88334984	285	561914	14789862	14792591
+9209	Sagrada Família/Gutierrez	0	Gutierrez	Rua Diametral 151	-19.90469988	-43.92217102	Avenida Marques De Valenca 35	-19.93651442	-43.95953374	203	562064	14790620	14786834
+9209	Sagrada Família/Gutierrez	1	Sagrada Familia	Avenida Marques De Valenca 35	-19.93651442	-43.95953374	Rua Diametral 151	-19.90469988	-43.92217102	204	562064	14786834	14790620
+9210	Santa Teresa/Prado	0	Prado	Rua Silvianopolis 130	-19.91228492	-43.91103864	Pca Doutor Carlos Marques 551	-19.92349985	-43.96858575	213	562034	14791430	14785206
+9210	Santa Teresa/Prado	1	Santa Teresa	Pca Doutor Carlos Marques 551	-19.92349985	-43.96858575	Rua Silvianopolis 130	-19.91228492	-43.91103864	210	562034	14785206	14791430
+9211	Caetano Furquim/Havaí	0	Havaí	Pca Itapira 28	-19.90298498	-43.88996646	Rua Olavo Bernardes 253	-19.96004669	-43.97012084	327	561788	14791856	14790793
+9211	Caetano Furquim/Havaí	1	Caetano Furquim	Rua Olavo Bernardes 253	-19.96004669	-43.97012084	Pca Itapira 28	-19.90298498	-43.88996646	308	561788	14790793	14791856
+9250	Caetano Furquim/Nova Cintra Via Savassi	0	Nova Cintra (Principal)	Avenida Itaite 210	-19.89902546	-43.90214368	Rua Nova 71	-19.95024988	-43.991174	251	561810	14786438	14785032
+9250	Caetano Furquim/Nova Cintra Via Savassi	1	São Geraldo (Principal)	Rua Nova 71	-19.95024988	-43.991174	Avenida Itaite 210	-19.89902546	-43.90214368	409	561810	14785032	14786438
+9402	Santa Inês/Santo André	0	Santo Andre	Rua Conceicao Do Para 1726	-19.8798862	-43.91101605	Rua Fides 300	-19.88875496	-43.95088927	212	562106	14785786	14787967
+9402	Santa Inês/Santo André	1	Santa Ines	Rua Fides 300	-19.88875496	-43.95088927	Rua Conceicao Do Para 1726	-19.8798862	-43.91101605	214	562106	14787967	14785786
+9403	Paraiso/Caiçara	0	Caiçara	Rua Desembargador Veloso 211	-19.9210299	-43.90180467	Rua Helio Lazzarotti 211	-19.89760498	-43.97758772	252	561961	14792828	14786873
+9403	Paraiso/Caiçara	1	Paraiso	Rua Helio Lazzarotti 211	-19.89760498	-43.97758772	Rua Desembargador Veloso 211	-19.9210299	-43.90180467	252	561961	14786873	14792828
+9404	São Lucas/Nova Esperança	0	Nova Esperança	Rua Coronel Pereira 49	-19.9337636	-43.91542416	Rua Francisco De Paula Ferreira 84	-19.89738389	-43.96132858	215	562012	14787144	14791903
+9404	São Lucas/Nova Esperança	1	São Lucas	Rua Francisco De Paula Ferreira 84	-19.89738389	-43.96132858	Rua Coronel Pereira 49	-19.9337636	-43.91542416	226	562012	14791903	14787144
+9405	Instituto Agronômico/Monsenhor Messias	0	Monsenhor Messias	Rua Josias Casimiro 751	-19.89862731	-43.91511636	Rua Boreal, 381	-19.90467083	-43.9797427	217	562047	14787929	14789312
+9405	Instituto Agronômico/Monsenhor Messias	1	Instituto Agronomico	Rua Boreal, 381	-19.90467083	-43.9797427	Rua Josias Casimiro 751	-19.89862731	-43.91511636	221	562047	14789312	14787929
+9407	Alto Vera Cruz/Dom Bosco	0	Dom Bosco (Atendimento a Rua Osmário Soares)	Rua Fernao Dias 1374	-19.91339341	-43.89051614	Rua Nelson Soares 356	-19.91973906	-44.00456116	338	561936	14791658	14787346
+9407	Alto Vera Cruz/Dom Bosco	1	Alto Vera Cruz	Rua Nelson Soares 356	-19.91973906	-44.00456116	Rua Fernao Dias 1374	-19.91339341	-43.89051614	355	561936	14787346	14791658
+9408	Santa Efigênia/Padre Eustáquio	0	Padre Eustáquio	Rua Coronel Juca Ferraz 10	-19.92471345	-43.90682559	Pca Tejo 17	-19.91260907	-43.98767586	253	561794	14786113	14786073
+9408	Santa Efigênia/Padre Eustáquio	1	Santa Efigenia	Pca Tejo 17	-19.91260907	-43.98767586	Rua Coronel Juca Ferraz 10	-19.92471345	-43.90682559	249	561794	14786073	14786113
+9410	Sagrada Família/Coração Eucarístico	0	Coração Eucaristico	Rua Doutor Julio Otaviano Ferreira 1085	-19.89049061	-43.92072123	Avenida Santa Matilde 200	-19.92364286	-44.00021351	224	561918	14785012	14792540
+9410	Sagrada Família/Coração Eucarístico	1	Sagrada Familia	Avenida Santa Matilde 200	-19.92364286	-44.00021351	Rua Doutor Julio Otaviano Ferreira 1085	-19.89049061	-43.92072123	223	561918	14792540	14785012
+9411	Casa Branca/São José	0	São José	Avenida Santa Albertina 760	-19.89299166	-43.88712011	Rua Violeta De Melo 178	-19.90142534	-43.99549423	256	562250	14787235	14789277
+9411	Casa Branca/São José	1	Casa Branca	Rua Violeta De Melo 178	-19.90142534	-43.99549423	Avenida Santa Albertina 760	-19.89299166	-43.88712011	271	562250	14789277	14787235
+9412	Conjunto Taquaril/Padre Eustáquio	0	Padre Eustaquio (Principal)	Rua Joaquim Teixeira Dos Anjos 155	-19.92023496	-43.87601216	Pca Tejo 17	-19.91260907	-43.98767586	216	562060	14790400	14786073
+9412	Conjunto Taquaril/Padre Eustáquio	1	Taquaril (Principal)	Pca Tejo 17	-19.91260907	-43.98767586	Rua Joaquim Teixeira Dos Anjos 155	-19.92023496	-43.87601216	201	562060	14786073	14790400
+9414	Santa Inês/João Pinheiro	0	João Pinheiro (Atendimento A Rua Quinze (Marilac))	Rua Hybris 555	-19.88093781	-43.90394112	Rua Professor Baeta Neves 185	-19.92255239	-44.00226435	238	561979	14785348	14788412
+9414	Santa Inês/João Pinheiro	1	Santa Inês (Carnaval)	Rua Professor Baeta Neves 185	-19.92255239	-44.00226435	Rua Hybris 555	-19.88093781	-43.90394112	234	561979	14788412	14785348
+9415	Nossa Senhora de Fátima/Bonfim	0	Bonfim	Rua Bonfim 1038	-19.90915764	-43.95072779	Rua Bonfim 1038	-19.90915764	-43.95072779	243	562132	14792715	14792715
+9501	São Lucas/Jaraguá	0	Jaraguá	Rua Doutor Newton De Paiva Ferreira 11	-19.92861879	-43.9136951	Avenida Professor Magalhães Penido, 46	-19.85313835	-43.95698222	228	561858	14790818	21043985
+9501	São Lucas/Jaraguá	1	São Lucas	Avenida Professor Magalhães Penido, 46	-19.85313835	-43.95698222	Rua Doutor Newton De Paiva Ferreira 11	-19.92861879	-43.9136951	227	561858	21043985	14790818
+9502	São Geraldo/São Francisco Via Esplanada	0	São Francisco (Atendimento A UFMG)	Avenida Itaite 1023	-19.89671658	-43.89453388	Rua Alentejo 1503	-19.87215287	-43.95804156	156	561843	14792592	14790268
+9502	São Geraldo/São Francisco Via Esplanada	1	São Geraldo (Carnaval)	Rua Alentejo 1503	-19.87215287	-43.95804156	Avenida Itaite 1023	-19.89671658	-43.89453388	161	561843	14790268	14792592
+9503	Taquaril/Jaraguá	0	Jaraguá	Rua Ercilia Siqueira 275	-19.91360982	-43.8795646	Rua General Aranha 303	-19.8555998	-43.95552649	157	561904	14787510	14792639
+9503	Taquaril/Jaraguá	1	Taquaril	Avenida Professor Magalhães Penido, 46	-19.85313835	-43.95698222	Rua Ercilia Siqueira 275	-19.91360982	-43.8795646	253	561904	21043985	14787510
+9550	Casa Branca/São Francisco Via Estação José Cândido	0	São Francisco (Atendimento A UFMG)	Avenida Santa Albertina 759	-19.89296474	-43.88720584	Avenida Reitor Mendes Pimentel 175	-19.86391674	-43.95942676	65	561853	14787204	14786355
+9550	Casa Branca/São Francisco Via Estação José Cândido	1	Casa Branca (Atendimento A UFMG)	Avenida Reitor Mendes Pimentel 175	-19.86391674	-43.95942676	Avenida Santa Albertina 759	-19.89296474	-43.88720584	75	561853	14786355	14787204
+9801	Saudade/Santa Cruz	0	Santa Cruz	Rua Doutor Brochado 1410	-19.91553923	-43.89193455	Rua Coronel Figueiredo 359	-19.87751242	-43.94875668	262	562113	14791014	14789811
+9801	Saudade/Santa Cruz	1	Saudade	Rua Coronel Figueiredo 359	-19.87751242	-43.94875668	Rua Doutor Brochado 1410	-19.91553923	-43.89193455	266	562113	14789811	14791014
+9805	Santa Efigênia/Renascença	0	Renascenca (Principal)	Rua Levi Freire 300	-19.9287406	-43.90509841	Pca Muqui 111	-19.89086369	-43.93810328	217	562085	14785792	14784909
+9805	Santa Efigênia/Renascença	1	Santa Efigenia (Principal)	Pca Muqui 111	-19.89086369	-43.93810328	Rua Levi Freire 300	-19.9287406	-43.90509841	225	562085	14784909	14785792
+1404A	Palmeiras / Alipio de Melo	0	Alipio De Melo (Principal)	Rua Senhora Do Porto 1440	-19.975094	-43.98177785	Avenida Dos Engenheiros 904	-19.88927279	-44.00172112	307	561973	14789065	14784387
+1404A	Palmeiras / Alipio de Melo	1	Palmeiras (Principal)	Avenida Dos Engenheiros 904	-19.88927279	-44.00172112	Rua Senhora Do Porto 1440	-19.975094	-43.98177785	318	561973	14784387	14789065
+1404C	Palmeiras / São Salvador	0	São Salvador	Rua Inacio Parreira Neves 182	-19.96285108	-43.97433534	Rua Piuma 70	-19.89699919	-44.02200273	280	562096	14790626	14790496
+1404C	Palmeiras / São Salvador	1	Palmeiras	Rua Piuma 70	-19.89699919	-44.02200273	Rua Inacio Parreira Neves 182	-19.96285108	-43.97433534	281	562096	14790496	14790626
+1505R	Conjunto Felicidade / Centro	0	Conjunto Felicidade	Avenida Fazenda Velha, 512	-19.82925353	-43.92636385	Avenida Fazenda Velha 530	-19.82889413	-43.92649873	164	562337	16888003	14784224
+3301A	Santa Terezinha / Hospitais	0	Santa Terezinha	Rua Monsenhor Nogueira Duarte 379	-19.86975241	-44.01008525	Rua Monsenhor Nogueira Duarte 379	-19.86975241	-44.01008525	234	562220	14792521	14792521
+3301B	Castelo / Centro - Via Avenida Carlos Luz	0	Castelo	Avenida Altamiro Avelino Soares 1215	-19.87900977	-44.00469498	Avenida Altamiro Avelino Soares 1215	-19.87900977	-44.00469498	199	562072	14791492	14791492
+3302A	Nova Pampulha/Centro - Via Zoológico	0	Nova Pampulha (Via Hospitais)	Rua Carbonita 825	-19.82988325	-44.02371291	Rua Carbonita 825	-19.82988325	-44.02371291	539	561891	14788599	14788599
+3302B	Trevo / Centro - Via Braunas	0	Trevo (Hospitais)	Rua Sete 44	-19.82499563	-44.01857126	Rua Sete 44	-19.82499563	-44.01857126	270	562030	14792453	14792453
+3302D	Braúnas / Centro	0	Braunas	Rua Marciano Jose De Souza 72	-19.81532207	-44.01593871	Rua Marciano Jose De Souza 72	-19.81532207	-44.01593871	253	561805	14792082	14792082
+3501A	Jardim Alvorada/São Marcos	0	São Marcos (Via Fernao Dias)	Estação Ponto São José	-19.90118634	-43.99107657	Rua Lago 295	-19.86904216	-43.91053369	281	561838	14784715	14785274
+3501A	Jardim Alvorada/São Marcos	1	Jardim Alvorada	Rua Lago 295	-19.86904216	-43.91053369	Estação Ponto São José	-19.90118634	-43.99107657	273	561838	14785274	14784715
+3501B	Ouro Preto 3a Gleba/Bairro Ipe Via Jardim Montanhes	0	Bairro Ipe	Rua Etel Nogueira De Sa 342	-19.8849633	-43.98348717	Rua Sebastiao Santana Filho 166	-19.87156727	-43.90461739	243	562313	14784626	14786647
+3501B	Ouro Preto 3a Gleba/Bairro Ipe Via Jardim Montanhes	1	Ouro Preto 3A Gleba	Rua Sebastiao Santana Filho 166	-19.87156727	-43.90461739	Rua Etel Nogueira De Sa 342	-19.8849633	-43.98348717	250	562313	14786647	14784626
+3503A	Santa Terezinha/São Gabriel	0	São Gabriel (Partidas do Ouro Minas)	Avenida Ayres Da Mata Machado 194	-19.87717444	-44.00677484	Rua Santa Leopoldina 351	-19.84539238	-43.907981	443	561985	14785487	14793125
+3503A	Santa Terezinha/São Gabriel	1	Santa Terezinha	Rua Santa Leopoldina 351	-19.84539238	-43.907981	Avenida Ayres Da Mata Machado 194	-19.87717444	-44.00677484	270	561985	14793125	14785487
+4801A	Jardim Filadelfia/Boa Vista A	0	Boa Vista	Rua Carlos Eduardo Lott 780	-19.919113	-44.02496398	Rua Sao Jose De Arimateia 753	-19.89220886	-43.89151324	240	561944	14790347	14787115
+4801A	Jardim Filadelfia/Boa Vista A	1	Jardim Filadelfia	Rua Sao Jose De Arimateia 753	-19.89220886	-43.89151324	Rua Carlos Eduardo Lott 780	-19.919113	-44.02496398	125	561944	14787115	14790347
+4802A	Pindorama/Boa Vista	0	Boa Vista (Carnaval)	Rua Muquicaba 2	-19.90995695	-44.02270887	Rua Sao Fidelis 830	-19.88819438	-43.8957256	397	562204	14789535	14785703
+4802A	Pindorama/Boa Vista	1	Pindorama (Inversao de Pc)	Rua Sao Fidelis 830	-19.88819438	-43.8957256	Rua Muquicaba 2	-19.90995695	-44.02270887	313	562204	14785703	14789535
+5502C	Pousada Santo Antônio / Centro / Hospitais	0	Pousada Santo Antonio	Rua Januario Borges 519	-19.85264679	-43.87810342	Rua Januario Borges 519	-19.85264679	-43.87810342	298	561848	14788923	14788923
+5503A	Goiânia A / Centro / Hospitais	0	Goiania (Via Vila Sao Jorge)	Rua Tiziu 175	-19.86735045	-43.89887481	Rua Tiziu 175	-19.86735045	-43.89887481	394	561934	14792861	14792861
+5503B	Goiânia B / Centro / Hospitais	0	Goiania (Principal)	Rua Maria Do Nascimento Abreu 132	-19.86206873	-43.8967432	Rua Maria Do Nascimento Abreu 132	-19.86206873	-43.8967432	230	562168	14793360	14793360
+8001A	Santa Inês/BH Shopping	0	BH Shopping	Rua Colorado 1	-19.88100195	-43.89746894	Rua Maria Luiza Santiago 550	-19.97343938	-43.94792478	346	561947	14791561	14789772
+8001A	Santa Inês/BH Shopping	1	Santa Inês	Rua Maria Luiza Santiago 550	-19.97343938	-43.94792478	Rua Colorado 1	-19.88100195	-43.89746894	354	561947	14789772	14791561
+83D	Estação São Gabriel / Centro - Direta	0	Estação São Gabriel	Estação São Gabriel	-19.8642081	-43.92758994	Estação São Gabriel	-19.8642081	-43.92758994	792	562171	15140119	15140119
+83P	Estação São Gabriel / Centro - Paradora	0	Estação São Gabriel	Estação São Gabriel	-19.86368087	-43.92674504	Estação São Gabriel	-19.86368087	-43.92674504	402	562185	15140120	15140120
+S10	BH Shopping / São Francisco	0	Bh Shopping	Rua Padre Joao Pio 35	-19.87505228	-43.95425146	Rua Padre Joao Pio 35	-19.87505228	-43.95425146	368	562437	14793532	14793532
+S19	Hospital Evangélico/Shopping Boulevard	0	Shopping Boulevard	Rua Guaxupe 232	-19.94043099	-43.91370645	Rua Guaxupe 232	-19.94043099	-43.91370645	157	562443	14793485	14793485
+S20	Palmeiras / Serra	0	Serra	Rua Senhora Do Porto 88	-19.9657538	-43.98261371	Rua Senhora Do Porto 88	-19.9657538	-43.98261371	65	562422	14793480	14793480
+S21	Dom Cabral / BH Shopping	0	BH Shopping	Avenida Trinta E Um De Marco 250	-19.92043381	-43.99644158	Avenida Trinta E Um De Marco 250	-19.92043381	-43.99644158	261	562439	14793482	14793482
+S22	Buritis / Metrô Calafate	0	Buritis	Avenida Guaratan, 1049	-19.92266822	-43.96991798	Avenida Guaratan, 1049	-19.92266822	-43.96991798	92	562442	14791995	14791995
+S22	Buritis / Metrô Calafate	1	Estação Metrô Calafate (Partidas da Av. Senhora do Porto e Estação Calafate)	Avenida Raul Mourao Guimaraes 610	-19.96722263	-43.97651341	Avenida Guaratan, 1049	-19.92266822	-43.96991798	4	562442	14789419	14791995
+S31	Petrópolis / Barreiro	0	Barreiro	Avenida Raimundo Pedro Rodrigues 291	-20.02032593	-44.02307849	Avenida Raimundo Pedro Rodrigues 291	-20.02032593	-44.02307849	213	562435	14793704	14793704
+S32	Itaipu / Cardoso	0	Cardoso	Rua Vinhedo 96	-19.9941894	-44.05052088	Rua Coletora 1009	-20.00406656	-44.02243185	147	562441	14793575	14793584
+S32	Itaipu / Cardoso	1	Itaipu	Rua Coletora 1009	-20.00406656	-44.02243185	Rua Vinhedo 96	-19.9941894	-44.05052088	149	562441	14793584	14793575
+S33	Lindéia / Milionários	0	Milionários	Avenida Flor De Seda 53	-19.97488331	-44.05525192	Avenida Flor De Seda 53	-19.97488331	-44.05525192	212	562448	14793599	14793599
+S33	Lindéia / Milionários	1	Lindéia (Partidas da Rua Bétula)	Rua Betula 195	-19.98812318	-43.99655624	Avenida Flor De Seda 53	-19.97488331	-44.05525192	7	562448	14793719	14793599
+S41	Conjunto Califórnia / Prado	0	Prado	Rua Patricio Barbosa 619	-19.91859628	-44.01064957	Rua Patricio Barbosa 619	-19.91859628	-44.01064957	97	562438	14793699	14793699
+S53	Confisco / Ouro Minas	0	Ouro Minas	Rua Aracy Guimaraes Rosa 367	-19.86699485	-44.01964456	Rua Santa Leopoldina 122	-19.84874183	-43.90769293	266	562429	14793560	14793694
+S53	Confisco / Ouro Minas	1	Confisco	Rua Santa Leopoldina 122	-19.84874183	-43.90769293	Rua Aracy Guimaraes Rosa 367	-19.86699485	-44.01964456	266	562429	14793694	14793560
+S54	Dom Bosco / Shopping Del Rey	0	Shopping Del Rey Via Castelo	Avenida Brigadeiro Eduardo Gomes, 309	-19.91310805	-44.00296306	Avenida Brigadeiro Eduardo Gomes, 309	-19.91310805	-44.00296306	394	562424	14793731	14793731
+S55	Santa Monica / Minas Shopping	0	Minas Shopping	Rua Beatriz 332	-19.81287316	-43.98530208	Rua Beatriz 332	-19.81287316	-43.98530208	224	562436	14793565	14793565
+S56	São José/Vilarinho	0	Vilarinho	Estação Ponto São José	-19.90118634	-43.99107657	Rua Dois Mil Trezentos E Setenta E Quatro 130	-19.82030526	-43.94790994	112	562425	14784715	14793664
+S56	São José/Vilarinho	1	São José	Rua Dois Mil Trezentos E Setenta E Quatro 130	-19.82030526	-43.94790994	Estação Ponto São José	-19.90118634	-43.99107657	121	562425	14793664	14784715
+S60	Etelvina Carneiro/Jardim Leblon Via Venda Nova	0	Piratininga	Rua Dois Mil Trezentos E Setenta E Quatro 130	-19.82030526	-43.94790994	Rua Dois Mil Trezentos E Setenta E Quatro 130	-19.82030526	-43.94790994	133	562451	14793664	14793664
+S61	Mantiqueira / Estação Vilarinho	0	Estação Vilarinho	Rua Jose De Lara Resende 171	-19.78370283	-43.98313366	Rua Jose De Lara Resende 171	-19.78370283	-43.98313366	478	562427	14793654	14793654
+S63	Campo Alegre/Céu Azul Via Rio Branco	0	Campo Alegre/Céu Azul Via Rio Branco	Rua dos Bacuraus, 16	-19.82981911	-43.94827685	Rua dos Bacuraus, 16	-19.82981911	-43.94827685	281	562453	17047648	17047648
+S64	Campo Alegre/Céu Azul Via Venda Nova	0	Campo Alegre/Céu Azul Via Venda Nova	Rua dos Bacuraus, 16	-19.82981911	-43.94827685	Rua dos Bacuraus, 16	-19.82981911	-43.94827685	297	562426	17047648	17047648
+S65	São Bernardo / Minas Caixa	0	Minas Caixa	Avenida Washington Luiz 854	-19.84874273	-43.94321445	Avenida Washington Luiz 854	-19.84874273	-43.94321445	173	562433	14793711	14793711
+S66	Tupi / Europa	0	Tupi	Rua Furquim Werneck, 129	-19.84252659	-43.9209598	Rua Furquim Werneck, 129	-19.84252659	-43.9209598	174	562440	14793656	14793656
+S70	Conjunto Felicidade / Shopping Del Rey	0	Shopping Del Rey (Principal)	Avenida Fazenda Velha, 512	-19.82925353	-43.92636385	Avenida Fazenda Velha, 512	-19.82925353	-43.92636385	296	562423	16888003	16888003
+S80	Jardim Vitória / Estação Vila Oeste	0	Estação Vila Oeste	Rua Terracota 30	-19.8615329	-43.89025234	Rua Dois Mil Quatrocentos E Vinte Sete 351	-19.9396486	-44.00305414	216	562444	14793748	14793737
+S80	Jardim Vitória / Estação Vila Oeste	1	Jardim Vitória	Rua Dois Mil Quatrocentos E Vinte Sete 351	-19.9396486	-44.00305414	Rua Terracota 30	-19.8615329	-43.89025234	216	562444	14793737	14793748
+S84	São Gabriel / Floresta - Via Hospital Belo Horizonte	0	São Gabriel	Rua Circular 35	-19.85490327	-43.91251079	Rua Circular 35	-19.85490327	-43.91251079	111	637901	14793610	14793610
+S85	Minas Shopping / Santa Ines	0	Santa Inês	Avenida Pastor Anselmo Silvestre 1402	-19.87279634	-43.92506518	Avenida Pastor Anselmo Silvestre 1402	-19.87279634	-43.92506518	49	562445	14793682	14793682
+S92	Esplanada/Buritis	0	Buritis	Rua Astolfo Dutra 651	-19.90838376	-43.89871738	Rua Doutor Aristides De Pinho 509	-19.97744705	-43.98201256	250	562434	14793743	14793496
+S92	Esplanada/Buritis	1	Esplanada	Rua Doutor Aristides De Pinho 509	-19.97744705	-43.98201256	Rua Astolfo Dutra 651	-19.90838376	-43.89871738	250	562434	14793496	14793743
+SC01A	Contorno A	0	Barro Preto	Avenida Do Contorno 9716	-19.92133562	-43.95706083	Avenida Do Contorno 9716	-19.92133562	-43.95706083	158	561868	14784792	14784792
+SC01B	Contorno B	0	Barro Preto	Avenida Do Contorno 10021	-19.92085686	-43.95717489	Avenida Do Contorno 10021	-19.92085686	-43.95717489	338	562032	14789247	14789247
+SC01R	Contorno/Praca Milton Campos	0	Barro Preto (Itinerário Manhã)	Rua Joao Lucio Brandao 65	-19.9208561	-43.95739969	Rua Joao Lucio Brandao 65	-19.9208561	-43.95739969	62	562122	14791642	14791642
+SC02A	Praca 7/Savassi Via Pca da Liberdade - Santa Casa	0	Santa Efigenia	Avenida Do Contorno 3300	-19.92426422	-43.91944935	Avenida Do Contorno 3300	-19.92426422	-43.91944935	157	561837	14787014	14787014
+SC03A	Hospital Felicio Rocho/Hospital Militar A	0	Santa Efigenia	Rua Manaus 52	-19.92289377	-43.92039609	Rua Manaus 52	-19.92289377	-43.92039609	48	561791	14793311	14793311
+SC04A	Santa Casa/Savassi/Rodoviaria A	0	Santa Efigenia	Avenida Francisco Sales 1116	-19.92445269	-43.92668057	Avenida Francisco Sales 1116	-19.92445269	-43.92668057	153	561955	14792698	14792698
+SC04B	Santa Casa/Rodoviaria/Savassi B	0	Santa Efigenia	Avenida Francisco Sales 1035	-19.92416016	-43.926568	Avenida Francisco Sales 1035	-19.92416016	-43.926568	127	561963	14793167	14793167

@@ -8,15 +8,19 @@ import { MapView } from './components/MapView';
 import { EmployeeList } from './components/EmployeeList';
 import { EmployeeForm } from './components/EmployeeForm';
 import { EmployeeView } from './components/EmployeeView';
+import { EmployeeAnalysis } from './components/EmployeeAnalysis';
+import { AssignRouteToEmployee } from './components/AssignRouteToEmployee';
 import { ReportsDashboard } from './components/ReportsDashboard';
 import { locations } from './data/locations';
 import { calculateRoutes } from './services/routeService';
+import { getEmployeeSavedRoute } from './services/employeeRouteService';
+import { getAllEmployees } from './services/employeeService';
 import { isAuthenticated, logout as authLogout } from './services/authService';
 import { Route, Location } from './types/route';
 import { Employee } from './types/employee';
 
 type ActiveTab = 'routes' | 'employees' | 'reports';
-type EmployeeViewMode = 'list' | 'form' | 'view';
+type EmployeeViewMode = 'list' | 'form' | 'view' | 'analysis';
 
 function App() {
   const [authenticated, setAuthenticated] = useState(false);
@@ -31,6 +35,8 @@ function App() {
   const [origin, setOrigin] = useState<Location | undefined>();
   const [destination, setDestination] = useState<Location | undefined>();
   const [isLoading, setIsLoading] = useState(false);
+  const [showAssignRouteModal, setShowAssignRouteModal] = useState(false);
+  const [assignRouteType, setAssignRouteType] = useState<'toWork' | 'fromWork' | null>(null);
 
   // Verifica autenticação ao montar o componente
   useEffect(() => {
@@ -62,7 +68,16 @@ function App() {
     setSelectedEmployee(undefined);
   };
 
-  const handleCalculateRoutes = async (originLoc: Location, destinationLoc: Location) => {
+  const handleCalculateRoutes = async (originLoc: Location, destinationLoc: Location, originEmployeeId?: string, destinationEmployeeId?: string) => {
+    // Validar se origem e destino são diferentes
+    if (
+      Math.abs(originLoc.lat - destinationLoc.lat) < 0.0001 &&
+      Math.abs(originLoc.lng - destinationLoc.lng) < 0.0001
+    ) {
+      alert('Origem e destino não podem ser o mesmo local.');
+      return;
+    }
+
     setIsLoading(true);
     setOrigin(originLoc);
     setDestination(destinationLoc);
@@ -70,16 +85,51 @@ function App() {
     setSelectedRoute(undefined);
 
     try {
-      const calculatedRoutes = await calculateRoutes({
-        origin: originLoc,
-        destination: destinationLoc,
-      });
-      setRoutes(calculatedRoutes);
-      if (calculatedRoutes.length > 0) {
-        setSelectedRoute(calculatedRoutes[0]);
+      // Verificar se algum colaborador já tem rota salva para esta origem/destino
+      let savedRoute: Route | null = null;
+      
+      if (originEmployeeId) {
+        const employees = await getAllEmployees();
+        const employee = employees.find(emp => emp.id === originEmployeeId);
+        if (employee) {
+          savedRoute = getEmployeeSavedRoute(employee, {
+            origin: originLoc,
+            destination: destinationLoc,
+          });
+        }
+      }
+      
+      if (!savedRoute && destinationEmployeeId) {
+        const employees = await getAllEmployees();
+        const employee = employees.find(emp => emp.id === destinationEmployeeId);
+        if (employee) {
+          savedRoute = getEmployeeSavedRoute(employee, {
+            origin: originLoc,
+            destination: destinationLoc,
+          });
+        }
+      }
+
+      // Se encontrou rota salva, usar ela; senão, calcular nova
+      if (savedRoute) {
+        setRoutes([savedRoute]);
+        setSelectedRoute(savedRoute);
+      } else {
+        const calculatedRoutes = await calculateRoutes({
+          origin: originLoc,
+          destination: destinationLoc,
+        });
+        setRoutes(calculatedRoutes);
+        if (calculatedRoutes.length > 0) {
+          setSelectedRoute(calculatedRoutes[0]);
+        }
       }
     } catch (error) {
       console.error('Error calculating routes:', error);
+      // Não mostrar erro ao usuário se for erro de cache (já foi logado)
+      if (error instanceof Error && !error.message.includes('cache')) {
+        alert('Erro ao calcular rotas. Tente novamente.');
+      }
     } finally {
       setIsLoading(false);
     }
@@ -114,6 +164,31 @@ function App() {
   const handleEmployeeBack = () => {
     setEmployeeViewMode('list');
     setSelectedEmployee(undefined);
+  };
+
+  const handleEmployeeAnalyze = (employee: Employee) => {
+    setSelectedEmployee(employee);
+    setEmployeeViewMode('analysis');
+  };
+
+  const handleAssignRoute = (routeType: 'toWork' | 'fromWork') => {
+    if (!selectedRoute || !origin || !destination) {
+      alert('Selecione uma rota primeiro');
+      return;
+    }
+    setAssignRouteType(routeType);
+    setShowAssignRouteModal(true);
+  };
+
+  const handleAssignRouteSave = () => {
+    setShowAssignRouteModal(false);
+    setAssignRouteType(null);
+    setEmployeeListRefresh(prev => prev + 1);
+  };
+
+  const handleAssignRouteCancel = () => {
+    setShowAssignRouteModal(false);
+    setAssignRouteType(null);
   };
 
   // Exibe loading enquanto verifica autenticação
@@ -183,6 +258,8 @@ function App() {
                           route={route}
                           onSelect={() => setSelectedRoute(route)}
                           isSelected={selectedRoute?.id === route.id}
+                          onAssignToEmployee={handleAssignRoute}
+                          showAssignButton={true}
                         />
                       ))}
                     </motion.div>
@@ -226,12 +303,48 @@ function App() {
                   employee={selectedEmployee}
                   onBack={handleEmployeeBack}
                   onEdit={() => handleEmployeeEdit(selectedEmployee)}
+                  onAnalyze={() => handleEmployeeAnalyze(selectedEmployee)}
+                />
+              )}
+              {employeeViewMode === 'analysis' && selectedEmployee && (
+                <EmployeeAnalysis
+                  employeeId={selectedEmployee.id}
+                  onBack={handleEmployeeBack}
                 />
               )}
             </motion.div>
           )}
         </AnimatePresence>
       </div>
+
+      {/* Modal de Atribuição de Rota */}
+      <AnimatePresence>
+        {showAssignRouteModal && selectedRoute && origin && destination && assignRouteType && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            onClick={handleAssignRouteCancel}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <AssignRouteToEmployee
+                route={selectedRoute}
+                origin={origin}
+                destination={destination}
+                routeType={assignRouteType}
+                onSave={handleAssignRouteSave}
+                onCancel={handleAssignRouteCancel}
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

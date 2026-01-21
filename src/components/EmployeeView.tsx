@@ -1,16 +1,15 @@
 import { motion } from 'framer-motion';
-import { ArrowLeft, MapPin, Mail, Phone, FileText, Briefcase, Building2, Star } from 'lucide-react';
+import { ArrowLeft, MapPin, Mail, Phone, FileText, Briefcase, Star, CreditCard, CheckCircle, XCircle, BarChart3 } from 'lucide-react';
 import { Employee } from '../types/employee';
 
 interface EmployeeViewProps {
   employee: Employee;
   onBack: () => void;
   onEdit: () => void;
+  onAnalyze?: () => void;
 }
 
-export function EmployeeView({ employee, onBack, onEdit }: EmployeeViewProps) {
-  const mainAddress = employee.addresses.find(addr => addr.isMain) || employee.addresses[0];
-
+export function EmployeeView({ employee, onBack, onEdit, onAnalyze }: EmployeeViewProps) {
   return (
     <motion.div
       initial={{ opacity: 0, x: 50 }}
@@ -27,14 +26,27 @@ export function EmployeeView({ employee, onBack, onEdit }: EmployeeViewProps) {
           <ArrowLeft className="w-5 h-5" />
           Voltar
         </motion.button>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={onEdit}
-          className="bg-gradient-to-r from-[#C4161C] to-[#8B0F14] text-white px-6 py-2 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-        >
-          Editar
-        </motion.button>
+        <div className="flex gap-3">
+          {onAnalyze && (
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={onAnalyze}
+              className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-2 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+            >
+              <BarChart3 className="w-5 h-5" />
+              Análise
+            </motion.button>
+          )}
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={onEdit}
+            className="bg-gradient-to-r from-[#C4161C] to-[#8B0F14] text-white px-6 py-2 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            Editar
+          </motion.button>
+        </div>
       </div>
 
       <div className="mb-6">
@@ -173,6 +185,68 @@ export function EmployeeView({ employee, onBack, onEdit }: EmployeeViewProps) {
           ))}
         </div>
       </div>
+
+      {/* Seção de Cartões de Ônibus */}
+      {(employee.busCards && employee.busCards.length > 0) && (
+        <div className="mb-6">
+          <div className="flex items-center gap-2 mb-4">
+            <CreditCard className="w-5 h-5 text-[#C4161C]" />
+            <h3 className="text-lg font-bold text-gray-800">Cartões de Ônibus</h3>
+            <span className="text-sm text-gray-600">({employee.busCards.length})</span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {employee.busCards.map((card, index) => (
+              <motion.div
+                key={card.id || index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                className={`bg-gradient-to-br rounded-xl p-4 border-2 ${
+                  card.isActive
+                    ? 'from-green-50 to-emerald-50 border-green-300'
+                    : 'from-gray-50 to-gray-100 border-gray-300'
+                }`}
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <CreditCard className={`w-5 h-5 ${card.isActive ? 'text-green-600' : 'text-gray-400'}`} />
+                    <h4 className="font-semibold text-gray-800">
+                      Cartão {index + 1}
+                    </h4>
+                  </div>
+                  {card.isActive ? (
+                    <div className="flex items-center gap-1 bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs font-bold">
+                      <CheckCircle className="w-3 h-3" />
+                      Ativo
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-1 bg-gray-200 text-gray-600 px-2 py-1 rounded-full text-xs font-bold">
+                      <XCircle className="w-3 h-3" />
+                      Inativo
+                    </div>
+                  )}
+                </div>
+
+                <div className="space-y-2 text-sm">
+                  <div>
+                    <span className="font-semibold text-gray-700">Número:</span>
+                    <p className="text-gray-800 font-mono bg-white/50 px-2 py-1 rounded mt-1">
+                      {card.cardNumber || 'Não informado'}
+                    </p>
+                  </div>
+                  {card.cardType && (
+                    <div>
+                      <span className="font-semibold text-gray-700">Tipo:</span>
+                      <p className="text-gray-800">{card.cardType}</p>
+                    </div>
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="pt-4 border-t border-gray-200 text-xs text-gray-500">
         <p>

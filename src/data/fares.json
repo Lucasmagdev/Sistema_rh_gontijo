@@ -1,0 +1,220 @@
+{
+  "description": "Tarifas de ônibus para Belo Horizonte e Região Metropolitana (RMBH)",
+  "lastUpdated": "2024-01-01",
+  "currency": "BRL",
+  "city": "Belo Horizonte",
+  "services": {
+    "troncais_move": {
+      "name": "Troncais MOVE",
+      "unitary_fare": 6.25,
+      "description": "Linhas troncais do sistema MOVE"
+    },
+    "troncais_convencionais": {
+      "name": "Troncais Convencionais",
+      "unitary_fare": 6.25,
+      "description": "Linhas troncais convencionais",
+      "integration_at_station": 0.00,
+      "integration_outside_station": 3.13
+    },
+    "estruturais": {
+      "name": "Estruturais",
+      "unitary_fare": 6.25,
+      "description": "Linhas estruturais",
+      "integration_at_station": 0.00,
+      "integration_outside_station": 3.13
+    },
+    "alimentadoras": {
+      "name": "Alimentadoras",
+      "unitary_fare": 6.00,
+      "description": "Linhas alimentadoras",
+      "integration_at_station": 0.00,
+      "integration_outside_station": 3.00
+    },
+    "circular": {
+      "name": "Circular",
+      "unitary_fare": 6.00,
+      "description": "Linhas circulares"
+    },
+    "vilas_favelas": {
+      "name": "Vilas e Favelas",
+      "unitary_fare": 0.00,
+      "description": "Linhas para vilas e favelas (gratuito)"
+    },
+    "metro": {
+      "name": "Metrô",
+      "unitary_fare": 5.80,
+      "description": "Sistema de metrô"
+    }
+  },
+  "integration_matrix": {
+    "1st_boarding": {
+      "troncais_move": {
+        "2nd_boarding": {
+          "troncais_move": 0.00,
+          "troncais_convencionais_na_estacao": 0.00,
+          "troncais_convencionais_fora_estacao": 3.13,
+          "estruturais_na_estacao": 0.00,
+          "estruturais_fora_estacao": 3.13,
+          "alimentadoras_na_estacao": 0.00,
+          "alimentadoras_fora_estacao": 3.00,
+          "circular": 3.00,
+          "vilas_favelas": 0.00,
+          "metro": 4.15
+        }
+      },
+      "troncais_convencionais": {
+        "2nd_boarding": {
+          "troncais_move": 3.13,
+          "troncais_convencionais_na_estacao": 0.00,
+          "troncais_convencionais_fora_estacao": 3.13,
+          "estruturais_na_estacao": 0.00,
+          "estruturais_fora_estacao": 3.13,
+          "alimentadoras_na_estacao": 0.00,
+          "alimentadoras_fora_estacao": 3.00,
+          "circular": 3.00,
+          "vilas_favelas": 0.00,
+          "metro": 4.15
+        }
+      },
+      "estruturais": {
+        "2nd_boarding": {
+          "troncais_move": 3.13,
+          "troncais_convencionais_na_estacao": 3.13,
+          "troncais_convencionais_fora_estacao": 3.13,
+          "estruturais_na_estacao": 0.00,
+          "estruturais_fora_estacao": 3.13,
+          "alimentadoras_na_estacao": 0.00,
+          "alimentadoras_fora_estacao": 3.00,
+          "circular": 3.00,
+          "vilas_favelas": 0.00,
+          "metro": 4.15
+        }
+      },
+      "alimentadoras": {
+        "2nd_boarding": {
+          "troncais_move": 0.25,
+          "troncais_convencionais_na_estacao": 0.25,
+          "troncais_convencionais_fora_estacao": 3.25,
+          "estruturais_na_estacao": 3.25,
+          "estruturais_fora_estacao": 3.25,
+          "alimentadoras_na_estacao": 0.00,
+          "alimentadoras_fora_estacao": 3.00,
+          "circular": 3.00,
+          "vilas_favelas": 0.00,
+          "metro": 3.15
+        }
+      },
+      "circular": {
+        "2nd_boarding": {
+          "troncais_move": 3.25,
+          "troncais_convencionais_na_estacao": 3.25,
+          "troncais_convencionais_fora_estacao": 3.25,
+          "estruturais_na_estacao": 3.25,
+          "estruturais_fora_estacao": 3.25,
+          "alimentadoras_na_estacao": 3.00,
+          "alimentadoras_fora_estacao": 3.00,
+          "circular": 6.00,
+          "vilas_favelas": 0.00,
+          "metro": 3.90
+        }
+      },
+      "vilas_favelas": {
+        "2nd_boarding": {
+          "troncais_move": 6.25,
+          "troncais_convencionais_na_estacao": 6.25,
+          "troncais_convencionais_fora_estacao": 6.25,
+          "estruturais_na_estacao": 6.25,
+          "estruturais_fora_estacao": 6.25,
+          "alimentadoras_na_estacao": 6.00,
+          "alimentadoras_fora_estacao": 6.00,
+          "circular": 6.00,
+          "vilas_favelas": 0.00,
+          "metro": 5.80
+        }
+      },
+      "metro": {
+        "2nd_boarding": {
+          "troncais_move": 4.60,
+          "troncais_convencionais_na_estacao": 4.60,
+          "troncais_convencionais_fora_estacao": 4.60,
+          "estruturais_na_estacao": 4.60,
+          "estruturais_fora_estacao": 4.60,
+          "alimentadoras_na_estacao": 3.35,
+          "alimentadoras_fora_estacao": 4.10,
+          "circular": 4.10,
+          "vilas_favelas": 0.00,
+          "metro": 5.80
+        }
+      }
+    }
+  },
+  "fares": {
+    "urban_bh": {
+      "base": 4.50,
+      "description": "Tarifa urbana de Belo Horizonte (BHTrans) - DEPRECATED: usar services",
+      "integration": 0.00,
+      "note": "Integração gratuita dentro do sistema urbano"
+    },
+    "metropolitan": {
+      "base": 5.75,
+      "description": "Tarifa metropolitana (DER-MG)",
+      "integration": 0.00,
+      "note": "Tarifa única para viagens metropolitanas"
+    },
+    "integration_urban_to_metro": {
+      "base": 4.50,
+      "integration": 1.25,
+      "description": "Integração entre urbano BH e metropolitano",
+      "note": "R$ 4,50 (urbano) + R$ 1,25 (integração metropolitana)"
+    }
+  },
+  "zones": {
+    "bh_urban": {
+      "cities": ["Belo Horizonte"],
+      "fare_type": "urban_bh"
+    },
+    "rmbh_metro": {
+      "cities": [
+        "Contagem",
+        "Betim",
+        "Santa Luzia",
+        "Venda Nova",
+        "Ribeirão das Neves",
+        "Sabará",
+        "Nova Lima",
+        "Ibirité",
+        "Sarzedo",
+        "Brumadinho",
+        "Mário Campos"
+      ],
+      "fare_type": "metropolitan"
+    }
+  },
+  "calculation_rules": {
+    "single_route": {
+      "description": "Rota única sem integração",
+      "formula": "base_fare"
+    },
+    "with_integration": {
+      "description": "Rota com integração",
+      "formula": "base_fare + (integrations_count * integration_fare)"
+    },
+    "urban_to_metro": {
+      "description": "Integração entre urbano e metropolitano",
+      "formula": "urban_base + metropolitan_integration"
+    },
+    "bh_integration": {
+      "description": "Integração no sistema BHTrans",
+      "formula": "1st_boarding_fare + integration_matrix[1st_service][2nd_service]"
+    }
+  },
+  "notes": [
+    "Valores baseados na tabela oficial de tarifas do BHTrans",
+    "Tarifas podem variar conforme atualizações oficiais",
+    "Para valores atualizados, consulte: https://transfacil.com.br ou https://prefeitura.pbh.gov.br/sumob",
+    "Integração 'Na Estação' = integração feita dentro de estações de integração",
+    "Integração 'Fora da Estação' = integração feita em pontos de parada normais",
+    "Linhas 'Vilas e Favelas' têm tarifa gratuita (R$ 0,00)",
+    "Algumas integrações têm valores especiais conforme condições específicas (ver notas na tabela original)"
+  ]
+}

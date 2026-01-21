@@ -1,4 +1,6 @@
 import { Route, RouteRequest, BusLine } from '../types/route';
+import { calculateFare, type ServiceType } from './fareCalculator';
+import faresData from '../data/fares.json';
 
 const busLines: BusLine[] = [
   { number: '5001', name: 'BH - Contagem', type: 'metropolitano' },
@@ -44,6 +46,7 @@ export async function calculateRoutesMock(request: RouteRequest): Promise<Route[
 
   const routes: Route[] = [];
 
+  const route1Services: ServiceType[] = ['troncais_convencionais'];
   const route1: Route = {
     id: '1',
     segments: [
@@ -57,12 +60,15 @@ export async function calculateRoutesMock(request: RouteRequest): Promise<Route[
     ],
     totalDuration: Math.round(distance * 2.5),
     totalDistance: distance,
-    totalCost: 4.50,
+    totalCost: busLines[0].type === 'metropolitano'
+      ? (faresData.fares?.metropolitan?.base ?? 5.75)
+      : calculateFare(route1Services).totalFare,
     integrations: 0,
     path: generatePath(request.origin.lat, request.origin.lng, request.destination.lat, request.destination.lng),
     badges: ['rapido'],
   };
 
+  const route2Services: ServiceType[] = ['troncais_convencionais', 'troncais_convencionais'];
   const route2: Route = {
     id: '2',
     segments: [
@@ -83,7 +89,9 @@ export async function calculateRoutesMock(request: RouteRequest): Promise<Route[
     ],
     totalDuration: Math.round(distance * 3.5),
     totalDistance: distance,
-    totalCost: 4.50,
+    totalCost: (busLines[1].type === 'metropolitano' || busLines[2].type === 'metropolitano')
+      ? (faresData.fares?.metropolitan?.base ?? 5.75)
+      : calculateFare(route2Services).totalFare,
     integrations: 1,
     path: [
       ...generatePath(request.origin.lat, request.origin.lng, -19.917, -43.935, 3),
@@ -92,6 +100,7 @@ export async function calculateRoutesMock(request: RouteRequest): Promise<Route[
     badges: ['economico'],
   };
 
+  const route3Services: ServiceType[] = ['troncais_convencionais'];
   const route3: Route = {
     id: '3',
     segments: [
@@ -105,7 +114,9 @@ export async function calculateRoutesMock(request: RouteRequest): Promise<Route[
     ],
     totalDuration: Math.round(distance * 3),
     totalDistance: distance * 1.1,
-    totalCost: 5.50,
+    totalCost: busLines[3].type === 'metropolitano'
+      ? (faresData.fares?.metropolitan?.base ?? 5.75)
+      : calculateFare(route3Services).totalFare,
     integrations: 0,
     path: generatePath(request.origin.lat, request.origin.lng, request.destination.lat, request.destination.lng, 8),
     badges: ['equilibrado'],

@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_contact_email,feed_contact_url,feed_lang,feed_start_date,feed_end_date,feed_version
+Bus2,https://bus2.app,suporte@bus2.me,https://bus2.app/form-page.html,pt-BR,20230907,20270123,202601202014

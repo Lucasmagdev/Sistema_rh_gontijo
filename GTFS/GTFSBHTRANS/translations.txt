@@ -1,0 +1,15 @@
+table_name,field_name,record_id,language,translation
+calendar,service_id,307679,pt-BR,Dias Úteis Convencional
+calendar,service_id,307680,pt-BR,Domingos Convencional
+calendar,service_id,307681,pt-BR,Sábados Convencional
+calendar,service_id,307682,pt-BR,Dias Úteis - Suplementar
+calendar,service_id,307683,pt-BR,Domingos - Suplementar
+calendar,service_id,307684,pt-BR,Sábados - Suplementar
+calendar,service_id,444623,pt-BR,Domingo/Terça_Carnaval_Conv_20-01-2026
+calendar,service_id,444624,pt-BR,Quarta-feira_Cinzas_Conv_20-01-2026
+calendar,service_id,444625,pt-BR,Segunda_Carnaval_Conv_20-01-2026
+calendar,service_id,444626,pt-BR,Sábado_Carnaval_Conv_20-01-2026
+calendar,service_id,444627,pt-BR,Domingo/Terça_Carnaval_Suple_20-01-2026
+calendar,service_id,444628,pt-BR,Quarta-feira_Cinzas_Suple_20-01-2026
+calendar,service_id,444629,pt-BR,Segunda_Carnaval_Suple_20-01-2026
+calendar,service_id,444630,pt-BR,Sábado_Carnaval_Suple_20-01-2026
