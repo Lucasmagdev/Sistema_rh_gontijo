@@ -21,3 +21,8 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Arquivos GTFS grandes
+GTFS/**/*.zip
+GTFS/**/shapes.txt
+GTFS/**/stop_times.txt
