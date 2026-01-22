@@ -1,25 +1,27 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Header } from './components/Header';
-import { Login } from './components/Login';
-import { RouteInputPanel } from './components/RouteInputPanel';
-import { RouteCard } from './components/RouteCard';
-import { MapView } from './components/MapView';
+import { Login } from './components/common/Login';
+import { RouteInputPanel } from './components/routes/RouteInputPanel';
+import { RouteCard } from './components/routes/RouteCard';
+import { MapView } from './components/routes/MapView';
 import { EmployeeList } from './components/EmployeeList';
-import { EmployeeForm } from './components/EmployeeForm';
-import { EmployeeView } from './components/EmployeeView';
-import { EmployeeAnalysis } from './components/EmployeeAnalysis';
-import { AssignRouteToEmployee } from './components/AssignRouteToEmployee';
-import { ReportsDashboard } from './components/ReportsDashboard';
+import { EmployeeForm } from './components/employees/EmployeeForm';
+import { EmployeeView } from './components/employees/EmployeeView';
+import { EmployeeAnalysis } from './components/employees/EmployeeAnalysis';
+import { AssignRouteToEmployee } from './components/routes/AssignRouteToEmployee';
+import { ReportsDashboard } from './components/reports/ReportsDashboard';
+import { RechargeCalculation } from './components/reports/RechargeCalculation';
+import { StatusBar } from './components/StatusBar';
 import { locations } from './data/locations';
-import { calculateRoutes } from './services/routeService';
+import { calculateRoutes } from './services/routes/routeService';
 import { getEmployeeSavedRoute } from './services/employeeRouteService';
-import { getAllEmployees } from './services/employeeService';
-import { isAuthenticated, logout as authLogout } from './services/authService';
+import { getAllEmployees } from './services/employeeServiceSupabase';
+import { isAuthenticated, logout as authLogout } from './services/auth/authService';
 import { Route, Location } from './types/route';
 import { Employee } from './types/employee';
 
-type ActiveTab = 'routes' | 'employees' | 'reports';
+type ActiveTab = 'routes' | 'employees' | 'reports' | 'recharge';
 type EmployeeViewMode = 'list' | 'form' | 'view' | 'analysis';
 
 function App() {
@@ -212,10 +214,21 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200">
       <Header activeTab={activeTab} onTabChange={setActiveTab} onLogout={handleLogout} />
+      <StatusBar refreshTrigger={employeeListRefresh} />
 
-      <div className="container mx-auto px-4 py-6 h-[calc(100vh-88px)]">
+      <div className="container mx-auto px-4 py-6 h-[calc(100vh-120px)]">
         <AnimatePresence mode="wait">
-          {activeTab === 'reports' ? (
+          {activeTab === 'recharge' ? (
+            <motion.div
+              key="recharge"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              className="overflow-y-auto"
+            >
+              <RechargeCalculation />
+            </motion.div>
+          ) : activeTab === 'reports' ? (
             <motion.div
               key="reports"
               initial={{ opacity: 0, x: 20 }}
@@ -287,6 +300,7 @@ function App() {
                 <EmployeeList
                   onView={handleEmployeeView}
                   onEdit={handleEmployeeEdit}
+                  onAnalyze={handleEmployeeAnalyze}
                   onNew={handleEmployeeNew}
                   refreshTrigger={employeeListRefresh}
                 />

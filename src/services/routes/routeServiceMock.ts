@@ -1,6 +1,6 @@
 import { Route, RouteRequest, BusLine } from '../types/route';
 import { calculateFare, type ServiceType } from './fareCalculator';
-import faresData from '../data/fares.json';
+import faresData from '../../data/fares.json';
 
 const busLines: BusLine[] = [
   { number: '5001', name: 'BH - Contagem', type: 'metropolitano' },

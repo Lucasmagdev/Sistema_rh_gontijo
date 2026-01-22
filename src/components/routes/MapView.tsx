@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 import { GoogleMap, MarkerF, PolylineF, useJsApiLoader } from '@react-google-maps/api';
 import { motion } from 'framer-motion';
-import { Route, Location } from '../types/route';
+import { Route, Location } from '../../types/route';
 
 interface MapViewProps {
   origin?: Location;

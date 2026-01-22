@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Save, X, Plus, Trash2, MapPin, CreditCard } from 'lucide-react';
-import { Employee, EmployeeFormData, Address, BusCard } from '../types/employee';
-import { createEmployee, updateEmployee } from '../services/employeeServiceSupabase';
+import { Employee, EmployeeFormData, Address, BusCard } from '../../types/employee';
+import { createEmployee, updateEmployee } from '../../services/employeeServiceSupabase';
 
 interface EmployeeFormProps {
   employee?: Employee;

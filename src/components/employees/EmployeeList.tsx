@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Users, Plus, Search, Edit, Trash2, Eye, BarChart3 } from 'lucide-react';
-import { Employee } from '../types/employee';
-import { getAllEmployees, deleteEmployee } from '../services/employeeServiceSupabase';
+import { Employee } from '../../types/employee';
+import { getAllEmployees, deleteEmployee } from '../../services/employeeServiceSupabase';
 
 interface EmployeeListProps {
   onView: (employee: Employee) => void;

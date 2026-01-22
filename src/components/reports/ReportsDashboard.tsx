@@ -16,18 +16,22 @@ import {
   Zap,
   Coins,
   Bus,
-  MapPin,
   Clock,
   Activity,
   Gauge,
-  Leaf,
-  LineChart
+  LineChart,
+  Filter,
+  X
 } from 'lucide-react';
 
-type ReportSection = 'overview' | 'operational' | 'coverage' | 'demand' | 'costs' | 'environmental' | 'comparative' | 'employees';
+type ReportSection = 'overview' | 'operational' | 'demand' | 'comparative' | 'employees';
 
 export function ReportsDashboard() {
   const [activeSection, setActiveSection] = useState<ReportSection>('overview');
+  const [showFilters, setShowFilters] = useState(false);
+  const [periodFilter, setPeriodFilter] = useState<'7' | '30' | '90' | 'custom'>('30');
+  const [routeTypeFilter, setRouteTypeFilter] = useState<'all' | 'urbano' | 'metropolitano'>('all');
+  const [departmentFilter, setDepartmentFilter] = useState<string>('all');
 
   // Dados conceituais para demonstração (serão substituídos por dados reais no futuro)
   const costMetrics = {
@@ -62,15 +66,6 @@ export function ReportsDashboard() {
     offPeakEfficiency: 92.1,
   };
 
-  const coverageMetrics = {
-    coverageArea: 285.5,
-    populationCovered: 1250000,
-    coveragePercentage: 78.5,
-    accessibilityScore: 82.3,
-    underservedAreas: 12,
-    newRoutesNeeded: 5,
-  };
-
   const demandMetrics = {
     dailyPassengers: 125000,
     peakHourPassengers: 45000,
@@ -78,15 +73,6 @@ export function ReportsDashboard() {
     routeUtilization: 85.2,
     demandGrowth: 8.3,
     seasonalVariation: 12.5,
-  };
-
-  const environmentalMetrics = {
-    co2Reduction: 1250,
-    fuelEfficiency: 8.5,
-    emissionsPerKm: 0.85,
-    greenRoutes: 35,
-    electricVehicles: 8,
-    sustainabilityScore: 75.8,
   };
 
   const integrationMetrics = {
@@ -213,10 +199,7 @@ export function ReportsDashboard() {
   const sections: { id: ReportSection; label: string; icon: React.ReactNode }[] = [
     { id: 'overview', label: 'Visão Geral', icon: <BarChart3 className="w-5 h-5" /> },
     { id: 'operational', label: 'Performance Operacional', icon: <Activity className="w-5 h-5" /> },
-    { id: 'coverage', label: 'Cobertura e Acessibilidade', icon: <MapPin className="w-5 h-5" /> },
     { id: 'demand', label: 'Demanda e Utilização', icon: <Users className="w-5 h-5" /> },
-    { id: 'costs', label: 'Análise de Custos', icon: <DollarSign className="w-5 h-5" /> },
-    { id: 'environmental', label: 'Impacto Ambiental', icon: <Leaf className="w-5 h-5" /> },
     { id: 'comparative', label: 'Análise Comparativa', icon: <LineChart className="w-5 h-5" /> },
     { id: 'employees', label: 'Uso por Colaboradores', icon: <Users className="w-5 h-5" /> },
   ];
@@ -240,10 +223,19 @@ export function ReportsDashboard() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <div className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-lg">
-              <Calendar className="w-4 h-4 text-gray-600" />
-              <span className="text-sm text-gray-700 font-medium">Últimos 30 dias</span>
-            </div>
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => setShowFilters(!showFilters)}
+              className={`px-4 py-2 rounded-lg font-medium text-sm transition-all flex items-center gap-2 ${
+                showFilters
+                  ? 'bg-gradient-to-r from-[#C4161C] to-[#8B0F14] text-white shadow-lg'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              }`}
+            >
+              <Filter className="w-4 h-4" />
+              Filtros
+            </motion.button>
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -255,6 +247,104 @@ export function ReportsDashboard() {
           </div>
         </div>
       </motion.div>
+
+      {/* Painel de Filtros */}
+      {showFilters && (
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: 'auto' }}
+          exit={{ opacity: 0, height: 0 }}
+          className="bg-white/80 backdrop-blur-xl rounded-2xl shadow-lg p-6 border border-white/20 overflow-hidden"
+        >
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-2">
+              <Filter className="w-5 h-5 text-[#C4161C]" />
+              <h3 className="text-lg font-bold text-gray-800">Filtros</h3>
+            </div>
+            <button
+              onClick={() => setShowFilters(false)}
+              className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+            >
+              <X className="w-5 h-5 text-gray-600" />
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {/* Filtro de Período */}
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <Calendar className="w-4 h-4 inline mr-1" />
+                Período
+              </label>
+              <select
+                value={periodFilter}
+                onChange={(e) => setPeriodFilter(e.target.value as '7' | '30' | '90' | 'custom')}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C4161C] focus:border-transparent bg-white text-gray-700"
+              >
+                <option value="7">Últimos 7 dias</option>
+                <option value="30">Últimos 30 dias</option>
+                <option value="90">Últimos 90 dias</option>
+                <option value="custom">Período personalizado</option>
+              </select>
+            </div>
+
+            {/* Filtro de Tipo de Rota */}
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <Route className="w-4 h-4 inline mr-1" />
+                Tipo de Rota
+              </label>
+              <select
+                value={routeTypeFilter}
+                onChange={(e) => setRouteTypeFilter(e.target.value as 'all' | 'urbano' | 'metropolitano')}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C4161C] focus:border-transparent bg-white text-gray-700"
+              >
+                <option value="all">Todas as rotas</option>
+                <option value="urbano">Rotas Urbanas</option>
+                <option value="metropolitano">Rotas Metropolitanas</option>
+              </select>
+            </div>
+
+            {/* Filtro de Departamento (apenas para seção de colaboradores) */}
+            {activeSection === 'employees' && (
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <Users className="w-4 h-4 inline mr-1" />
+                  Departamento
+                </label>
+                <select
+                  value={departmentFilter}
+                  onChange={(e) => setDepartmentFilter(e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C4161C] focus:border-transparent bg-white text-gray-700"
+                >
+                  <option value="all">Todos os departamentos</option>
+                  <option value="operacoes">Operações</option>
+                  <option value="comercial">Comercial</option>
+                  <option value="administrativo">Administrativo</option>
+                  <option value="rh">RH</option>
+                </select>
+              </div>
+            )}
+
+            {/* Espaço vazio quando não está na seção de colaboradores */}
+            {activeSection !== 'employees' && <div></div>}
+          </div>
+
+          {/* Botão de Limpar Filtros */}
+          <div className="mt-4 flex justify-end">
+            <button
+              onClick={() => {
+                setPeriodFilter('30');
+                setRouteTypeFilter('all');
+                setDepartmentFilter('all');
+              }}
+              className="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 font-medium transition-colors"
+            >
+              Limpar filtros
+            </button>
+          </div>
+        </motion.div>
+      )}
 
       {/* Navegação de Seções */}
       <motion.div
@@ -392,9 +482,9 @@ export function ReportsDashboard() {
                 <p className="text-xs text-gray-600">Redução de custos no período</p>
               </div>
               <div className="p-4 bg-purple-50 rounded-xl border border-purple-200">
-                <p className="text-sm font-semibold text-gray-700 mb-2">Cobertura</p>
-                <p className="text-2xl font-bold text-purple-600 mb-1">{coverageMetrics.coveragePercentage}%</p>
-                <p className="text-xs text-gray-600">Área coberta pelo sistema</p>
+                <p className="text-sm font-semibold text-gray-700 mb-2">Utilização</p>
+                <p className="text-2xl font-bold text-purple-600 mb-1">{efficiencyMetrics.utilizationRate}%</p>
+                <p className="text-xs text-gray-600">Taxa de utilização de recursos</p>
               </div>
             </div>
           </motion.div>
@@ -499,76 +589,6 @@ export function ReportsDashboard() {
         </div>
       )}
 
-      {/* COBERTURA E ACESSIBILIDADE */}
-      {activeSection === 'coverage' && (
-        <div className="space-y-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="bg-white/80 backdrop-blur-xl rounded-2xl shadow-2xl p-6 border border-white/20"
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="bg-green-100 p-2 rounded-lg">
-                <MapPin className="w-5 h-5 text-green-600" />
-              </div>
-              <div>
-                <h3 className="text-lg font-bold text-gray-800">Cobertura e Acessibilidade</h3>
-                <p className="text-sm text-gray-600">Análise de alcance geográfico e acessibilidade do sistema</p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-              <div className="p-5 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl border border-green-200">
-                <p className="text-sm font-semibold text-gray-700 mb-2">Área Coberta</p>
-                <p className="text-3xl font-bold text-green-600 mb-1">{coverageMetrics.coverageArea} km²</p>
-                <p className="text-xs text-gray-600">Cobertura geográfica total</p>
-              </div>
-
-              <div className="p-5 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-200">
-                <p className="text-sm font-semibold text-gray-700 mb-2">População Atendida</p>
-                <p className="text-3xl font-bold text-blue-600 mb-1">{formatNumber(coverageMetrics.populationCovered)}</p>
-                <p className="text-xs text-gray-600">Habitantes com acesso</p>
-              </div>
-
-              <div className="p-5 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl border border-purple-200">
-                <p className="text-sm font-semibold text-gray-700 mb-2">Taxa de Cobertura</p>
-                <p className="text-3xl font-bold text-purple-600 mb-1">{coverageMetrics.coveragePercentage}%</p>
-                <p className="text-xs text-gray-600">Percentual da área total</p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="p-5 bg-orange-50 rounded-xl border border-orange-200">
-                <div className="flex items-center gap-2 mb-3">
-                  <AlertTriangle className="w-5 h-5 text-orange-600" />
-                  <p className="text-sm font-semibold text-gray-800">Áreas Subatendidas</p>
-                </div>
-                <p className="text-2xl font-bold text-orange-600 mb-1">{coverageMetrics.underservedAreas}</p>
-                <p className="text-xs text-gray-600">Regiões que necessitam expansão</p>
-              </div>
-
-              <div className="p-5 bg-blue-50 rounded-xl border border-blue-200">
-                <div className="flex items-center gap-2 mb-3">
-                  <Route className="w-5 h-5 text-blue-600" />
-                  <p className="text-sm font-semibold text-gray-800">Novas Rotas Necessárias</p>
-                </div>
-                <p className="text-2xl font-bold text-blue-600 mb-1">{coverageMetrics.newRoutesNeeded}</p>
-                <p className="text-xs text-gray-600">Rotas recomendadas para expansão</p>
-              </div>
-            </div>
-
-            <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-xl">
-              <p className="text-sm text-blue-800">
-                <strong>Insight:</strong> O sistema cobre {coverageMetrics.coveragePercentage}% da área total, 
-                atendendo {formatNumber(coverageMetrics.populationCovered)} habitantes. 
-                A identificação de {coverageMetrics.underservedAreas} áreas subatendidas indica oportunidades 
-                estratégicas de expansão para melhorar a acessibilidade.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      )}
-
       {/* DEMANDA E UTILIZAÇÃO */}
       {activeSection === 'demand' && (
         <div className="space-y-6">
@@ -618,181 +638,6 @@ export function ReportsDashboard() {
                 <p className="text-sm font-semibold text-gray-700 mb-2">Crescimento da Demanda</p>
                 <p className="text-2xl font-bold text-green-600 mb-1">{formatPercentage(demandMetrics.demandGrowth)}</p>
                 <p className="text-xs text-gray-600">Aumento em relação ao período anterior</p>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      )}
-
-      {/* ANÁLISE DE CUSTOS */}
-      {activeSection === 'costs' && (
-        <div className="space-y-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="bg-white/80 backdrop-blur-xl rounded-2xl shadow-2xl p-6 border border-white/20"
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="bg-red-100 p-2 rounded-lg">
-                <DollarSign className="w-5 h-5 text-red-600" />
-              </div>
-              <div>
-                <h3 className="text-lg font-bold text-gray-800">Análise Detalhada de Custos</h3>
-                <p className="text-sm text-gray-600">Decomposição de custos operacionais e oportunidades de economia</p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              <div className="p-5 bg-red-50 rounded-xl border border-red-200">
-                <p className="text-sm font-semibold text-gray-700 mb-2">Combustível</p>
-                <p className="text-2xl font-bold text-red-600 mb-1">{formatCurrency(costMetrics.fuelCost)}</p>
-                <p className="text-xs text-gray-600">36% do total</p>
-              </div>
-
-              <div className="p-5 bg-orange-50 rounded-xl border border-orange-200">
-                <p className="text-sm font-semibold text-gray-700 mb-2">Manutenção</p>
-                <p className="text-2xl font-bold text-orange-600 mb-1">{formatCurrency(costMetrics.maintenanceCost)}</p>
-                <p className="text-xs text-gray-600">22.4% do total</p>
-              </div>
-
-              <div className="p-5 bg-blue-50 rounded-xl border border-blue-200">
-                <p className="text-sm font-semibold text-gray-700 mb-2">Pessoal</p>
-                <p className="text-2xl font-bold text-blue-600 mb-1">{formatCurrency(costMetrics.personnelCost)}</p>
-                <p className="text-xs text-gray-600">41.6% do total</p>
-              </div>
-            </div>
-
-            <div className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 border border-green-300 rounded-xl">
-              <h4 className="text-lg font-bold text-gray-800 mb-3">Oportunidades de Economia</h4>
-              <div className="space-y-3">
-                <div className="flex items-center justify-between p-3 bg-white rounded-lg">
-                  <div>
-                    <p className="text-sm font-semibold text-gray-800">Otimização de Rotas</p>
-                    <p className="text-xs text-gray-600">Redução de custos com combustível</p>
-                  </div>
-                  <p className="text-lg font-bold text-green-600">{formatCurrency(12000)}</p>
-                </div>
-                <div className="flex items-center justify-between p-3 bg-white rounded-lg">
-                  <div>
-                    <p className="text-sm font-semibold text-gray-800">Manutenção Preventiva</p>
-                    <p className="text-xs text-gray-600">Redução de custos de reparos</p>
-                  </div>
-                  <p className="text-lg font-bold text-green-600">{formatCurrency(8500)}</p>
-                </div>
-                <div className="flex items-center justify-between p-3 bg-white rounded-lg">
-                  <div>
-                    <p className="text-sm font-semibold text-gray-800">Consolidação de Viagens</p>
-                    <p className="text-xs text-gray-600">Eliminação de rotas redundantes</p>
-                  </div>
-                  <p className="text-lg font-bold text-green-600">{formatCurrency(8000)}</p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="bg-white/80 backdrop-blur-xl rounded-2xl shadow-2xl p-6 border border-white/20"
-          >
-            <h4 className="text-md font-bold text-gray-800 mb-4">Custo por Tipo de Rota</h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="p-5 bg-blue-50 rounded-xl border border-blue-200">
-                <div className="flex items-center justify-between mb-3">
-                  <p className="text-sm font-semibold text-gray-800">Rotas Urbanas</p>
-                  <Route className="w-5 h-5 text-blue-600" />
-                </div>
-                <p className="text-2xl font-bold text-blue-600 mb-2">{routeTypeAnalysis.urbano.count} rotas</p>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Custo médio:</span>
-                    <span className="font-semibold">{formatCurrency(routeTypeAnalysis.urbano.avgCost)}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Utilização:</span>
-                    <span className="font-semibold">{routeTypeAnalysis.urbano.utilization}%</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-5 bg-indigo-50 rounded-xl border border-indigo-200">
-                <div className="flex items-center justify-between mb-3">
-                  <p className="text-sm font-semibold text-gray-800">Rotas Metropolitanas</p>
-                  <Route className="w-5 h-5 text-indigo-600" />
-                </div>
-                <p className="text-2xl font-bold text-indigo-600 mb-2">{routeTypeAnalysis.metropolitano.count} rotas</p>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Custo médio:</span>
-                    <span className="font-semibold">{formatCurrency(routeTypeAnalysis.metropolitano.avgCost)}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Utilização:</span>
-                    <span className="font-semibold">{routeTypeAnalysis.metropolitano.utilization}%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      )}
-
-      {/* IMPACTO AMBIENTAL */}
-      {activeSection === 'environmental' && (
-        <div className="space-y-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="bg-white/80 backdrop-blur-xl rounded-2xl shadow-2xl p-6 border border-white/20"
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="bg-green-100 p-2 rounded-lg">
-                <Leaf className="w-5 h-5 text-green-600" />
-              </div>
-              <div>
-                <h3 className="text-lg font-bold text-gray-800">Impacto Ambiental e Sustentabilidade</h3>
-                <p className="text-sm text-gray-600">Métricas de sustentabilidade e impacto ambiental do sistema</p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-              <div className="p-5 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl border border-green-200">
-                <p className="text-sm font-semibold text-gray-700 mb-2">Redução de CO₂</p>
-                <p className="text-3xl font-bold text-green-600 mb-1">{formatNumber(environmentalMetrics.co2Reduction)}</p>
-                <p className="text-xs text-gray-600">Toneladas evitadas no período</p>
-              </div>
-
-              <div className="p-5 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-200">
-                <p className="text-sm font-semibold text-gray-700 mb-2">Eficiência de Combustível</p>
-                <p className="text-3xl font-bold text-blue-600 mb-1">{environmentalMetrics.fuelEfficiency} km/L</p>
-                <p className="text-xs text-gray-600">Consumo médio por litro</p>
-              </div>
-
-              <div className="p-5 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl border border-purple-200">
-                <p className="text-sm font-semibold text-gray-700 mb-2">Score de Sustentabilidade</p>
-                <p className="text-3xl font-bold text-purple-600 mb-1">{environmentalMetrics.sustainabilityScore}%</p>
-                <p className="text-xs text-gray-600">Índice geral de sustentabilidade</p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-5 bg-green-50 rounded-xl border border-green-200">
-                <p className="text-sm font-semibold text-gray-700 mb-2">Rotas Verdes</p>
-                <p className="text-2xl font-bold text-green-600 mb-1">{environmentalMetrics.greenRoutes}</p>
-                <p className="text-xs text-gray-600">Rotas otimizadas ambientalmente</p>
-              </div>
-
-              <div className="p-5 bg-blue-50 rounded-xl border border-blue-200">
-                <p className="text-sm font-semibold text-gray-700 mb-2">Veículos Elétricos</p>
-                <p className="text-2xl font-bold text-blue-600 mb-1">{environmentalMetrics.electricVehicles}</p>
-                <p className="text-xs text-gray-600">Frota elétrica em operação</p>
-              </div>
-
-              <div className="p-5 bg-gray-50 rounded-xl border border-gray-200">
-                <p className="text-sm font-semibold text-gray-700 mb-2">Emissões por km</p>
-                <p className="text-2xl font-bold text-gray-800 mb-1">{environmentalMetrics.emissionsPerKm} kg</p>
-                <p className="text-xs text-gray-600">Média de emissões por quilômetro</p>
               </div>
             </div>
           </motion.div>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Bus, LogIn, Mail, Lock, AlertCircle } from 'lucide-react';
-import { login } from '../services/authService';
+import { login } from '../../services/auth/authService';
 
 interface LoginProps {
   onLoginSuccess: () => void;

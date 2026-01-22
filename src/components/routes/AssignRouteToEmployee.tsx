@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Save, X, User } from 'lucide-react';
-import { Route, Location } from '../types/route';
-import { Employee } from '../types/employee';
-import { getAllEmployees } from '../services/employeeServiceSupabase';
-import { assignRouteToEmployee } from '../services/employeeRouteService';
+import { Route, Location } from '../../types/route';
+import { Employee } from '../../types/employee';
+import { getAllEmployees } from '../../services/employeeServiceSupabase';
+import { assignRouteToEmployee } from '../../services/employeeRouteService';
 
 interface AssignRouteToEmployeeProps {
   route: Route;

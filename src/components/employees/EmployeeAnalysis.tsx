@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, TrendingUp, DollarSign, Calendar, Clock, MapPin, BarChart3, User, Bus } from 'lucide-react';
-import { Employee } from '../types/employee';
-import { getEmployeeById } from '../services/employeeServiceSupabase';
-import { formatFare } from '../services/routes/fareCalculator';
+import { Employee } from '../../types/employee';
+import { getEmployeeById } from '../../services/employeeServiceSupabase';
+import { formatFare } from '../../services/routes/fareCalculator';
 
 interface EmployeeAnalysisProps {
   employeeId: string;

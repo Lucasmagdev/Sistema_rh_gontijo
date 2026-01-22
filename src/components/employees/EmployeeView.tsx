@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowLeft, MapPin, Mail, Phone, FileText, Briefcase, Star, CreditCard, CheckCircle, XCircle, BarChart3 } from 'lucide-react';
-import { Employee } from '../types/employee';
+import { Employee } from '../../types/employee';
 
 interface EmployeeViewProps {
   employee: Employee;

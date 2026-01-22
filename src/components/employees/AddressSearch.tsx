@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { Search, MapPin, Loader2, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { geocodeAddress, searchAddressSuggestions, getPlaceDetails, type GeocodingResult } from '../services/geocodingService';
-import { Location } from '../types/route';
+import { geocodeAddress, searchAddressSuggestions, getPlaceDetails, type GeocodingResult } from '../../services/routes/geocodingService';
+import { Location } from '../../types/route';
 
 interface AddressSearchProps {
   value: string;

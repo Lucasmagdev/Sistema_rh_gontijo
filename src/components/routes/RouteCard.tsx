@@ -1,7 +1,7 @@
 import { Clock, DollarSign, ArrowRight, Award, Bus, MapPin, UserPlus } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Route } from '../types/route';
-import { formatFare } from '../services/fareCalculator';
+import { Route } from '../../types/route';
+import { formatFare } from '../../services/routes/fareCalculator';
 import { useState } from 'react';
 
 interface RouteCardProps {

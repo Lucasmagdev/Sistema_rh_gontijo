@@ -3,7 +3,7 @@
  * Baseado na matriz de integração oficial do BHTrans
  */
 
-import faresData from '../data/fares.json';
+import faresData from '../../data/fares.json';
 
 export type ServiceType = 
   | 'troncais_move'

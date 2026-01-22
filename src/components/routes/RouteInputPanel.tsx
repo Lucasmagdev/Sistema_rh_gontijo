@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import { MapPin, Navigation, Loader2, Users, X, Search } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Location } from '../types/route';
-import { Employee } from '../types/employee';
-import { getAllEmployees } from '../services/employeeServiceSupabase';
-import { addressToLocation } from '../utils/addressToLocation';
-import { AddressSearch } from './employees/AddressSearch';
+import { Location } from '../../types/route';
+import { Employee } from '../../types/employee';
+import { getAllEmployees } from '../../services/employeeServiceSupabase';
+import { addressToLocation } from '../../utils/addressToLocation';
+import { AddressSearch } from '../employees/AddressSearch';
 
 interface RouteInputPanelProps {
   locations: Location[];

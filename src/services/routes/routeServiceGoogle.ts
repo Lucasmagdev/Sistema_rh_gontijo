@@ -1,6 +1,6 @@
 import { Route, RouteRequest, BusLine } from '../types/route';
 import { calculateFare, getUnitaryFare, type ServiceType, type IntegrationLocation } from './fareCalculator';
-import faresData from '../data/fares.json';
+import faresData from '../../data/fares.json';
 import { ROUTE_SERVICE_CONFIG } from './routeServiceConfig';
 import { findBusLines } from './gtfsService';
 
@@ -473,7 +473,7 @@ export async function calculateRoutesGoogle(request: RouteRequest): Promise<Rout
   }
 
   // Rate limiting
-  const { canMakeRequest, recordRequest } = await import('./rateLimiter');
+  const { canMakeRequest, recordRequest } = await import('../shared/rateLimiter');
   if (!canMakeRequest()) {
     throw new Error('Muitas requisições. Aguarde alguns segundos antes de tentar novamente.');
   }
