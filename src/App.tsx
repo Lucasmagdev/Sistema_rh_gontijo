@@ -20,6 +20,8 @@ import { calculateRoutes } from './services/routes/routeService';
 import { getEmployeeSavedRoute } from './services/employeeRouteService';
 import { getAllEmployees } from './services/employeeServiceSupabase';
 import { isAuthenticated, logout as authLogout } from './services/auth/authService';
+// Inicializar sistema de usuários
+import './services/users/userService';
 import { Route, Location } from './types/route';
 import { Employee } from './types/employee';
 

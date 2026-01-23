@@ -1,10 +1,12 @@
 /**
- * Serviço de autenticação temporário
+ * Serviço de autenticação
  * 
  * Este serviço gerencia autenticação local usando localStorage.
  * Foi projetado para ser facilmente substituído por autenticação real
  * (Supabase, SSO, Microsoft, etc.) no futuro sem refatorações grandes.
  */
+
+import { validateCredentials } from '../users/userService';
 
 const AUTH_STORAGE_KEY = 'transit_route_auth';
 const AUTH_TOKEN_KEY = 'transit_route_token';
@@ -12,6 +14,7 @@ const AUTH_TOKEN_KEY = 'transit_route_token';
 export interface AuthUser {
   email: string;
   name: string;
+  role?: 'admin' | 'operador' | 'gestor';
   // Campos adicionais podem ser adicionados aqui no futuro
 }
 
@@ -22,45 +25,15 @@ export interface AuthState {
 }
 
 /**
- * Credenciais fictícias para desenvolvimento
- * TODO: Substituir por autenticação real no futuro
- */
-interface FictitiousCredentials {
-  email: string;
-  password: string;
-  name: string;
-}
-
-const FICTITIOUS_USERS: FictitiousCredentials[] = [
-  {
-    email: 'admin@saferoutehub.com',
-    password: 'admin123',
-    name: 'Administrador',
-  },
-  {
-    email: 'operador@saferoutehub.com',
-    password: 'operador123',
-    name: 'Operador',
-  },
-  {
-    email: 'gestor@saferoutehub.com',
-    password: 'gestor123',
-    name: 'Gestor de Rotas',
-  },
-];
-
-/**
- * Simula login - valida contra credenciais fictícias
+ * Realiza login - valida contra usuários do sistema
  * No futuro, esta função será substituída por chamada real ao backend
  */
 export async function login(email: string, password: string): Promise<AuthState> {
   // Simulação de delay de rede
   await new Promise(resolve => setTimeout(resolve, 500));
 
-  // Valida credenciais fictícias
-  const userCredentials = FICTITIOUS_USERS.find(
-    (cred) => cred.email.toLowerCase() === email.toLowerCase() && cred.password === password
-  );
+  // Valida credenciais usando o serviço de usuários
+  const userCredentials = validateCredentials(email, password);
 
   if (!userCredentials) {
     throw new Error('Credenciais inválidas. Verifique seu email e senha.');
@@ -69,6 +42,7 @@ export async function login(email: string, password: string): Promise<AuthState>
   const user: AuthUser = {
     email: userCredentials.email,
     name: userCredentials.name,
+    role: userCredentials.role,
   };
 
   const token = `temp_token_${Date.now()}`;
