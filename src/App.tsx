@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Component, ErrorInfo, ReactNode } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Header } from './components/Header';
 import { Login } from './components/common/Login';
@@ -13,6 +13,7 @@ import { AssignRouteToEmployee } from './components/routes/AssignRouteToEmployee
 import { ReportsDashboard } from './components/reports/ReportsDashboard';
 import { RechargeCalculation } from './components/reports/RechargeCalculation';
 import { StatusBar } from './components/StatusBar';
+import { DriverRouteManager } from './components/ubergon/DriverRouteManager';
 import { locations } from './data/locations';
 import { calculateRoutes } from './services/routes/routeService';
 import { getEmployeeSavedRoute } from './services/employeeRouteService';
@@ -21,8 +22,50 @@ import { isAuthenticated, logout as authLogout } from './services/auth/authServi
 import { Route, Location } from './types/route';
 import { Employee } from './types/employee';
 
-type ActiveTab = 'routes' | 'employees' | 'reports' | 'recharge';
+type ActiveTab = 'routes' | 'employees' | 'reports' | 'recharge' | 'ubergon';
 type EmployeeViewMode = 'list' | 'form' | 'view' | 'analysis';
+
+// Error Boundary para capturar erros de renderização
+class ErrorBoundary extends Component<
+  { children: ReactNode },
+  { hasError: boolean; error: Error | null }
+> {
+  constructor(props: { children: ReactNode }) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+
+  static getDerivedStateFromError(error: Error) {
+    return { hasError: true, error };
+  }
+
+  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+    console.error('Erro capturado pelo ErrorBoundary:', error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="flex items-center justify-center min-h-[calc(100vh-200px)] p-4">
+          <div className="text-center bg-white rounded-xl p-6 shadow-sm max-w-md">
+            <p className="text-red-600 font-semibold mb-2">Erro ao renderizar UberGon</p>
+            <p className="text-gray-600 text-sm mb-4">
+              {this.state.error?.message || 'Erro desconhecido'}
+            </p>
+            <button
+              onClick={() => window.location.reload()}
+              className="px-4 py-2 bg-[#C4161C] text-white rounded-lg font-semibold hover:bg-[#8B0F14] transition-colors"
+            >
+              Recarregar Página
+            </button>
+          </div>
+        </div>
+      );
+    }
+
+    return this.props.children;
+  }
+}
 
 function App() {
   const [authenticated, setAuthenticated] = useState(false);
@@ -287,6 +330,18 @@ function App() {
                   selectedRoute={selectedRoute}
                 />
               </div>
+            </motion.div>
+          ) : activeTab === 'ubergon' ? (
+            <motion.div
+              key="ubergon"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              className="h-full overflow-y-auto min-h-[calc(100vh-200px)] w-full"
+            >
+              <ErrorBoundary>
+                <DriverRouteManager />
+              </ErrorBoundary>
             </motion.div>
           ) : (
             <motion.div

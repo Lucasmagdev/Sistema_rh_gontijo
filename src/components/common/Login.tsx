@@ -71,10 +71,10 @@ export function Login({ onLoginSuccess }: LoginProps) {
                 <Bus className="w-9 h-9" />
               </motion.div>
               <h1 className="text-3xl font-bold tracking-tight mb-2">
-                TransitRoute RMBH
+                SafeRouteHub
               </h1>
               <p className="text-white/90 text-sm">
-                Sistema de Roteirização e Logística
+                Sistema de Gestão de Rotas e Mobilidade
               </p>
             </div>
           </div>
@@ -174,15 +174,15 @@ export function Login({ onLoginSuccess }: LoginProps) {
               <div className="space-y-1 text-xs text-blue-700">
                 <div className="flex justify-between items-center">
                   <span className="font-medium">Admin:</span>
-                  <span className="font-mono">admin@transitroute.com / admin123</span>
+                  <span className="font-mono">admin@saferoutehub.com / admin123</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="font-medium">Operador:</span>
-                  <span className="font-mono">operador@transitroute.com / operador123</span>
+                  <span className="font-mono">operador@saferoutehub.com / operador123</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="font-medium">Gestor:</span>
-                  <span className="font-mono">gestor@transitroute.com / gestor123</span>
+                  <span className="font-mono">gestor@saferoutehub.com / gestor123</span>
                 </div>
               </div>
             </div>
@@ -192,7 +192,7 @@ export function Login({ onLoginSuccess }: LoginProps) {
         {/* Footer */}
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600">
-            © {new Date().getFullYear()} TransitRoute RMBH. Todos os direitos reservados.
+            © {new Date().getFullYear()} SafeRouteHub. Todos os direitos reservados.
           </p>
         </div>
       </motion.div>

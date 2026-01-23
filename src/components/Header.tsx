@@ -1,9 +1,9 @@
-import { Bus, Route, Users, LogOut, BarChart3, Calculator } from 'lucide-react';
+import { Bus, Route, Users, LogOut, BarChart3, Calculator, Car } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface HeaderProps {
-  activeTab: 'routes' | 'employees' | 'reports' | 'recharge';
-  onTabChange: (tab: 'routes' | 'employees' | 'reports' | 'recharge') => void;
+  activeTab: 'routes' | 'employees' | 'reports' | 'recharge' | 'ubergon';
+  onTabChange: (tab: 'routes' | 'employees' | 'reports' | 'recharge' | 'ubergon') => void;
   onLogout?: () => void;
 }
 
@@ -18,8 +18,8 @@ export function Header({ activeTab, onTabChange, onLogout }: HeaderProps) {
               <Bus className="w-7 h-7" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold tracking-tight">TransitRoute RMBH</h1>
-              <p className="text-sm text-white/80">Sistema de Simulação de Rotas de Ônibus</p>
+              <h1 className="text-2xl font-bold tracking-tight">SafeRouteHub</h1>
+              <p className="text-sm text-white/80">Sistema de Gestão de Rotas e Mobilidade</p>
             </div>
           </div>
 
@@ -76,6 +76,19 @@ export function Header({ activeTab, onTabChange, onLogout }: HeaderProps) {
               >
                 <Calculator className="w-4 h-4" />
                 Recarga
+              </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => onTabChange('ubergon')}
+                className={`px-6 py-2 rounded-lg font-semibold text-sm transition-all duration-300 flex items-center gap-2 ${
+                  activeTab === 'ubergon'
+                    ? 'bg-white text-[#C4161C] shadow-lg'
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
+                }`}
+              >
+                <Car className="w-4 h-4" />
+                UberGon
               </motion.button>
             </nav>
 

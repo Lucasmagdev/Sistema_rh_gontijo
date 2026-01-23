@@ -33,17 +33,17 @@ interface FictitiousCredentials {
 
 const FICTITIOUS_USERS: FictitiousCredentials[] = [
   {
-    email: 'admin@transitroute.com',
+    email: 'admin@saferoutehub.com',
     password: 'admin123',
     name: 'Administrador',
   },
   {
-    email: 'operador@transitroute.com',
+    email: 'operador@saferoutehub.com',
     password: 'operador123',
     name: 'Operador',
   },
   {
-    email: 'gestor@transitroute.com',
+    email: 'gestor@saferoutehub.com',
     password: 'gestor123',
     name: 'Gestor de Rotas',
   },
