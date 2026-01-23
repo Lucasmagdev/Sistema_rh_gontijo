@@ -14,6 +14,7 @@ import { ReportsDashboard } from './components/reports/ReportsDashboard';
 import { RechargeCalculation } from './components/reports/RechargeCalculation';
 import { StatusBar } from './components/StatusBar';
 import { DriverRouteManager } from './components/ubergon/DriverRouteManager';
+import { ToastContainer } from './components/common/Toast';
 import { locations } from './data/locations';
 import { calculateRoutes } from './services/routes/routeService';
 import { getEmployeeSavedRoute } from './services/employeeRouteService';
@@ -258,6 +259,7 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200">
       <Header activeTab={activeTab} onTabChange={setActiveTab} onLogout={handleLogout} />
       <StatusBar refreshTrigger={employeeListRefresh} />
+      <ToastContainer />
 
       <div className="container mx-auto px-4 py-6 h-[calc(100vh-120px)]">
         <AnimatePresence mode="wait">

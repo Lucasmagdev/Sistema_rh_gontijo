@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Plus, Car, MapPin, Users, Edit, Trash2, X, Save, Palette } from 'lucide-react';
+import { Plus, Car, MapPin, Users, Edit, Trash2, X, Save, Clock } from 'lucide-react';
 import { DriverRoute, DriverRouteFormData, RouteStop, PickupPoint } from '../../types/driverRoute';
 import { Employee } from '../../types/employee';
 import {
@@ -11,14 +11,13 @@ import {
   calculateCarRoute,
   getAllPickupPoints,
   createPickupPoint,
-  updatePickupPoint,
-  deletePickupPoint,
   DRIVER_ROUTE_COLORS,
 } from '../../services/driverRouteServiceSupabase';
 import { getAllEmployees } from '../../services/employeeServiceSupabase';
 import { DriverRouteMap } from './DriverRouteMap';
 import { Location } from '../../types/route';
 import { AddressSearch } from '../employees/AddressSearch';
+import { showToast } from '../common/Toast';
 
 export function DriverRouteManager() {
   const [driverRoutes, setDriverRoutes] = useState<DriverRoute[]>([]);
@@ -93,7 +92,7 @@ export function DriverRouteManager() {
 
   const handleCreateRoute = async () => {
     if (!formData.driverId || !formData.name || !formData.origin || !formData.destination) {
-      alert('Preencha todos os campos obrigatórios');
+      showToast('Preencha todos os campos obrigatórios', 'warning');
       return;
     }
 
@@ -122,7 +121,7 @@ export function DriverRouteManager() {
         } catch (error) {
           loadingMessage.remove();
           console.error('Erro ao calcular rota:', error);
-          alert('Erro ao calcular rota. Verifique o console para mais detalhes.');
+          showToast('Erro ao calcular rota. Usando linha reta como fallback.', 'warning');
           // Fallback: linha reta se a API falhar
           path = [
             [formData.origin.lat, formData.origin.lng],
@@ -151,9 +150,10 @@ export function DriverRouteManager() {
       console.log('🔄 Recarregando dados após salvar...');
       await loadData();
       console.log('✅ Dados recarregados');
+      showToast('Rota criada com sucesso!', 'success');
     } catch (error) {
       console.error('Erro ao criar rota:', error);
-      alert('Erro ao criar rota. Tente novamente.');
+      showToast('Erro ao criar rota. Tente novamente.', 'error');
     }
   };
 
@@ -196,14 +196,18 @@ export function DriverRouteManager() {
       setIsFormOpen(false);
       setSelectedRoute(null);
       resetForm();
+      showToast('Rota atualizada com sucesso!', 'success');
     } catch (error) {
       console.error('Erro ao atualizar rota:', error);
-      alert('Erro ao atualizar rota. Tente novamente.');
+      showToast('Erro ao atualizar rota. Tente novamente.', 'error');
     }
   };
 
   const handleDeleteRoute = async (id: string) => {
-    if (!confirm('Tem certeza que deseja excluir esta rota?')) return;
+    const route = driverRoutes.find(r => r.id === id);
+    const routeName = route?.name || 'esta rota';
+    
+    if (!window.confirm(`Tem certeza que deseja excluir a rota "${routeName}"?\n\nEsta ação não pode ser desfeita.`)) return;
 
     try {
       await deleteDriverRoute(id);
@@ -211,9 +215,10 @@ export function DriverRouteManager() {
       if (selectedRoute?.id === id) {
         setSelectedRoute(null);
       }
+      showToast(`Rota "${routeName}" excluída com sucesso!`, 'success');
     } catch (error) {
       console.error('Erro ao excluir rota:', error);
-      alert('Erro ao excluir rota. Tente novamente.');
+      showToast('Erro ao excluir rota. Tente novamente.', 'error');
     }
   };
 
@@ -320,7 +325,7 @@ export function DriverRouteManager() {
 
   const handleCreatePickupPoint = async () => {
     if (!pickupPointFormData.location || !pickupPointFormData.name) {
-      alert('Preencha nome e localização do ponto de embarque');
+      showToast('Preencha nome e localização do ponto de embarque', 'warning');
       return;
     }
 
@@ -339,9 +344,10 @@ export function DriverRouteManager() {
         location: null,
         routeIds: [],
       });
+      showToast('Ponto de embarque criado com sucesso!', 'success');
     } catch (error) {
       console.error('Erro ao criar ponto de embarque:', error);
-      alert('Erro ao criar ponto de embarque. Tente novamente.');
+      showToast('Erro ao criar ponto de embarque. Tente novamente.', 'error');
     }
   };
 
@@ -356,10 +362,19 @@ export function DriverRouteManager() {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center min-h-[calc(100vh-200px)] bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 p-4">
-        <div className="text-center">
-          <div className="w-12 h-12 border-4 border-[#C4161C] border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-gray-600">Carregando rotas...</p>
-        </div>
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="text-center"
+        >
+          <motion.div 
+            className="w-12 h-12 border-4 border-[#C4161C] border-t-transparent rounded-full mx-auto mb-4"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+          />
+          <p className="text-gray-600 font-medium">Carregando rotas...</p>
+          <p className="text-sm text-gray-400 mt-2">Aguarde um momento</p>
+        </motion.div>
       </div>
     );
   }
@@ -367,44 +382,69 @@ export function DriverRouteManager() {
   if (error) {
     return (
       <div className="flex items-center justify-center min-h-[calc(100vh-200px)] bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 p-4">
-        <div className="text-center bg-white rounded-xl p-6 shadow-sm max-w-md">
-          <p className="text-red-600 font-semibold mb-2">Erro ao carregar</p>
-          <p className="text-gray-600 text-sm mb-4">{error}</p>
-          <button
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center bg-white rounded-xl p-6 shadow-lg max-w-md border-2 border-red-100"
+        >
+          <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <X className="w-8 h-8 text-red-600" />
+          </div>
+          <p className="text-red-600 font-bold text-lg mb-2">Erro ao carregar</p>
+          <p className="text-gray-600 text-sm mb-6">{error}</p>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             onClick={loadData}
-            className="px-4 py-2 bg-[#C4161C] text-white rounded-lg font-semibold hover:bg-[#8B0F14] transition-colors"
+            className="px-6 py-3 bg-[#C4161C] text-white rounded-lg font-semibold hover:bg-[#8B0F14] transition-colors shadow-md"
           >
             Tentar Novamente
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </div>
     );
   }
 
-  const motoristas = employees.filter(emp => 
-    driverRoutes.some(route => route.driverId === emp.id)
-  );
-
   return (
     <div className="w-full min-h-[calc(100vh-200px)] flex flex-col bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 p-4">
       {/* Header */}
-      <div className="bg-white rounded-xl p-4 mb-4 shadow-sm">
+      <motion.div 
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="bg-white rounded-xl p-6 mb-4 shadow-md border border-gray-100"
+      >
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="text-2xl font-bold text-gray-800">UberGon</h2>
-            <p className="text-sm text-gray-600">Gerenciamento de Rotas de Caronas</p>
+            <div className="flex items-center gap-3 mb-1">
+              <div className="w-10 h-10 bg-gradient-to-br from-[#C4161C] to-[#8B0F14] rounded-lg flex items-center justify-center shadow-md">
+                <Car className="w-6 h-6 text-white" />
+              </div>
+              <h2 className="text-3xl font-bold text-gray-800">UberGon</h2>
+            </div>
+            <p className="text-sm text-gray-500 ml-13">Gerenciamento de Rotas de Caronas</p>
           </div>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={handleNewRoute}
-            className="px-4 py-2 bg-[#C4161C] text-white rounded-lg font-semibold flex items-center gap-2 hover:bg-[#8B0F14] transition-colors"
-          >
-            <Plus className="w-4 h-4" />
-            Nova Rota
-          </motion.button>
+          <div className="flex items-center gap-3">
+            <motion.button
+              whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(196, 22, 28, 0.3)" }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => setIsPickupPointFormOpen(true)}
+              className="px-4 py-2 bg-green-600 text-white rounded-lg font-semibold flex items-center gap-2 hover:bg-green-700 transition-all shadow-md"
+            >
+              <MapPin className="w-4 h-4" />
+              Novo Ponto
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(196, 22, 28, 0.3)" }}
+              whileTap={{ scale: 0.95 }}
+              onClick={handleNewRoute}
+              className="px-5 py-2.5 bg-[#C4161C] text-white rounded-lg font-semibold flex items-center gap-2 hover:bg-[#8B0F14] transition-all shadow-lg"
+            >
+              <Plus className="w-5 h-5" />
+              Nova Rota
+            </motion.button>
+          </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Conteúdo principal */}
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-4 min-h-0">
@@ -414,14 +454,28 @@ export function DriverRouteManager() {
             {driverRoutes.length === 0 ? (
               <motion.div
                 key="empty-state"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                className="bg-white rounded-xl p-6 text-center shadow-sm"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                className="bg-white rounded-xl p-8 text-center shadow-sm border-2 border-dashed border-gray-200"
               >
-                <Car className="w-12 h-12 text-gray-400 mx-auto mb-4" />
-                <p className="text-gray-600 font-semibold">Nenhuma rota cadastrada</p>
-                <p className="text-sm text-gray-500 mt-2">Clique em "Nova Rota" para começar</p>
+                <motion.div
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  <Car className="w-16 h-16 text-gray-300 mx-auto mb-4" />
+                </motion.div>
+                <p className="text-gray-700 font-bold text-lg mb-2">Nenhuma rota cadastrada</p>
+                <p className="text-sm text-gray-500 mb-4">Comece criando sua primeira rota de carona</p>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={handleNewRoute}
+                  className="px-4 py-2 bg-[#C4161C] text-white rounded-lg font-semibold hover:bg-[#8B0F14] transition-colors flex items-center gap-2 mx-auto"
+                >
+                  <Plus className="w-4 h-4" />
+                  Criar Primeira Rota
+                </motion.button>
               </motion.div>
             ) : (
               driverRoutes.map((route) => (
@@ -430,10 +484,10 @@ export function DriverRouteManager() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
-                  className={`bg-white rounded-xl p-4 shadow-sm border-2 transition-all cursor-pointer ${
+                  className={`bg-white rounded-xl p-4 shadow-sm border-2 transition-all duration-200 cursor-pointer group ${
                     selectedRoute?.id === route.id
-                      ? 'border-[#C4161C] shadow-lg'
-                      : 'border-transparent hover:border-gray-200'
+                      ? 'border-[#C4161C] shadow-lg scale-[1.02]'
+                      : 'border-transparent hover:border-gray-300 hover:shadow-md'
                   }`}
                   onClick={() => setSelectedRoute(route)}
                 >
@@ -485,8 +539,10 @@ export function DriverRouteManager() {
                       style={{ backgroundColor: route.color }}
                     />
                   </div>
-                  <div className="flex gap-2 mt-3">
-                    <button
+                  <div className="flex gap-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
                       onClick={(e) => {
                         e.stopPropagation();
                         handleEditRoute(route);
@@ -495,15 +551,14 @@ export function DriverRouteManager() {
                     >
                       <Edit className="w-3 h-3" />
                       Editar
-                    </button>
-                    <button
+                    </motion.button>
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
                       onClick={async (e) => {
                         e.stopPropagation();
                         if (route.origin && route.destination) {
-                          const loadingMessage = document.createElement('div');
-                          loadingMessage.className = 'fixed top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-lg shadow-lg z-50 flex items-center gap-2';
-                          loadingMessage.innerHTML = '<div class="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div><span>Recalculando rota...</span>';
-                          document.body.appendChild(loadingMessage);
+                          showToast('Recalculando rota...', 'info', 0);
                           
                           try {
                             const newPath = await calculateCarRoute(
@@ -513,12 +568,10 @@ export function DriverRouteManager() {
                             );
                             await updateDriverRoute(route.id, { path: newPath });
                             await loadData();
-                            loadingMessage.remove();
-                            alert('✅ Rota recalculada com sucesso!');
+                            showToast('Rota recalculada com sucesso!', 'success');
                           } catch (error) {
-                            loadingMessage.remove();
                             console.error('Erro ao recalcular rota:', error);
-                            alert('❌ Erro ao recalcular rota. Verifique o console.');
+                            showToast('Erro ao recalcular rota. Verifique o console.', 'error');
                           }
                         }
                       }}
@@ -526,16 +579,19 @@ export function DriverRouteManager() {
                       title="Recalcular rota usando estradas reais"
                     >
                       <MapPin className="w-3 h-3" />
-                    </button>
-                    <button
+                    </motion.button>
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
                       onClick={(e) => {
                         e.stopPropagation();
                         handleDeleteRoute(route.id);
                       }}
                       className="px-3 py-1.5 bg-red-50 text-red-600 rounded-lg text-xs font-semibold hover:bg-red-100 transition-colors flex items-center justify-center gap-1"
+                      title="Excluir rota"
                     >
                       <Trash2 className="w-3 h-3" />
-                    </button>
+                    </motion.button>
                   </div>
                 </motion.div>
               ))
@@ -566,22 +622,31 @@ export function DriverRouteManager() {
             onClick={() => setIsFormOpen(false)}
           >
             <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
+              initial={{ scale: 0.95, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.95, opacity: 0, y: 20 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-white rounded-2xl p-6 w-full max-w-2xl max-h-[90vh] overflow-y-auto"
+              className="bg-white rounded-2xl p-6 w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl border border-gray-100"
             >
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-bold text-gray-800">
-                  {selectedRoute ? 'Editar Rota' : 'Nova Rota de Motorista'}
-                </h3>
-                <button
+              <div className="flex items-center justify-between mb-6 pb-4 border-b border-gray-200">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-1">
+                    {selectedRoute ? 'Editar Rota' : 'Nova Rota de Motorista'}
+                  </h3>
+                  <p className="text-sm text-gray-500">
+                    {selectedRoute ? 'Atualize as informações da rota' : 'Preencha os dados para criar uma nova rota'}
+                  </p>
+                </div>
+                <motion.button
+                  whileHover={{ scale: 1.1, rotate: 90 }}
+                  whileTap={{ scale: 0.9 }}
                   onClick={() => setIsFormOpen(false)}
                   className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                  aria-label="Fechar formulário"
                 >
                   <X className="w-5 h-5" />
-                </button>
+                </motion.button>
               </div>
 
               <div className="space-y-4">
@@ -590,13 +655,13 @@ export function DriverRouteManager() {
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
                     Nome da Rota *
                   </label>
-                  <input
-                    type="text"
-                    value={formData.name || ''}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C4161C] focus:border-transparent"
-                    placeholder="Ex: Rota Centro - Pampulha"
-                  />
+                    <input
+                      type="text"
+                      value={formData.name || ''}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      className="w-full px-4 py-2.5 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C4161C] focus:border-[#C4161C] transition-all"
+                      placeholder="Ex: Rota Centro - Pampulha"
+                    />
                 </div>
 
                 {/* Motorista */}
@@ -607,7 +672,7 @@ export function DriverRouteManager() {
                   <select
                     value={formData.driverId || ''}
                     onChange={(e) => setFormData({ ...formData, driverId: e.target.value })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C4161C] focus:border-transparent"
+                    className="w-full px-4 py-2.5 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C4161C] focus:border-[#C4161C] transition-all bg-white"
                   >
                     <option value="">Selecione um motorista</option>
                     {employees.map((emp) => (
@@ -648,43 +713,54 @@ export function DriverRouteManager() {
                     <label className="block text-sm font-semibold text-gray-700">
                       Paradas na Rota
                     </label>
-                    <button
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
                       type="button"
                       onClick={handleAddStop}
-                      className="px-3 py-1 text-xs bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors flex items-center gap-1"
+                      className="px-3 py-1.5 text-xs bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-all shadow-sm hover:shadow-md flex items-center gap-1 font-semibold"
                     >
                       <Users className="w-3 h-3" />
                       <Plus className="w-3 h-3" />
                       Adicionar Parada
-                    </button>
+                    </motion.button>
                   </div>
                   <div className="space-y-2">
                     {formData.stops && formData.stops.length > 0 ? (
                       formData.stops
                         .sort((a, b) => a.order - b.order)
                         .map((stop, index) => (
-                          <div key={stop.id} className="flex gap-2 items-start p-3 bg-gray-50 rounded-lg">
+                          <motion.div 
+                            key={stop.id} 
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: 20 }}
+                            className="flex gap-2 items-start p-4 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all"
+                          >
                             <div className="flex-1 space-y-2">
                               <div className="flex items-center gap-2">
-                                <span className="text-xs font-semibold text-gray-500 bg-white px-2 py-1 rounded flex items-center gap-1">
-                                  <Users className="w-3 h-3" />
+                                <span className="text-xs font-bold text-gray-600 bg-blue-100 px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
+                                  <Users className="w-3.5 h-3.5" />
                                   Parada {index + 1}
                                 </span>
                                 <input
                                   type="text"
                                   value={stop.name}
                                   onChange={(e) => handleStopChange(stop.id, 'name', e.target.value)}
-                                  className="flex-1 px-3 py-1.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C4161C] focus:border-transparent"
+                                  className="flex-1 px-3 py-2 text-sm border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C4161C] focus:border-[#C4161C] transition-all"
                                   placeholder="Nome da parada"
                                 />
-                                <input
-                                  type="time"
-                                  value={stop.time || ''}
-                                  onChange={(e) => handleStopChange(stop.id, 'time', e.target.value)}
-                                  className="px-3 py-1.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C4161C] focus:border-transparent w-32"
-                                  placeholder="Horário"
-                                  title="Horário da parada"
-                                />
+                                <div className="relative">
+                                  <Clock className="absolute left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+                                  <input
+                                    type="time"
+                                    value={stop.time || ''}
+                                    onChange={(e) => handleStopChange(stop.id, 'time', e.target.value)}
+                                    className="pl-8 pr-3 py-2 text-sm border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C4161C] focus:border-[#C4161C] transition-all w-36"
+                                    placeholder="Horário"
+                                    title="Horário da parada"
+                                  />
+                                </div>
                               </div>
                               <AddressSearch
                                 value={stop.location?.name || ''}
@@ -692,14 +768,17 @@ export function DriverRouteManager() {
                                 placeholder="Localização da parada"
                               />
                             </div>
-                            <button
+                            <motion.button
+                              whileHover={{ scale: 1.1 }}
+                              whileTap={{ scale: 0.9 }}
                               type="button"
                               onClick={() => handleRemoveStop(stop.id)}
-                              className="p-1.5 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                              className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors shadow-sm hover:shadow-md"
+                              title="Remover parada"
                             >
                               <Trash2 className="w-4 h-4" />
-                            </button>
-                          </div>
+                            </motion.button>
+                          </motion.div>
                         ))
                     ) : (
                       <p className="text-sm text-gray-500 text-center py-2">
@@ -714,14 +793,14 @@ export function DriverRouteManager() {
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
                     Capacidade de Passageiros
                   </label>
-                  <input
-                    type="number"
-                    min="1"
-                    max="10"
-                    value={formData.capacity || 4}
-                    onChange={(e) => setFormData({ ...formData, capacity: parseInt(e.target.value) || 4 })}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C4161C] focus:border-transparent"
-                  />
+                    <input
+                      type="number"
+                      min="1"
+                      max="10"
+                      value={formData.capacity || 4}
+                      onChange={(e) => setFormData({ ...formData, capacity: parseInt(e.target.value) || 4 })}
+                      className="w-full px-4 py-2.5 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C4161C] focus:border-[#C4161C] transition-all"
+                    />
                 </div>
 
                 {/* Cor */}
@@ -731,36 +810,43 @@ export function DriverRouteManager() {
                   </label>
                   <div className="flex gap-2 flex-wrap">
                     {DRIVER_ROUTE_COLORS.map((color) => (
-                      <button
+                      <motion.button
                         key={color}
                         type="button"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
                         onClick={() => setFormData({ ...formData, color })}
-                        className={`w-10 h-10 rounded-lg border-2 transition-all ${
+                        className={`w-12 h-12 rounded-lg border-2 transition-all shadow-md ${
                           formData.color === color
-                            ? 'border-gray-800 scale-110'
-                            : 'border-gray-300 hover:border-gray-400'
+                            ? 'border-gray-800 scale-110 ring-2 ring-offset-2 ring-gray-400'
+                            : 'border-gray-300 hover:border-gray-500 hover:shadow-lg'
                         }`}
                         style={{ backgroundColor: color }}
+                        title={`Cor: ${color}`}
                       />
                     ))}
                   </div>
                 </div>
               </div>
 
-              <div className="flex gap-3 mt-6">
-                <button
+              <div className="flex gap-3 mt-8 pt-6 border-t border-gray-200">
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
                   onClick={() => setIsFormOpen(false)}
-                  className="flex-1 px-4 py-2 border border-gray-300 rounded-lg font-semibold text-gray-700 hover:bg-gray-50 transition-colors"
+                  className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg font-semibold text-gray-700 hover:bg-gray-50 hover:border-gray-400 transition-all"
                 >
                   Cancelar
-                </button>
-                <button
+                </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.02, boxShadow: "0 10px 25px rgba(196, 22, 28, 0.3)" }}
+                  whileTap={{ scale: 0.98 }}
                   onClick={selectedRoute ? handleUpdateRoute : handleCreateRoute}
-                  className="flex-1 px-4 py-2 bg-[#C4161C] text-white rounded-lg font-semibold hover:bg-[#8B0F14] transition-colors flex items-center justify-center gap-2"
+                  className="flex-1 px-4 py-3 bg-[#C4161C] text-white rounded-lg font-semibold hover:bg-[#8B0F14] transition-all shadow-lg flex items-center justify-center gap-2"
                 >
-                  <Save className="w-4 h-4" />
+                  <Save className="w-5 h-5" />
                   {selectedRoute ? 'Atualizar' : 'Criar'} Rota
-                </button>
+                </motion.button>
               </div>
             </motion.div>
           </motion.div>
@@ -874,20 +960,24 @@ export function DriverRouteManager() {
                   </div>
                 </div>
 
-                <div className="flex gap-3 mt-6">
-                  <button
+                <div className="flex gap-3 mt-8 pt-6 border-t border-gray-200">
+                  <motion.button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
                     onClick={() => setIsPickupPointFormOpen(false)}
-                    className="flex-1 px-4 py-2 border border-gray-300 rounded-lg font-semibold text-gray-700 hover:bg-gray-50 transition-colors"
+                    className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg font-semibold text-gray-700 hover:bg-gray-50 hover:border-gray-400 transition-all"
                   >
                     Cancelar
-                  </button>
-                  <button
+                  </motion.button>
+                  <motion.button
+                    whileHover={{ scale: 1.02, boxShadow: "0 10px 25px rgba(34, 197, 94, 0.3)" }}
+                    whileTap={{ scale: 0.98 }}
                     onClick={handleCreatePickupPoint}
-                    className="flex-1 px-4 py-2 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center gap-2"
+                    className="flex-1 px-4 py-3 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-all shadow-lg flex items-center justify-center gap-2"
                   >
-                    <Save className="w-4 h-4" />
+                    <Save className="w-5 h-5" />
                     Criar Ponto
-                  </button>
+                  </motion.button>
                 </div>
               </motion.div>
             </motion.div>
