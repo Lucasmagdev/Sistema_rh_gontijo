@@ -14,7 +14,7 @@ import {
   updatePickupPoint,
   deletePickupPoint,
   DRIVER_ROUTE_COLORS,
-} from '../../services/driverRouteService';
+} from '../../services/driverRouteServiceSupabase';
 import { getAllEmployees } from '../../services/employeeServiceSupabase';
 import { DriverRouteMap } from './DriverRouteMap';
 import { Location } from '../../types/route';
@@ -65,16 +65,22 @@ export function DriverRouteManager() {
     setIsLoading(true);
     setError(null);
     try {
+      console.log('🔄 Carregando dados do UberGon...');
       const [routes, emps, points] = await Promise.all([
         getAllDriverRoutes(),
         getAllEmployees(),
         getAllPickupPoints(),
       ]);
+      console.log('✅ Dados carregados:', {
+        rotas: routes?.length || 0,
+        colaboradores: emps?.length || 0,
+        pontos: points?.length || 0,
+      });
       setDriverRoutes(routes || []);
       setEmployees(emps || []);
       setPickupPoints(points || []);
     } catch (error) {
-      console.error('Erro ao carregar dados:', error);
+      console.error('❌ Erro ao carregar dados:', error);
       setError('Erro ao carregar dados. Tente recarregar a página.');
       // Garante que os estados não fiquem undefined
       setDriverRoutes([]);
@@ -125,7 +131,8 @@ export function DriverRouteManager() {
         }
       }
 
-      await createDriverRoute({
+      console.log('💾 Salvando nova rota...');
+      const newRoute = await createDriverRoute({
         driverId: formData.driverId,
         name: formData.name,
         origin: formData.origin!,
@@ -136,9 +143,14 @@ export function DriverRouteManager() {
         capacity: formData.capacity || 4,
       });
 
-      await loadData();
+      console.log('✅ Rota salva:', newRoute.id);
       setIsFormOpen(false);
       resetForm();
+      
+      // Recarregar dados para atualizar a lista e o mapa
+      console.log('🔄 Recarregando dados após salvar...');
+      await loadData();
+      console.log('✅ Dados recarregados');
     } catch (error) {
       console.error('Erro ao criar rota:', error);
       alert('Erro ao criar rota. Tente novamente.');
@@ -398,11 +410,13 @@ export function DriverRouteManager() {
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-4 min-h-0">
         {/* Lista de rotas */}
         <div className="lg:col-span-1 space-y-4 overflow-y-auto max-h-[calc(100vh-250px)]">
-          <AnimatePresence>
+          <AnimatePresence mode="wait">
             {driverRoutes.length === 0 ? (
               <motion.div
+                key="empty-state"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
                 className="bg-white rounded-xl p-6 text-center shadow-sm"
               >
                 <Car className="w-12 h-12 text-gray-400 mx-auto mb-4" />
@@ -541,9 +555,10 @@ export function DriverRouteManager() {
       </div>
 
       {/* Modal de formulário */}
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {isFormOpen && (
           <motion.div
+            key="route-form-modal"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -750,11 +765,13 @@ export function DriverRouteManager() {
             </motion.div>
           </motion.div>
         )}
+      </AnimatePresence>
 
-        {/* Modal de Ponto de Embarque */}
-        <AnimatePresence>
+      {/* Modal de Ponto de Embarque */}
+      <AnimatePresence mode="wait">
           {isPickupPointFormOpen && (
             <motion.div
+              key="pickup-point-form-modal"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -876,7 +893,6 @@ export function DriverRouteManager() {
             </motion.div>
           )}
         </AnimatePresence>
-      </AnimatePresence>
     </div>
   );
 }
